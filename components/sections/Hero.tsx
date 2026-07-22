@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../ui/Button";
 
 export default function Hero() {
   return (
@@ -28,9 +29,10 @@ export default function Hero() {
           Designed for unforgettable moments.
         </p>
 
-        <button className="rounded-full bg-black px-10 py-4 text-white transition hover:scale-105">
-          Explore Collection
-        </button>
+        <Button>
+  Explore Collection
+</Button>
+
       </div>
     </section>
   );

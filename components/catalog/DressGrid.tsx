@@ -1,5 +1,5 @@
 import DressCard from "./DressCard";
-import { dresses } from "../../data/dresses";
+import { dresses } from "@/data/dresses";
 
 export default function DressGrid() {
   return (
@@ -9,7 +9,7 @@ export default function DressGrid() {
           key={dress.slug}
           slug={dress.slug}
           name={dress.name}
-          image={dress.image}
+          image={dress.images[0]}
         />
       ))}
     </section>

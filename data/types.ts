@@ -5,7 +5,7 @@ export interface Dress {
   collection: string;
   collectionSlug: string;
 
-  image: string;
+  images: string[];
 
   description: string;
 }

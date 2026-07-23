@@ -1,23 +1,28 @@
-export const dresses = [
+import { Dress } from "./types";
+
+export const dresses: Dress[] = [
   {
-    id: 1,
     slug: "beatrice",
     name: "Beatrice",
     collection: "Echoes of Her",
-    image: "/images/collections/echoes/beatrice.jpg",
+    collectionSlug: "echoes-of-her",
+    image: "/images/dresses/echoes-of-her/beatrice/cover.jpg",
+    description: "",
   },
   {
-    id: 2,
-    slug: "celesta",
-    name: "Celesta",
-    collection: "Echoes of Her",
-    image: "/images/collections/echoes/celesta.jpg",
-  },
-  {
-    id: 3,
     slug: "cecilia",
     name: "Cecilia",
     collection: "Echoes of Her",
-    image: "/images/collections/echoes/cecilia.jpg",
+    collectionSlug: "echoes-of-her",
+    image: "/images/dresses/echoes-of-her/cecilia/cover.jpg",
+    description: "",
+  },
+  {
+    slug: "celesta",
+    name: "Celesta",
+    collection: "Echoes of Her",
+    collectionSlug: "echoes-of-her",
+    image: "/images/dresses/echoes-of-her/celesta/cover.jpg",
+    description: "",
   },
 ];

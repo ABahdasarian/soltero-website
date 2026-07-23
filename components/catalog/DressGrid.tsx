@@ -6,7 +6,8 @@ export default function DressGrid() {
     <section className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
       {dresses.map((dress) => (
         <DressCard
-          key={dress.id}
+          key={dress.slug}
+          slug={dress.slug}
           name={dress.name}
           image={dress.image}
         />

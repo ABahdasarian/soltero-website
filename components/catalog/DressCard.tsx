@@ -3,35 +3,29 @@ import Link from "next/link";
 
 type DressCardProps = {
   name: string;
-  image: string;
   slug: string;
+  image: string;
 };
 
 export default function DressCard({
   name,
-  image,
   slug,
+  image,
 }: DressCardProps) {
   return (
     <Link href={`/dress/${slug}`} className="group block">
-      <article>
-        <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
-          <Image
-            src={image}
-            alt={name}
-            fill
-            className="object-cover transition duration-500 group-hover:scale-105"
-          />
-        </div>
+      <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
+        <Image
+          src={image}
+          alt={name}
+          fill
+          className="object-cover transition duration-300 group-hover:scale-105"
+        />
+      </div>
 
-        <h3 className="mt-4 text-center text-lg font-medium">
-          {name}
-        </h3>
-
-        <p className="mt-2 text-center text-sm text-neutral-500">
-          View Details →
-        </p>
-      </article>
+      <h3 className="mt-4 text-center text-lg font-light">
+        {name}
+      </h3>
     </Link>
   );
 }

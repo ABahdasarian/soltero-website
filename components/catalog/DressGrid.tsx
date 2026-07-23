@@ -1,7 +1,11 @@
 import DressCard from "./DressCard";
-import { dresses } from "@/data/dresses";
+import { Dress } from "@/data/types";
 
-export default function DressGrid() {
+type DressGridProps = {
+  dresses: Dress[];
+};
+
+export default function DressGrid({ dresses }: DressGridProps) {
   return (
     <section className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
       {dresses.map((dress) => (

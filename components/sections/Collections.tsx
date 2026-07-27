@@ -4,19 +4,24 @@ import Link from "next/link";
 
 const collections = [
   {
+    title: "Spring Flower",
+    season: "Spring 2026",
+    image: "/images/collections/spring-flower.jpg",
+  },
+  {
     title: "Echoes of Her",
     season: "Spring 2026",
-    image: "/images/collections/collection-1.jpg",
+    image: "/images/collections/echoes-of-her.jpg",
   },
   {
     title: "Illuminare",
     season: "Fall 2025",
-    image: "/images/collections/collection-2.jpg",
+    image: "/images/collections/illuminare.jpg",
   },
   {
-    title: "Radiance",
+    title: "Radiance of love",
     season: "Signature",
-    image: "/images/collections/collection-3.jpg",
+    image: "/images/collections/radiance.jpg",
   },
 ];
 
@@ -39,16 +44,13 @@ export default function Collections() {
           </p>
         </div>
 
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
           {collections.map((collection) => (
-            <article
-              key={collection.title}
-              className="group"
-            >
-              <div className="overflow-hidden">
+            <article key={collection.title} className="group">
+              <div className="overflow-hidden bg-[#f7f5f2]">
                 <img
                   src={collection.image}
-                  alt={collection.title}
+                  alt=""
                   className="aspect-[3/4] w-full object-cover transition duration-700 group-hover:scale-105"
                 />
               </div>

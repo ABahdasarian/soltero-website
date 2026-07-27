@@ -1,7 +1,11 @@
-// components/catalog/DressCard.tsx
-
 import Link from "next/link";
-import type { Dress } from "@/data/dresses";
+
+interface Dress {
+  slug: string;
+  name: string;
+  collection: string;
+  image: string;
+}
 
 interface Props {
   dress: Dress;
@@ -13,26 +17,22 @@ export default function DressCard({ dress }: Props) {
       <Link href={`/catalog/${dress.slug}`}>
         <div className="overflow-hidden bg-[#f7f5f2]">
           <img
-            src={dress.images[0]}
+            src={dress.image}
             alt={dress.name}
             className="aspect-[3/4] w-full object-cover transition duration-700 group-hover:scale-105"
           />
         </div>
 
         <div className="pt-8 text-center">
-          <span className="uppercase tracking-[0.3em] text-[#b8915d] text-sm">
-            Soltero
+          <span className="text-sm uppercase tracking-[0.3em] text-[#b8915d]">
+            {dress.collection}
           </span>
 
           <h3 className="mt-3 text-3xl font-light">
             {dress.name}
           </h3>
 
-          <p className="mt-4 text-neutral-500">
-            {dress.price}
-          </p>
-
-          <div className="mt-8 inline-flex items-center gap-3 uppercase tracking-[0.25em] text-sm">
+          <div className="mt-8 inline-flex items-center gap-3 text-sm uppercase tracking-[0.25em]">
             View Dress
 
             <svg

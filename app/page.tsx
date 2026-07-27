@@ -36,7 +36,7 @@ export default function Home() {
             </p>
           </div>
 
-          <DressGrid dresses={dresses.slice(0, 6)} />
+          <DressGrid />
 
           <div className="mt-16 text-center">
             <Link

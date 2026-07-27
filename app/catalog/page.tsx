@@ -1,25 +1,57 @@
-import Sidebar from "../../components/catalog/Sidebar";
-import DressGrid from "@/components/catalog/DressGrid";
+// app/catalog/page.tsx
+
 import { dresses } from "@/data/dresses";
+import DressGrid from "@/components/catalog/DressGrid";
 
 export default function CatalogPage() {
   return (
-    <main className="bg-[#F8F6F3] py-20">
-      <div className="mx-auto flex max-w-7xl gap-16 px-8">
-        <Sidebar />
+    <main className="pt-24">
+      <section className="relative h-[60vh] overflow-hidden">
+        <img
+          src="/images/catalog-hero.jpg"
+          alt="Collections"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
 
-        <div className="flex-1">
-          <h1 className="mb-4 text-4xl font-light tracking-wide">
-            Wedding Dresses
-          </h1>
+        <div className="absolute inset-0 bg-black/35" />
 
-          <p className="mb-12 text-stone-500">
-            Explore our bridal collections.
-          </p>
+        <div className="relative flex h-full items-center justify-center text-center text-white">
+          <div>
+            <p className="mb-5 uppercase tracking-[0.45em] text-[#d5b27c]">
+              Soltero
+            </p>
+
+            <h1 className="text-6xl font-light md:text-8xl">
+              Our Collections
+            </h1>
+
+            <p className="mx-auto mt-8 max-w-2xl text-lg text-white/80">
+              Explore every gown from our luxury bridal collections.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="mb-20 text-center">
+            <span className="uppercase tracking-[0.35em] text-[#b8915d]">
+              Bridal Dresses
+            </span>
+
+            <h2 className="section-title mt-5">
+              Find Your Dream Dress
+            </h2>
+
+            <p className="section-subtitle">
+              Designed with luxurious fabrics, timeless silhouettes and
+              handcrafted details.
+            </p>
+          </div>
 
           <DressGrid dresses={dresses} />
         </div>
-      </div>
+      </section>
     </main>
   );
 }

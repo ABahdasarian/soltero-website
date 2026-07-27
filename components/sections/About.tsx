@@ -1,36 +1,51 @@
-import Image from "next/image";
-import Container from "../ui/Container";
+// components/sections/About.tsx
+
+import Link from "next/link";
 
 export default function About() {
   return (
-    <section className="bg-white py-28">
-      <Container>
-        <h2 className="mb-20 text-center text-5xl font-light">
-          About us
-        </h2>
+    <section className="bg-[#faf8f5] py-32">
+      <div className="mx-auto grid max-w-7xl items-center gap-20 px-6 lg:grid-cols-2">
+        <div>
+          <span className="uppercase tracking-[0.45em] text-[#b8915d]">
+            About Soltero
+          </span>
 
-        <div className="grid items-center gap-16 lg:grid-cols-2">
-          <div>
-            <p className="max-w-lg text-2xl leading-relaxed text-stone-700">
-              We are the official UK branch of Vittoria Soltero.
-              Our designs combine exceptional craftsmanship,
-              premium fabrics and timeless elegance, making
-              them a perfect fit for modern brides.
-            </p>
-          </div>
+          <h2 className="mt-6 text-5xl font-light leading-tight">
+            Timeless Elegance,
+            <br />
+            Crafted for Every Bride
+          </h2>
 
-          <div className="flex justify-center">
-            <div className="relative h-[520px] w-[380px] overflow-hidden rounded-[40px]">
-              <Image
-                src="/images/about.jpg"
-                alt="Soltero Bridal"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
+          <p className="mt-8 text-lg leading-8 text-neutral-600">
+            At SOLTERO we believe every wedding dress should feel
+            effortless, luxurious and unforgettable. Every gown is
+            designed with refined silhouettes, premium fabrics and
+            handcrafted details to celebrate modern femininity.
+          </p>
+
+          <p className="mt-6 text-lg leading-8 text-neutral-600">
+            From intimate ceremonies to grand celebrations, our
+            collections are created to make every bride feel confident,
+            elegant and uniquely herself.
+          </p>
+
+          <Link
+            href="/about"
+            className="mt-12 inline-block border border-black px-10 py-4 uppercase tracking-[0.25em] transition hover:bg-black hover:text-white"
+          >
+            Our Story
+          </Link>
         </div>
-      </Container>
+
+        <div className="overflow-hidden rounded-sm">
+          <img
+            src="/images/about.jpg"
+            alt="About SOLTERO"
+            className="aspect-[4/5] w-full object-cover transition duration-700 hover:scale-105"
+          />
+        </div>
+      </div>
     </section>
   );
 }

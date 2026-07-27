@@ -1,29 +1,65 @@
+// components/layout/Header.tsx
+
+"use client";
+
 import Link from "next/link";
-import Container from "../ui/Container";
+import { usePathname } from "next/navigation";
+
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/catalog", label: "Collections" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+];
 
 export default function Header() {
+  const pathname = usePathname();
+
+  const transparent = pathname === "/";
+
   return (
-    <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/90 backdrop-blur">
-      <Container>
-        <div className="flex h-20 items-center justify-between">
-          <Link
-            href="/"
-            className="text-3xl tracking-[0.15em] font-light"
-          >
-            SOLTERO
-          </Link>
+    <header
+      className={`fixed left-0 top-0 z-50 w-full transition-all duration-300 ${
+        transparent
+          ? "bg-transparent text-white"
+          : "border-b border-neutral-200 bg-white text-black"
+      }`}
+    >
+      <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-6">
+        <Link
+          href="/"
+          className="text-3xl font-light tracking-[0.35em]"
+        >
+          SOLTERO
+        </Link>
 
-          <nav className="hidden md:flex items-center gap-10">
-            <Link href="/">Collections</Link>
-            <Link href="/catalog">Catalog</Link>
-            <Link href="/contact">Contact</Link>
+        <nav className="hidden gap-12 lg:flex">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`uppercase tracking-[0.22em] transition ${
+                pathname === link.href
+                  ? "text-[#b8915d]"
+                  : "hover:text-[#b8915d]"
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
 
-            <button className="rounded-full bg-black px-5 py-2 text-white transition hover:bg-neutral-800">
-              Book Appointment
-            </button>
-          </nav>
-        </div>
-      </Container>
+        <Link
+          href="/booking"
+          className={`border px-8 py-3 uppercase tracking-[0.2em] transition ${
+            transparent
+              ? "border-white hover:bg-white hover:text-black"
+              : "border-black hover:bg-black hover:text-white"
+          }`}
+        >
+          Book
+        </Link>
+      </div>
     </header>
   );
 }

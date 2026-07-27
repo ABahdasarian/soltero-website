@@ -1,44 +1,89 @@
-import Container from "../ui/Container";
+// components/layout/Footer.tsx
+
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-neutral-200 bg-white py-20">
-      <Container>
-        <div className="grid gap-16 lg:grid-cols-2">
+    <footer className="border-t border-neutral-200 bg-[#faf8f5]">
+      <div className="mx-auto max-w-7xl px-6 py-24">
+        <div className="grid gap-16 md:grid-cols-4">
           <div>
-            <h2 className="text-5xl font-light">Subscribe</h2>
+            <h2 className="text-3xl font-light tracking-[0.2em]">
+              SOLTERO
+            </h2>
 
-            <p className="mt-6 text-stone-600">
-              Get inspiration & updates to your inbox
+            <p className="mt-6 leading-8 text-neutral-600">
+              Luxury bridal gowns designed for unforgettable moments and
+              timeless elegance.
             </p>
-
-            <form className="mt-10 flex max-w-md gap-4">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 border-b border-black bg-transparent py-2 outline-none"
-              />
-
-              <button className="font-medium">
-                Sign Up
-              </button>
-            </form>
           </div>
 
-          <div className="flex flex-col items-end justify-between">
-            <div className="flex gap-6 text-lg">
-              <a href="#">Instagram</a>
-              <a href="#">LinkedIn</a>
-              <a href="#">TikTok</a>
-              <a href="#">Facebook</a>
-            </div>
+          <div>
+            <h3 className="mb-6 uppercase tracking-[0.3em] text-[#b8915d]">
+              Collections
+            </h3>
 
-            <p className="mt-10 text-stone-500">
-              © 2026 Soltero Bridal
+            <div className="space-y-4 text-neutral-600">
+              <Link href="/catalog" className="block hover:text-black">
+                All Dresses
+              </Link>
+
+              <Link href="/catalog" className="block hover:text-black">
+                New Collection
+              </Link>
+
+              <Link href="/catalog" className="block hover:text-black">
+                Best Sellers
+              </Link>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="mb-6 uppercase tracking-[0.3em] text-[#b8915d]">
+              Company
+            </h3>
+
+            <div className="space-y-4 text-neutral-600">
+              <Link href="/about" className="block hover:text-black">
+                About
+              </Link>
+
+              <Link href="/contact" className="block hover:text-black">
+                Contact
+              </Link>
+
+              <Link href="/booking" className="block hover:text-black">
+                Appointment
+              </Link>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="mb-6 uppercase tracking-[0.3em] text-[#b8915d]">
+              Newsletter
+            </h3>
+
+            <p className="mb-6 text-neutral-600">
+              Subscribe to receive new collections and exclusive bridal
+              inspiration.
             </p>
+
+            <input
+              type="email"
+              placeholder="Email Address"
+              className="w-full border border-neutral-300 bg-white px-4 py-4 outline-none focus:border-[#b8915d]"
+            />
+
+            <button className="mt-4 w-full bg-[#b8915d] py-4 uppercase tracking-[0.2em] text-white transition hover:bg-[#a37d4a]">
+              Subscribe
+            </button>
           </div>
         </div>
-      </Container>
+
+        <div className="mt-20 border-t border-neutral-200 pt-8 text-center text-sm tracking-[0.15em] text-neutral-500">
+          © 2026 SOLTERO. ALL RIGHTS RESERVED.
+        </div>
+      </div>
     </footer>
   );
 }

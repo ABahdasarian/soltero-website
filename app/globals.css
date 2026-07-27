@@ -1,14 +1,118 @@
+/* app/globals.css */
+
 @import "tailwindcss";
 
-* {
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --gold: #b8915d;
+  --gold-dark: #9e7847;
+
+  --cream: #faf8f5;
+
+  --container: 1320px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   margin: 0;
-  padding: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+* {
   box-sizing: border-box;
 }
 
-html,
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
-  color: #111111;
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: min(var(--container), calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.section {
+  padding: 140px 0;
+}
+
+.section-title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.section-subtitle {
+  max-width: 700px;
+  margin: 24px auto 0;
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+.gold-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 42px;
+  background: var(--gold);
+  color: white;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  transition: .35s;
+}
+
+.gold-btn:hover {
+  background: var(--gold-dark);
+}
+
+.outline-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 42px;
+  border: 1px solid currentColor;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  transition: .35s;
+}
+
+.outline-btn:hover {
+  background: black;
+  color: white;
+}
+
+.card-hover {
+  overflow: hidden;
+}
+
+.card-hover img {
+  transition: transform .8s;
+}
+
+.card-hover:hover img {
+  transform: scale(1.06);
+}
+
+@media (max-width:768px) {
+  .section {
+    padding: 90px 0;
+  }
+
+  .container {
+    width: calc(100% - 32px);
+  }
 }

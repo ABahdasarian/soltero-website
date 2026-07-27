@@ -1,23 +1,26 @@
+// app/layout.tsx
+
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Playfair_Display, Montserrat } from "next/font/google";
+
 import "./globals.css";
 
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const playfair = Playfair_Display({
   subsets: ["latin"],
+  variable: "--font-heading",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const montserrat = Montserrat({
   subsets: ["latin"],
+  variable: "--font-body",
 });
 
 export const metadata: Metadata = {
-  title: "Soltero Bridal",
-  description: "Luxury bridal boutique",
+  title: "SOLTERO",
+  description: "Luxury Bridal Boutique",
 };
 
 export default function RootLayout({
@@ -28,14 +31,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${playfair.variable} ${montserrat.variable}`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="bg-white text-neutral-900">
         <Header />
 
-        <main className="flex-1">
-          {children}
-        </main>
+        {children}
 
         <Footer />
       </body>

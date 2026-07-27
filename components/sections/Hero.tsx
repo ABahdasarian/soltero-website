@@ -1,38 +1,51 @@
-import Image from "next/image";
-import Button from "../ui/Button";
+// components/sections/Hero.tsx
+
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative h-[700px] w-full">
-      <Image
+    <section className="relative h-[85vh] overflow-hidden">
+      <img
         src="/images/hero.jpg"
-        alt="Wedding Collection"
-        fill
-        priority
-        className="object-cover"
+        alt="SOLTERO"
+        className="absolute inset-0 h-full w-full object-cover"
       />
 
-      {/* Затемнение изображения */}
-      <div className="absolute inset-0 bg-black/20" />
+      <div className="absolute inset-0 bg-black/30" />
 
-      {/* Контент */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
-        <h1 className="mb-6 text-5xl font-light tracking-wide">
-          WEDDING COLLECTION
-        </h1>
+      <div className="relative z-10 flex h-full items-center justify-center px-6 text-center text-white">
+        <div className="max-w-4xl">
+          <p className="mb-6 uppercase tracking-[0.45em] text-[#d7b27b]">
+            Soltero Bridal
+          </p>
 
-        <p className="mb-2 text-2xl">
-          Timeless Bridal Elegance
-        </p>
+          <h1 className="text-5xl font-light leading-tight md:text-8xl">
+            Discover
+            <br />
+            Our Collection
+          </h1>
 
-        <p className="mb-8 text-lg">
-          Designed for unforgettable moments.
-        </p>
+          <p className="mx-auto mt-8 max-w-2xl text-lg text-white/80">
+            Timeless silhouettes, luxurious fabrics and handcrafted
+            details created for unforgettable moments.
+          </p>
 
-        <Button>
-  Explore Collection
-</Button>
+          <div className="mt-12 flex flex-col justify-center gap-5 sm:flex-row">
+            <Link
+              href="/catalog"
+              className="border border-white px-10 py-4 uppercase tracking-[0.2em] transition hover:bg-white hover:text-black"
+            >
+              Explore Collection
+            </Link>
 
+            <Link
+              href="/booking"
+              className="bg-[#b9935d] px-10 py-4 uppercase tracking-[0.2em] transition hover:bg-[#a88352]"
+            >
+              Book Appointment
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -1,6 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { motion } from "framer-motion";
-import type { Dress } from "@/data/dresses";
+import type { Dress } from "@/data/types";
 
 interface Props {
   dress: Dress;
@@ -15,8 +17,8 @@ export default function DressCard({ dress }: Props) {
       transition={{ duration: 0.6 }}
       className="group"
     >
-      <Link href={`/catalog/${dress.slug}`}>
-        <div className="relative overflow-hidden bg-[#f7f5f2]">
+      <Link href={`/collection/${dress.slug}`}>
+        <div className="relative overflow-hidden bg-[#F7F5F2]">
           <img
             src={dress.images[0]}
             alt={dress.name}
@@ -26,22 +28,22 @@ export default function DressCard({ dress }: Props) {
           <div className="absolute inset-0 bg-black/0 transition duration-500 group-hover:bg-black/10" />
 
           <div className="absolute bottom-0 left-0 right-0 translate-y-full bg-gradient-to-t from-black/70 to-transparent p-8 text-white transition duration-500 group-hover:translate-y-0">
-            <span className="uppercase tracking-[0.35em] text-xs">
+            <span className="text-xs uppercase tracking-[0.35em]">
               View Dress
             </span>
           </div>
         </div>
 
         <div className="pt-8 text-center">
-          <span className="text-sm uppercase tracking-[0.35em] text-[#b8915d]">
+          <span className="text-xs uppercase tracking-[0.35em] text-[#978065]">
             {dress.collection}
           </span>
 
-          <h3 className="mt-4 text-4xl font-light transition duration-300 group-hover:text-[#b8915d]">
+          <h3 className="mt-4 font-heading text-4xl text-[#2A2A2A] transition duration-300 group-hover:text-[#978065]">
             {dress.name}
           </h3>
 
-          <div className="mt-8 inline-flex items-center gap-3 text-xs uppercase tracking-[0.35em]">
+          <div className="mt-8 inline-flex items-center gap-3 text-xs uppercase tracking-[0.35em] text-[#2A2A2A]">
             Discover
 
             <svg

@@ -32,8 +32,8 @@ export default function DressGrid() {
             onClick={() => setActive(filter)}
             className={`border px-7 py-3 text-xs uppercase tracking-[0.35em] transition duration-300 ${
               active === filter
-                ? "border-black bg-black text-white"
-                : "border-neutral-300 hover:border-black"
+                ? "border-[#978065] bg-[#978065] text-white"
+                : "border-neutral-300 text-[#2A2A2A] hover:border-[#978065] hover:text-[#978065]"
             }`}
           >
             {filter}

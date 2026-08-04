@@ -1,14 +1,17 @@
-// components/sections/Hero.tsx
-
+import Image from "next/image";
 import Link from "next/link";
+import { getCloudinaryPageImage } from "@/lib/cloudinary";
 
 export default function Hero() {
   return (
     <section className="relative h-[85vh] overflow-hidden">
-      <img
-        src="/images/hero.jpg"
+      <Image
+        src={getCloudinaryPageImage("hero")}
         alt="SOLTERO"
-        className="absolute inset-0 h-full w-full object-cover"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
       />
 
       <div className="absolute inset-0 bg-black/30" />

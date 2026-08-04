@@ -1,15 +1,20 @@
 // app/about/page.tsx
 
+import Image from "next/image";
 import Link from "next/link";
+import { getCloudinaryPageImage } from "@/lib/cloudinary";
 
 export default function AboutPage() {
   return (
     <main className="pt-24">
       <section className="relative h-[60vh] overflow-hidden">
-        <img
-          src="/images/about.jpg"
+        <Image
+          src={getCloudinaryPageImage("about")}
           alt="About SOLTERO"
-          className="absolute inset-0 h-full w-full object-cover"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
 
         <div className="absolute inset-0 bg-black/40" />
@@ -33,9 +38,11 @@ export default function AboutPage() {
 
       <section className="py-32">
         <div className="mx-auto grid max-w-7xl items-center gap-20 px-6 lg:grid-cols-2">
-          <img
-            src="/images/about.jpg"
-            alt=""
+          <Image
+            src={getCloudinaryPageImage("about")}
+            alt="About SOLTERO"
+            width={900}
+            height={1125}
             className="aspect-[4/5] w-full object-cover"
           />
 
@@ -117,29 +124,16 @@ export default function AboutPage() {
       <section className="py-32">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-6 md:grid-cols-2">
-            <img
-              src="/images/about.jpg"
-              className="aspect-square w-full object-cover"
-              alt=""
-            />
-
-            <img
-              src="/images/about.jpg"
-              className="aspect-square w-full object-cover"
-              alt=""
-            />
-
-            <img
-              src="/images/about.jpg"
-              className="aspect-square w-full object-cover"
-              alt=""
-            />
-
-            <img
-              src="/images/about.jpg"
-              className="aspect-square w-full object-cover"
-              alt=""
-            />
+            {[1, 2, 3, 4].map((item) => (
+              <Image
+                key={item}
+                src={getCloudinaryPageImage("about")}
+                alt="About SOLTERO"
+                width={800}
+                height={800}
+                className="aspect-square w-full object-cover"
+              />
+            ))}
           </div>
         </div>
       </section>

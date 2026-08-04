@@ -1,15 +1,19 @@
 // app/booking/page.tsx
 
-import Link from "next/link";
+import Image from "next/image";
+import { getCloudinaryPageImage } from "@/lib/cloudinary";
 
 export default function BookingPage() {
   return (
     <main className="pt-24">
       <section className="relative h-[60vh] overflow-hidden">
-        <img
-          src="/images/appointment/100.jpg"
+        <Image
+          src={getCloudinaryPageImage("hero")}
           alt="Book Appointment"
-          className="absolute inset-0 h-full w-full object-cover"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
 
         <div className="absolute inset-0 bg-black/45" />

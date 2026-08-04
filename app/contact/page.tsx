@@ -1,13 +1,20 @@
+// app/contact/page.tsx
+
+import Image from "next/image";
 import Link from "next/link";
+import { getCloudinaryPageImage } from "@/lib/cloudinary";
 
 export default function ContactPage() {
   return (
     <main className="pt-24">
       <section className="relative h-[60vh] overflow-hidden">
-        <img
-          src="/images/contact.jpg"
+        <Image
+          src={getCloudinaryPageImage("hero")}
           alt="Contact"
-          className="absolute inset-0 h-full w-full object-cover"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
 
         <div className="absolute inset-0 bg-black/45" />

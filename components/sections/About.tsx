@@ -1,6 +1,6 @@
-// components/sections/About.tsx
-
+import Image from "next/image";
 import Link from "next/link";
+import { getCloudinaryPageImage } from "@/lib/cloudinary";
 
 export default function About() {
   return (
@@ -39,9 +39,11 @@ export default function About() {
         </div>
 
         <div className="overflow-hidden rounded-sm">
-          <img
-            src="/images/about.jpg"
+          <Image
+            src={getCloudinaryPageImage("about")}
             alt="About SOLTERO"
+            width={900}
+            height={1125}
             className="aspect-[4/5] w-full object-cover transition duration-700 hover:scale-105"
           />
         </div>

@@ -1,18 +1,18 @@
 export const collections = [
   {
     title: "Echoes of Her",
-    image: "/images/collections/echoes.jpg",
+    image: "echoes-of-her",
   },
   {
     title: "Illuminare",
-    image: "/images/collections/illuminare.jpg",
+    image: "illuminare",
   },
   {
     title: "Radiance of Love",
-    image: "/images/collections/radiance.jpg",
+    image: "radiance",
   },
   {
     title: "Spring Flower",
-    image: "/images/collections/spring.jpg",
+    image: "spring-flower",
   },
 ];

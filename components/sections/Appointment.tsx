@@ -1,12 +1,16 @@
+import Image from "next/image";
 import Link from "next/link";
+import { getCloudinaryPageImage } from "@/lib/cloudinary";
 
 export default function Appointment() {
   return (
     <section className="relative overflow-hidden">
-      <img
-        src="/images/appointment/100.jpg"
+      <Image
+        src={getCloudinaryPageImage("hero")}
         alt="Appointment"
-        className="absolute inset-0 h-full w-full object-cover"
+        fill
+        sizes="100vw"
+        className="object-cover"
       />
 
       <div className="absolute inset-0 bg-black/45" />

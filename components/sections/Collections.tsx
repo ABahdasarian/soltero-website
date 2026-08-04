@@ -1,27 +1,29 @@
 // components/sections/Collections.tsx
 
+import Image from "next/image";
 import Link from "next/link";
+import { getCloudinaryCover } from "@/lib/cloudinary";
 
 const collections = [
   {
     title: "Spring Flower",
     season: "Spring 2026",
-    image: "/images/collections/spring-flower.jpg",
+    image: "spring-flower",
   },
   {
     title: "Echoes of Her",
     season: "Spring 2026",
-    image: "/images/collections/echoes-of-her.jpg",
+    image: "echoes-of-her",
   },
   {
     title: "Illuminare",
     season: "Fall 2025",
-    image: "/images/collections/illuminare.jpg",
+    image: "illuminare",
   },
   {
     title: "Radiance of love",
     season: "Signature",
-    image: "/images/collections/radiance.jpg",
+    image: "radiance",
   },
 ];
 
@@ -48,9 +50,11 @@ export default function Collections() {
           {collections.map((collection) => (
             <article key={collection.title} className="group">
               <div className="overflow-hidden bg-[#f7f5f2]">
-                <img
-                  src={collection.image}
-                  alt=""
+                <Image
+                  src={getCloudinaryCover(collection.image)}
+                  alt={collection.title}
+                  width={900}
+                  height={1200}
                   className="aspect-[3/4] w-full object-cover transition duration-700 group-hover:scale-105"
                 />
               </div>

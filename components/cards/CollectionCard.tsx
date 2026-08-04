@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getCloudinaryCover } from "@/lib/cloudinary";
 
 type CollectionCardProps = {
   title: string;
@@ -13,7 +14,7 @@ export default function CollectionCard({
     <article className="group cursor-pointer">
       <div className="relative aspect-[3/4] overflow-hidden rounded-md">
         <Image
-          src={image}
+          src={getCloudinaryCover(image)}
           alt={title}
           fill
           className="object-cover transition duration-500 group-hover:scale-105"

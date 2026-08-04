@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
+
 import { dresses } from "@/data/dresses";
+import { getCloudinaryImage } from "@/lib/cloudinary";
 
 type Props = {
   params: {
@@ -20,7 +22,9 @@ export default function DressPage({ params }: Props) {
       <div className="grid gap-12 lg:grid-cols-2">
         <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
           <Image
-            src={dress.images[0]}
+            src={getCloudinaryImage(dress.images[0], {
+              width: 1200,
+            })}
             alt={dress.name}
             fill
             className="object-cover"

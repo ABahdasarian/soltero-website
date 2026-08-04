@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import type { Dress } from "@/data/types";
+import { getCloudinaryImage } from "@/lib/cloudinary";
 
 interface Props {
   dress: Dress;
@@ -17,11 +19,15 @@ export default function DressCard({ dress }: Props) {
       transition={{ duration: 0.6 }}
       className="group"
     >
-      <Link href={`/collection/${dress.slug}`}>
+      <Link href={`/dress/${dress.slug}`}>
         <div className="relative overflow-hidden bg-[#F7F5F2]">
-          <img
-            src={dress.images[0]}
+          <Image
+            src={getCloudinaryImage(dress.images[0], {
+              width: 700,
+            })}
             alt={dress.name}
+            width={700}
+            height={950}
             className="aspect-[3/4] w-full object-cover transition duration-700 group-hover:scale-105"
           />
 
@@ -46,12 +52,7 @@ export default function DressCard({ dress }: Props) {
           <div className="mt-8 inline-flex items-center gap-3 text-xs uppercase tracking-[0.35em] text-[#2A2A2A]">
             Discover
 
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
               <path
                 d="M5 12H19"
                 stroke="currentColor"

@@ -1,5 +1,7 @@
 // app/booking/page.tsx
 
+import BookingForm from "./BookingForm";
+
 import Image from "next/image";
 import { getCloudinaryPageImage } from "@/lib/cloudinary";
 
@@ -113,48 +115,8 @@ export default async function BookingPage({
             </div>
           </div>
 
-          {/* Form */}
-          <form className="space-y-6 rounded-sm bg-white p-10 shadow-sm">
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-            />
+<BookingForm dress={dress ?? ""} />
 
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-            />
-
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-            />
-
-            <input
-              type="date"
-              className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-            />
-
-            <input
-              type="text"
-              placeholder="Wedding Dress"
-              defaultValue={dress ?? ""}
-              className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-            />
-
-            <textarea
-              rows={6}
-              placeholder="Message"
-              className="w-full resize-none border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-            />
-
-            <button className="w-full bg-[#b8915d] py-5 uppercase tracking-[0.25em] text-white transition hover:bg-[#9f7847]">
-              Send Request
-            </button>
-          </form>
         </div>
       </section>
 

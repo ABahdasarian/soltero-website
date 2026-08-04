@@ -6,6 +6,7 @@ import About from "@/components/sections/About";
 import Appointment from "@/components/sections/Appointment";
 
 import DressGrid from "@/components/catalog/DressGrid";
+
 import { dresses } from "@/data/dresses";
 
 import Link from "next/link";

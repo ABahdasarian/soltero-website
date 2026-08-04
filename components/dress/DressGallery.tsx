@@ -2,67 +2,73 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
-import type { Dress } from "@/data/types";
+
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
 import { getCloudinaryImage } from "@/lib/cloudinary";
 
-interface Props {
-  dress: Dress;
-}
+type Props = {
+  images: string[];
+  name: string;
+};
 
-export default function DressGallery({ dress }: Props) {
-  const [activeImage, setActiveImage] = useState(0);
+export default function DressGallery({ images, name }: Props) {
+  const [active, setActive] = useState(0);
+  const [open, setOpen] = useState(false);
 
   return (
-    <div className="space-y-6">
-      <div className="overflow-hidden rounded-sm bg-[#F7F5F2]">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeImage}
-            initial={{ opacity: 0, scale: 1.03 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.35 }}
-          >
-            <Image
-              src={getCloudinaryImage(dress.images[activeImage], {
-                width: 1200,
-              })}
-              alt={dress.name}
-              width={1200}
-              height={1600}
-              priority
-              className="aspect-[3/4] w-full object-cover"
-            />
-          </motion.div>
-        </AnimatePresence>
-      </div>
+    <>
+      <div>
+        <button
+          onClick={() => setOpen(true)}
+          className="relative aspect-[3/4] w-full overflow-hidden rounded-lg"
+        >
+          <Image
+            src={getCloudinaryImage(images[active], {
+              width: 1400,
+            })}
+            alt={name}
+            fill
+            priority
+            className="object-cover transition duration-300 hover:scale-105"
+          />
+        </button>
 
-      {dress.images.length > 1 && (
-        <div className="grid grid-cols-4 gap-4">
-          {dress.images.map((image, index) => (
+        <div className="mt-5 flex gap-3 overflow-x-auto">
+          {images.map((image, index) => (
             <button
               key={image}
-              onClick={() => setActiveImage(index)}
-              className={`overflow-hidden transition duration-300 ${
-                activeImage === index
-                  ? "ring-2 ring-[#978065]"
-                  : "opacity-70 hover:opacity-100"
+              onClick={() => setActive(index)}
+              className={`relative h-28 w-20 overflow-hidden rounded border-2 transition ${
+                active === index
+                  ? "border-[#978065]"
+                  : "border-transparent"
               }`}
             >
               <Image
                 src={getCloudinaryImage(image, {
                   width: 300,
                 })}
-                alt={`${dress.name} ${index + 1}`}
-                width={300}
-                height={400}
-                className="aspect-square w-full object-cover"
+                alt={`${name} ${index + 1}`}
+                fill
+                className="object-cover"
               />
             </button>
           ))}
         </div>
-      )}
-    </div>
+      </div>
+
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        index={active}
+        slides={images.map((image) => ({
+          src: getCloudinaryImage(image, {
+            width: 2000,
+          }),
+        }))}
+      />
+    </>
   );
 }

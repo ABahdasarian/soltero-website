@@ -3,7 +3,17 @@
 import Image from "next/image";
 import { getCloudinaryPageImage } from "@/lib/cloudinary";
 
-export default function BookingPage() {
+type Props = {
+  searchParams: Promise<{
+    dress?: string;
+  }>;
+};
+
+export default async function BookingPage({
+  searchParams,
+}: Props) {
+  const { dress } = await searchParams;
+
   return (
     <main className="pt-24">
       <section className="relative h-[60vh] overflow-hidden">
@@ -38,6 +48,7 @@ export default function BookingPage() {
 
       <section className="bg-[#faf8f5] py-28">
         <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:grid-cols-2">
+          {/* Left */}
           <div>
             <span className="uppercase tracking-[0.4em] text-[#b8915d]">
               Appointment
@@ -102,6 +113,7 @@ export default function BookingPage() {
             </div>
           </div>
 
+          {/* Form */}
           <form className="space-y-6 rounded-sm bg-white p-10 shadow-sm">
             <input
               type="text"
@@ -126,13 +138,12 @@ export default function BookingPage() {
               className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
             />
 
-            <select className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]">
-              <option>Choose Collection</option>
-              <option>Spring Flower</option>
-              <option>Echoes of Her</option>
-              <option>Illuminare</option>
-              <option>Radiance</option>
-            </select>
+            <input
+              type="text"
+              placeholder="Wedding Dress"
+              defaultValue={dress ?? ""}
+              className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
+            />
 
             <textarea
               rows={6}

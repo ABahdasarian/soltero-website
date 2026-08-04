@@ -40,7 +40,7 @@ export default function Home() {
 
           <div className="mt-16 text-center">
             <Link
-              href="/catalog"
+              href="/collection"
               className="inline-block border border-black px-10 py-4 uppercase tracking-[0.25em] transition hover:bg-black hover:text-white"
             >
               View All Dresses

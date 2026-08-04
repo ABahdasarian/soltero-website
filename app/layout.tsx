@@ -31,6 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${playfair.variable} ${montserrat.variable}`}
     >
       <body className="bg-white text-neutral-900">

@@ -32,7 +32,7 @@ export default function RelatedDresses({ dresses }: Props) {
           {dresses.map((dress) => (
             <Link
               key={dress.slug}
-              href={`/collection/${dress.slug}`}
+              href={`/dress/${dress.slug}`}
               className="group"
             >
               <div className="overflow-hidden bg-[#F7F5F2]">

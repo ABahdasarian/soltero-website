@@ -35,7 +35,7 @@ export default function Hero() {
 
           <div className="mt-12 flex flex-col justify-center gap-5 sm:flex-row">
             <Link
-              href="/catalog"
+              href="/collection"
               className="border border-white px-10 py-4 uppercase tracking-[0.2em] transition hover:bg-white hover:text-black"
             >
               Explore Collection

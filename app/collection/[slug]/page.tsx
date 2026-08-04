@@ -1,17 +1,18 @@
 import { notFound } from "next/navigation";
-
 import { dresses } from "@/data/dresses";
 import DressCard from "@/components/catalog/DressCard";
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
-export default function CollectionPage({ params }: Props) {
+export default async function CollectionPage({ params }: Props) {
+  const { slug } = await params;
+
   const collectionDresses = dresses.filter(
-    (dress) => dress.collectionSlug === params.slug
+    (dress) => dress.collectionSlug === slug
   );
 
   if (collectionDresses.length === 0) {

@@ -21,7 +21,7 @@ export default function NotFound() {
         </p>
 
         <Link
-          href="/catalog"
+          href="/collection"
           className="mt-12 inline-flex border border-black px-10 py-5 uppercase tracking-[0.3em] transition hover:bg-black hover:text-white"
         >
           Back to Catalog

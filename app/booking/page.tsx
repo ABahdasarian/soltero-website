@@ -1,10 +1,7 @@
-// app/booking/page.tsx
-
 import BookingForm from "./BookingForm";
 
 import Image from "next/image";
 import { getCloudinaryPageImage } from "@/lib/cloudinary";
-
 
 type Props = {
   searchParams: Promise<{
@@ -18,11 +15,15 @@ export default async function BookingPage({
   const { dress } = await searchParams;
 
   return (
-    <main className="pt-24">
-      <section className="relative h-[60vh] overflow-hidden">
+    <main className="bg-white pt-24">
+
+      {/* Hero */}
+
+      <section className="relative h-[70vh] overflow-hidden">
+
         <Image
           src={getCloudinaryPageImage("hero")}
-          alt="Book Appointment"
+          alt="Request Consultation"
           fill
           priority
           sizes="100vw"
@@ -31,51 +32,159 @@ export default async function BookingPage({
 
         <div className="absolute inset-0 bg-black/45" />
 
-        <div className="relative flex h-full items-center justify-center text-center text-white">
-          <div>
-            <p className="mb-5 uppercase tracking-[0.45em] text-[#d7b27b]">
-              SOLTERO
-            </p>
+        <div className="relative flex h-full items-center justify-center px-6 text-center text-white">
 
-            <h1 className="text-6xl font-light md:text-8xl">
-              Book Appointment
+          <div className="max-w-4xl">
+
+            <h1 className="font-heading text-6xl leading-none md:text-8xl">
+              Request
+              <br />
+              Consultation
             </h1>
 
-            <p className="mx-auto mt-8 max-w-2xl text-lg text-white/80">
-              Experience a private bridal consultation tailored
-              exclusively for you.
+            <div className="mx-auto mt-10 h-px w-24 bg-[#B9935D]" />
+
+            <p className="mx-auto mt-10 max-w-2xl text-lg leading-9 text-white/85">
+              Begin your bridal journey with a private consultation
+              and discover the gown created for your unforgettable day.
             </p>
+
           </div>
+
         </div>
+
       </section>
 
-      <section className="bg-[#faf8f5] py-28">
-        <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:grid-cols-2">
+      {/* Content */}
+
+      <section className="py-32">
+
+        <div className="mx-auto grid max-w-[1450px] gap-24 px-6 lg:grid-cols-[0.9fr_1.1fr]">
+
           {/* Left */}
+
           <div>
-            <span className="uppercase tracking-[0.4em] text-[#b8915d]">
-              Appointment
-            </span>
 
-            <h2 className="mt-5 text-5xl font-light">
-              Reserve Your
-              <br />
-              Private Fitting
-            </h2>
-
-            <p className="mt-8 leading-8 text-neutral-600">
-              Meet with our bridal consultants in an intimate
-              atmosphere and discover the dress that perfectly
-              reflects your style.
+            <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
+              Why Choose SOLTERO
             </p>
 
-            <div className="mt-14 space-y-8">
+            <h2 className="mt-6 font-heading text-6xl leading-none text-[#2A2A2A]">
+              A Bridal
+              <br />
+              Experience
+              <br />
+              Like No Other
+            </h2>
+
+            <p className="mt-10 max-w-lg text-[17px] leading-9 text-[#666]">
+              Every appointment is thoughtfully designed to provide
+              a relaxed, personal and unforgettable bridal experience.
+              Our stylists will guide you through every step of finding
+              the dress that feels uniquely yours.
+            </p>
+
+            <div className="mt-16 space-y-8">
+
+              <div className="flex gap-5">
+
+                <span className="text-2xl text-[#B9935D]">✦</span>
+
+                <div>
+
+                  <h3 className="text-lg font-medium text-[#2A2A2A]">
+                    Private Bridal Suite
+                  </h3>
+
+                  <p className="mt-2 leading-7 text-[#777]">
+                    Enjoy an exclusive fitting in a calm,
+                    elegant atmosphere.
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div className="flex gap-5">
+
+                <span className="text-2xl text-[#B9935D]">✦</span>
+
+                <div>
+
+                  <h3 className="text-lg font-medium text-[#2A2A2A]">
+                    Personal Stylist
+                  </h3>
+
+                  <p className="mt-2 leading-7 text-[#777]">
+                    Receive expert guidance tailored to
+                    your personal bridal vision.
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div className="flex gap-5">
+
+                <span className="text-2xl text-[#B9935D]">✦</span>
+
+                <div>
+
+                  <h3 className="text-lg font-medium text-[#2A2A2A]">
+                    Exclusive Collections
+                  </h3>
+
+                  <p className="mt-2 leading-7 text-[#777]">
+                    Discover carefully selected gowns
+                    available only in our boutique.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* Form */}
+
+          <BookingForm dress={dress ?? ""} />
+
+        </div>
+
+      </section>
+            {/* Contact Section */}
+
+      <section className="border-t border-[#ECE6DF] bg-[#FAF8F5] py-28">
+
+        <div className="mx-auto grid max-w-[1450px] gap-20 px-6 lg:grid-cols-2">
+
+          <div>
+
+            <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
+              Contact
+            </p>
+
+            <h2 className="mt-6 font-heading text-5xl leading-none text-[#2A2A2A]">
+              We Look Forward
+              <br />
+              To Meeting You
+            </h2>
+
+            <p className="mt-8 max-w-lg text-[17px] leading-9 text-[#666]">
+              If you have any questions before your appointment,
+              our team will be delighted to assist you.
+            </p>
+
+            <div className="mt-14 space-y-10">
+
               <div>
-                <p className="uppercase tracking-[0.2em] text-[#b8915d]">
-                  Address
+                <p className="text-[11px] uppercase tracking-[0.35em] text-[#B9935D]">
+                  Boutique
                 </p>
 
-                <p className="mt-2 text-neutral-600">
+                <p className="mt-3 text-lg text-[#444]">
                   24 Bridal Avenue
                   <br />
                   London, United Kingdom
@@ -83,55 +192,47 @@ export default async function BookingPage({
               </div>
 
               <div>
-                <p className="uppercase tracking-[0.2em] text-[#b8915d]">
-                  Phone
+                <p className="text-[11px] uppercase tracking-[0.35em] text-[#B9935D]">
+                  Contact
                 </p>
 
-                <p className="mt-2 text-neutral-600">
+                <p className="mt-3 text-lg text-[#444]">
                   +44 20 1234 5678
-                </p>
-              </div>
-
-              <div>
-                <p className="uppercase tracking-[0.2em] text-[#b8915d]">
-                  Email
-                </p>
-
-                <p className="mt-2 text-neutral-600">
+                  <br />
                   hello@soltero.com
                 </p>
               </div>
 
               <div>
-                <p className="uppercase tracking-[0.2em] text-[#b8915d]">
+                <p className="text-[11px] uppercase tracking-[0.35em] text-[#B9935D]">
                   Opening Hours
                 </p>
 
-                <p className="mt-2 text-neutral-600">
-                  Mon – Sat
+                <p className="mt-3 text-lg text-[#444]">
+                  Monday – Saturday
                   <br />
                   10:00 — 19:00
                 </p>
               </div>
+
             </div>
+
           </div>
 
-<BookingForm dress={dress ?? ""} />
+          <div className="overflow-hidden">
 
-        </div>
-      </section>
-
-      <section className="py-28">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="overflow-hidden rounded-sm">
             <iframe
               src="https://www.google.com/maps?q=london&output=embed"
-              className="h-[500px] w-full border-0"
               loading="lazy"
+              className="h-[620px] w-full border-0 grayscale"
             />
+
           </div>
+
         </div>
+
       </section>
+
     </main>
   );
 }

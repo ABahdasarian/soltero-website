@@ -51,66 +51,92 @@ export default function BookingForm({ dress }: Props) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="space-y-6 rounded-sm bg-white p-10 shadow-sm"
+      className="border border-[#ECE6DF] bg-white p-10 lg:p-14"
     >
-      <input
-        name="name"
-        type="text"
-        placeholder="Full Name"
-        required
-        className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-      />
+      <div className="mb-10">
+        <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
+          Bridal Appointment
+        </p>
 
-      <input
-        name="email"
-        type="email"
-        placeholder="Email Address"
-        required
-        className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-      />
+        <h2 className="mt-4 font-heading text-4xl text-[#2A2A2A]">
+          Request Your Visit
+        </h2>
 
-      <input
-        name="phone"
-        type="tel"
-        placeholder="Phone Number"
-        required
-        className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-      />
+        <p className="mt-5 text-[16px] leading-8 text-[#777]">
+          Complete the form below and our bridal consultants will
+          contact you shortly to confirm your appointment.
+        </p>
+      </div>
 
-      <input
-        name="weddingDate"
-        type="date"
-        required
-        className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-      />
+      <div className="space-y-6">
 
-      <input
-        name="dress"
-        type="text"
-        defaultValue={dress}
-        placeholder="Wedding Dress"
-        className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-      />
+        <input
+          name="name"
+          type="text"
+          placeholder="Full Name"
+          required
+          className="h-14 w-full border border-[#E6E1DA] px-5 text-[15px] outline-none transition focus:border-[#B9935D]"
+        />
 
-      <textarea
-        name="message"
-        rows={6}
-        placeholder="Message"
-        className="w-full resize-none border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-      />
+        <input
+          name="email"
+          type="email"
+          placeholder="Email Address"
+          required
+          className="h-14 w-full border border-[#E6E1DA] px-5 text-[15px] outline-none transition focus:border-[#B9935D]"
+        />
+
+        <input
+          name="phone"
+          type="tel"
+          placeholder="Phone Number"
+          required
+          className="h-14 w-full border border-[#E6E1DA] px-5 text-[15px] outline-none transition focus:border-[#B9935D]"
+        />
+
+        <input
+          name="weddingDate"
+          type="date"
+          required
+          className="h-14 w-full border border-[#E6E1DA] px-5 text-[15px] outline-none transition focus:border-[#B9935D]"
+        />
+                <input
+          name="dress"
+          type="text"
+          defaultValue={dress}
+          placeholder="Preferred Dress (optional)"
+          className="h-14 w-full border border-[#E6E1DA] px-5 text-[15px] outline-none transition focus:border-[#B9935D]"
+        />
+
+        <textarea
+          name="message"
+          rows={6}
+          placeholder="Tell us a little about your wedding or anything you'd like us to know."
+          className="w-full resize-none border border-[#E6E1DA] p-5 text-[15px] leading-7 outline-none transition focus:border-[#B9935D]"
+        />
+
+      </div>
 
       <button
+        type="submit"
         disabled={loading}
-        className="w-full bg-[#b8915d] py-5 uppercase tracking-[0.25em] text-white transition hover:bg-[#9f7847] disabled:cursor-not-allowed disabled:opacity-70"
+        className="mt-10 w-full bg-[#B9935D] py-5 text-[11px] uppercase tracking-[0.35em] text-white transition duration-300 hover:bg-[#A88352] disabled:cursor-not-allowed disabled:opacity-70"
       >
-        {loading ? "Sending..." : "Send Request"}
+        {loading ? "Sending Request..." : "Request Appointment"}
       </button>
 
+      <p className="mt-6 text-center text-sm leading-7 text-[#888]">
+        We usually respond within one business day.
+      </p>
+
       {success && (
-        <div className="rounded border border-green-200 bg-green-50 p-4 text-center text-green-700">
-          Thank you! Your appointment request has been sent successfully.
+        <div className="mt-8 rounded-sm border border-green-200 bg-green-50 p-5 text-center text-green-700">
+          Thank you! Your appointment request has been received.
+          <br />
+          We will contact you shortly.
         </div>
       )}
+
     </form>
   );
 }

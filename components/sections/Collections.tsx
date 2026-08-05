@@ -1,29 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import { getCloudinaryCover } from "@/lib/cloudinary";
 
 const collections = [
   {
     title: "Spring Flower",
-    season: "Spring 2026",
     image: "spring-flower",
     slug: "spring-flower",
   },
   {
     title: "Echoes of Her",
-    season: "Spring 2026",
     image: "echoes-of-her",
     slug: "echoes-of-her",
   },
   {
     title: "Illuminare",
-    season: "Fall 2025",
     image: "illuminare",
     slug: "illuminare",
   },
   {
     title: "Radiance of Love",
-    season: "Signature",
     image: "radiance",
     slug: "radiance-of-love",
   },
@@ -32,17 +29,18 @@ const collections = [
 export default function Collections() {
   return (
     <section className="bg-white py-32">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-[1500px] px-6">
+
         <div className="mb-20 text-center">
-          <span className="uppercase tracking-[0.45em] text-[#b8915d]">
+          <span className="uppercase tracking-[0.45em] text-[#B9935D]">
             Collections
           </span>
 
-          <h2 className="mt-5 text-5xl font-light">
+          <h2 className="mt-5 font-heading text-5xl text-[#2A2A2A]">
             Discover Our Collections
           </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-neutral-500">
+          <p className="mx-auto mt-6 max-w-2xl leading-8 text-neutral-500">
             Every collection tells a different story while preserving
             timeless elegance and modern femininity.
           </p>
@@ -50,36 +48,64 @@ export default function Collections() {
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
           {collections.map((collection) => (
-            <article key={collection.slug} className="group">
-              <div className="overflow-hidden bg-[#f7f5f2]">
-                <Image
-                  src={getCloudinaryCover(collection.image)}
-                  alt={collection.title}
-                  width={900}
-                  height={1200}
-                  className="aspect-[3/4] w-full object-cover transition duration-700 group-hover:scale-105"
-                />
+            <Link
+              key={collection.slug}
+              href={`/collection/${collection.slug}`}
+              className="group block"
+            >
+              <div className="overflow-hidden bg-[#F7F5F2]">
+                <div className="relative overflow-hidden">
+                  <Image
+                    src={getCloudinaryCover(collection.image)}
+                    alt={collection.title}
+                    width={900}
+                    height={1200}
+                    className="aspect-[3/4] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  />
+
+                  <div className="absolute inset-0 bg-black/0 transition duration-500 group-hover:bg-black/10" />
+                </div>
               </div>
 
-              <div className="mt-8 text-center">
-                <p className="uppercase tracking-[0.3em] text-neutral-400">
-                  {collection.season}
-                </p>
+              <div className="pt-8 text-center">
 
-                <h3 className="mt-3 text-3xl font-light">
+                <h3 className="font-heading text-[30px] leading-tight text-[#2A2A2A] transition duration-300 group-hover:text-[#B9935D] xl:text-[34px]">
                   {collection.title}
                 </h3>
 
-                <Link
-                  href={`/collection/${collection.slug}`}
-                  className="mt-8 inline-block border border-black px-8 py-3 uppercase tracking-[0.25em] transition hover:bg-black hover:text-white"
-                >
-                  Explore
-                </Link>
+                <div className="mx-auto mt-8 h-px w-12 bg-[#B9935D] transition-all duration-300 group-hover:w-24" />
+
+                <div className="mt-8 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-[#2A2A2A] transition duration-300 group-hover:text-[#B9935D]">
+
+                  Explore Collection
+
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    <path
+                      d="M5 12H19"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    />
+
+                    <path
+                      d="M13 6L19 12L13 18"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    />
+                  </svg>
+
+                </div>
+
               </div>
-            </article>
+            </Link>
           ))}
         </div>
+
       </div>
     </section>
   );

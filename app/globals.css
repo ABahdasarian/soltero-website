@@ -3,6 +3,17 @@
 @import "tailwindcss";
 
 :root {
+  --gold: #B9935D;
+  --gold-hover: #A88352;
+
+  --text: #2A2A2A;
+  --muted: #666666;
+
+  --border: #ECE6DF;
+  --background: #FAF8F5;
+}
+
+:root {
   /* Brand Colors */
   --color-taupe: #978065;
   --color-taupe-hover: #876f56;

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Button from "@/components/ui/Button";
 import { getCloudinaryPageImage } from "@/lib/cloudinary";
 
 export default function Hero() {
@@ -36,20 +36,13 @@ export default function Hero() {
 
           <div className="mt-14 flex flex-col justify-center gap-5 sm:flex-row">
 
-            <Link
-              href="/collection"
-              className="border border-white px-10 py-4 text-xs uppercase tracking-[0.35em] transition duration-300 hover:bg-white hover:text-black"
-            >
-              Explore Collection
-            </Link>
+        <Button href="/collection">
+  Explore Collection
+</Button>
 
-            <Link
-              href="/booking"
-              className="border border-[#B9935D] bg-[#B9935D] px-10 py-4 text-xs uppercase tracking-[0.35em] text-white transition duration-300 hover:bg-[#A88352]"
-            >
-              Request Consultation
-            </Link>
-
+<Button href="/booking">
+  Request Consultation
+</Button>
           </div>
 
           <div className="mt-24 flex flex-col items-center">

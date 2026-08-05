@@ -1,6 +1,7 @@
 // app/page.tsx
 
-import Link from "next/link";
+
+import Button from "@/components/ui/Button";
 
 import Hero from "@/components/sections/Hero";
 import Collections from "@/components/sections/Collections";
@@ -40,13 +41,10 @@ export default function Home() {
           <DressGrid />
 
           <div className="mt-16 text-center">
-            <Link
-              href="/collection"
-              className="inline-block border border-black px-10 py-4 uppercase tracking-[0.25em] transition hover:bg-black hover:text-white"
-            >
-              View All Dresses
-            </Link>
-          </div>
+  <Button href="/collection">
+    View All Dresses
+  </Button>
+</div> 
         </div>
       </section>
 

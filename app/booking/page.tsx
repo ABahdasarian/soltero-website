@@ -5,6 +5,7 @@ import BookingForm from "./BookingForm";
 import Image from "next/image";
 import { getCloudinaryPageImage } from "@/lib/cloudinary";
 
+
 type Props = {
   searchParams: Promise<{
     dress?: string;

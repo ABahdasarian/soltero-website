@@ -1,15 +1,14 @@
 // app/page.tsx
 
+import Link from "next/link";
+
 import Hero from "@/components/sections/Hero";
 import Collections from "@/components/sections/Collections";
 import About from "@/components/sections/About";
 import Appointment from "@/components/sections/Appointment";
+import Faq from "@/components/sections/Faq";
 
 import DressGrid from "@/components/catalog/DressGrid";
-
-import { dresses } from "@/data/dresses";
-
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,6 +19,7 @@ export default function Home() {
 
       <About />
 
+      {/* Featured Dresses */}
       <section className="py-32">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-20 text-center">
@@ -27,11 +27,11 @@ export default function Home() {
               Featured Dresses
             </span>
 
-            <h2 className="mt-6 text-5xl font-light">
+            <h2 className="mt-6 font-heading text-5xl text-[#2A2A2A]">
               Signature Collection
             </h2>
 
-            <p className="mx-auto mt-6 max-w-2xl text-neutral-500">
+            <p className="mx-auto mt-6 max-w-2xl leading-8 text-neutral-500">
               Discover a curated selection of our finest bridal gowns,
               combining timeless elegance with contemporary craftsmanship.
             </p>
@@ -50,6 +50,10 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <Faq />
+
+      {/* Appointment */}
       <Appointment />
     </>
   );

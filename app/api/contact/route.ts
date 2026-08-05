@@ -1,3 +1,5 @@
+// app/api/contact/route.ts
+
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
@@ -9,7 +11,6 @@ export async function POST(req: Request) {
       name,
       email,
       phone,
-      weddingDate,
       dress,
       message,
     } = await req.json();
@@ -26,16 +27,16 @@ export async function POST(req: Request) {
       );
     }
 
-    // Email to SOLTERO
+    // EMAIL TO SOLTERO
     await resend.emails.send({
       from: "SOLTERO <onboarding@resend.dev>",
       to: "solterobridaluk@gmail.com",
-      subject: `New Bridal Appointment – ${name}`,
+      subject: `New Consultation Request – ${name}`,
       html: `
       <div style="font-family:Arial,sans-serif;padding:40px;max-width:700px;margin:auto">
 
         <h1 style="color:#978065;margin-bottom:30px;">
-          New Bridal Appointment
+          New Consultation Request
         </h1>
 
         <table style="width:100%;border-collapse:collapse;">
@@ -56,11 +57,6 @@ export async function POST(req: Request) {
           </tr>
 
           <tr>
-            <td style="padding:12px;font-weight:bold;">Wedding Date</td>
-            <td>${weddingDate}</td>
-          </tr>
-
-          <tr>
             <td style="padding:12px;font-weight:bold;">Wedding Dress</td>
             <td>${dress || "Not specified"}</td>
           </tr>
@@ -76,61 +72,84 @@ export async function POST(req: Request) {
       `,
     });
 
-    // Confirmation email to customer
+    // EMAIL TO CLIENT
     await resend.emails.send({
       from: "SOLTERO <onboarding@resend.dev>",
       to: "solterobridaluk@gmail.com",
-      subject: "Your Appointment Request – SOLTERO",
+      subject: "Your Consultation Request – SOLTERO Bridal Boutique",
       html: `
-      <div style="font-family:Arial,sans-serif;padding:40px;max-width:700px;margin:auto">
+      <div style="
+        font-family:Arial,sans-serif;
+        max-width:700px;
+        margin:auto;
+        padding:40px;
+        color:#333;
+        line-height:1.8;
+      ">
 
-        <h1 style="color:#978065;">
-          Thank You
+        <h1 style="
+          color:#978065;
+          margin-bottom:30px;
+        ">
+          Thank You for Your Request
         </h1>
 
-        <p>Dear <strong>${name}</strong>,</p>
-
         <p>
-          Thank you for booking your bridal consultation with
-          <strong>SOLTERO Bridal Boutique</strong>.
+          Dear <strong>${name}</strong>,
         </p>
 
         <p>
-          We have successfully received your appointment request.
-        </p>
-
-        <h3 style="margin-top:35px;">
-          Your Request
-        </h3>
-
-        <table style="width:100%;border-collapse:collapse;">
-
-          <tr>
-            <td style="padding:10px;font-weight:bold;">Wedding Dress</td>
-            <td>${dress || "Not specified"}</td>
-          </tr>
-
-          <tr>
-            <td style="padding:10px;font-weight:bold;">Wedding Date</td>
-            <td>${weddingDate}</td>
-          </tr>
-
-        </table>
-
-        <p style="margin-top:35px;">
-          One of our bridal stylists will contact you within
-          <strong>24 hours</strong>
-          to confirm your appointment.
+          Thank you for choosing
+          <strong> SOLTERO Bridal Boutique</strong>.
         </p>
 
         <p>
-          We look forward to welcoming you to SOLTERO.
+          We have successfully received your consultation request.
+        </p>
+
+        <p>
+          To complete your booking, please choose your preferred
+          appointment time by clicking the button below.
+        </p>
+
+        <div style="text-align:center;margin:50px 0;">
+
+          <a
+            href="https://calendly.com/solterobridaluk/30min"
+            style="
+              background:#978065;
+              color:#ffffff;
+              text-decoration:none;
+              padding:18px 38px;
+              display:inline-block;
+              letter-spacing:2px;
+              text-transform:uppercase;
+              font-size:13px;
+              border-radius:2px;
+            "
+          >
+            Choose Your Appointment
+          </a>
+
+        </div>
+
+        <p>
+          If you have any questions before your consultation,
+          simply reply to this email and one of our bridal
+          stylists will be delighted to assist you.
+        </p>
+
+        <p>
+          We look forward to welcoming you to
+          <strong> SOLTERO Bridal Boutique.</strong>
         </p>
 
         <br>
 
         <p>
-          Kind regards,<br>
+          Kind regards,
+          <br><br>
+
           <strong>SOLTERO Bridal Boutique</strong>
         </p>
 
@@ -141,14 +160,12 @@ export async function POST(req: Request) {
     return NextResponse.json({
       success: true,
     });
-
   } catch (error) {
     console.error(error);
 
     return NextResponse.json(
       {
         success: false,
-        message: "Failed to send email",
       },
       {
         status: 500,

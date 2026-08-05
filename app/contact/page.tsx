@@ -91,7 +91,7 @@ export default function ContactPage() {
                     </h3>
 
                     <p className="mt-2 leading-7 text-[#777]">
-                      hello@soltero.com
+                      solterobridaluk@gmail.com
                     </p>
 
                   </div>

@@ -166,7 +166,7 @@ export default async function BookingPage({
                   <p className="mt-3 text-lg text-[#444]">
                     +44 20 1234 5678
                     <br />
-                    hello@soltero.com
+                    solterobridaluk@gmail.com
                   </p>
                 </div>
 

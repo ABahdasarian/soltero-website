@@ -1,7 +1,5 @@
 import BookingForm from "./BookingForm";
-
-import Image from "next/image";
-import { getCloudinaryPageImage } from "@/lib/cloudinary";
+import PageHero from "@/components/ui/PageHero";
 
 type Props = {
   searchParams: Promise<{
@@ -19,41 +17,11 @@ export default async function BookingPage({
 
       {/* Hero */}
 
-      <section className="relative h-[70vh] overflow-hidden">
-
-        <Image
-          src={getCloudinaryPageImage("hero")}
-          alt="Request Consultation"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-
-        <div className="absolute inset-0 bg-black/45" />
-
-        <div className="relative flex h-full items-center justify-center px-6 text-center text-white">
-
-          <div className="max-w-4xl">
-
-            <h1 className="font-heading text-6xl leading-none md:text-8xl">
-              Request
-              <br />
-              Consultation
-            </h1>
-
-            <div className="mx-auto mt-10 h-px w-24 bg-[#B9935D]" />
-
-            <p className="mx-auto mt-10 max-w-2xl text-lg leading-9 text-white/85">
-              Begin your bridal journey with a private consultation
-              and discover the gown created for your unforgettable day.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
+      <PageHero
+  image="hero"
+  title="Request Consultation"
+  description="Begin your bridal journey with a private consultation and discover the gown created for your unforgettable day."
+/>
 
       {/* Content */}
 

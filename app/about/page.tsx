@@ -8,41 +8,20 @@ export default function AboutPage() {
 
       {/* Hero */}
 
-      <section className="relative h-[70vh] overflow-hidden">
+      <section className="bg-[#FAF8F5] py-24">
+        <div className="mx-auto max-w-6xl px-6 text-center">
+          <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
+            About SOLTERO
+          </p>
 
-        <Image
-          src={getCloudinaryPageImage("about")}
-          alt="About SOLTERO"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
+          <h1 className="mt-6 font-heading text-6xl text-[#2A2A2A]">
+            About SOLTERO
+          </h1>
 
-        <div className="absolute inset-0 bg-black/45" />
-
-        <div className="relative flex h-full items-center justify-center px-6 text-center text-white">
-
-          <div className="max-w-4xl">
-
-            <h1 className="font-heading text-6xl leading-none md:text-8xl">
-              About
-              <br />
-              SOLTERO
-            </h1>
-
-            <div className="mx-auto mt-10 h-px w-24 bg-[#B9935D]" />
-
-            <p className="mx-auto mt-10 max-w-2xl text-lg leading-9 text-white/85">
-              Crafting timeless bridal elegance through exceptional
-              design, refined craftsmanship and unforgettable
-              experiences.
-            </p>
-
-          </div>
-
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-9 text-[#666]">
+            Crafting timeless bridal elegance through exceptional design, refined craftsmanship and unforgettable experiences.
+          </p>
         </div>
-
       </section>
 
       {/* Story */}

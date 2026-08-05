@@ -4,14 +4,14 @@ import { getCloudinaryPageImage } from "@/lib/cloudinary";
 
 export default function About() {
   return (
-    <section className="bg-[#faf8f5] py-32">
+    <section className="bg-[#FAF8F5] py-32">
       <div className="mx-auto grid max-w-7xl items-center gap-20 px-6 lg:grid-cols-2">
         <div>
-          <span className="uppercase tracking-[0.45em] text-[#b8915d]">
+          <span className="uppercase tracking-[0.45em] text-[#B9935D]">
             About Soltero
           </span>
 
-          <h2 className="mt-6 text-5xl font-light leading-tight">
+          <h2 className="mt-6 font-heading text-5xl leading-tight text-[#2A2A2A]">
             Timeless Elegance,
             <br />
             Crafted for Every Bride
@@ -32,19 +32,43 @@ export default function About() {
 
           <Link
             href="/about"
-            className="mt-12 inline-block border border-black px-10 py-4 uppercase tracking-[0.25em] transition hover:bg-black hover:text-white"
+            className="group mt-12 inline-flex flex-col"
           >
-            Our Story
+            <div className="inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-[#2A2A2A] transition duration-300 group-hover:text-[#B9935D]">
+              Discover Our Story
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              >
+                <path
+                  d="M5 12H19"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                />
+
+                <path
+                  d="M13 6L19 12L13 18"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                />
+              </svg>
+            </div>
+
+            <div className="mt-5 h-px w-12 bg-[#B9935D] transition-all duration-300 group-hover:w-24" />
           </Link>
         </div>
 
-        <div className="overflow-hidden rounded-sm">
+        <div className="overflow-hidden">
           <Image
             src={getCloudinaryPageImage("about")}
             alt="About SOLTERO"
             width={900}
             height={1125}
-            className="aspect-[4/5] w-full object-cover transition duration-700 hover:scale-105"
+            className="aspect-[4/5] w-full object-cover transition duration-700 group-hover:scale-105 hover:scale-105"
           />
         </div>
       </div>

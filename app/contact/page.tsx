@@ -1,16 +1,18 @@
-// app/contact/page.tsx
-
 import Image from "next/image";
 import Link from "next/link";
 import { getCloudinaryPageImage } from "@/lib/cloudinary";
 
 export default function ContactPage() {
   return (
-    <main className="pt-24">
-      <section className="relative h-[60vh] overflow-hidden">
+    <main className="bg-white pt-24">
+
+      {/* Hero */}
+
+      <section className="relative h-[70vh] overflow-hidden">
+
         <Image
           src={getCloudinaryPageImage("hero")}
-          alt="Contact"
+          alt="Contact SOLTERO"
           fill
           priority
           sizes="100vw"
@@ -19,125 +21,249 @@ export default function ContactPage() {
 
         <div className="absolute inset-0 bg-black/45" />
 
-        <div className="relative flex h-full items-center justify-center text-center text-white">
-          <div>
-            <p className="mb-5 uppercase tracking-[0.45em] text-[#d8b176]">
-              SOLTERO
-            </p>
+        <div className="relative flex h-full items-center justify-center px-6 text-center text-white">
 
-            <h1 className="text-6xl font-light md:text-8xl">
-              Contact Us
+          <div className="max-w-4xl">
+
+            <h1 className="font-heading text-6xl leading-none md:text-8xl">
+              Contact
+              <br />
+              SOLTERO
             </h1>
 
-            <p className="mx-auto mt-8 max-w-2xl text-lg text-white/80">
-              We'd love to help you find your dream wedding dress.
+            <div className="mx-auto mt-10 h-px w-24 bg-[#B9935D]" />
+
+            <p className="mx-auto mt-10 max-w-2xl text-lg leading-9 text-white/85">
+              Whether you're looking for your dream gown or simply
+              have a question, our team is here to help.
             </p>
+
           </div>
+
         </div>
+
       </section>
 
-      <section className="py-28">
-        <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:grid-cols-2">
-          <div>
-            <span className="uppercase tracking-[0.35em] text-[#b8915d]">
-              Get In Touch
-            </span>
+      {/* Contact */}
 
-            <h2 className="mt-6 text-5xl font-light">
-              Visit Our Boutique
+      <section className="py-32">
+
+        <div className="mx-auto grid max-w-[1450px] gap-24 px-6 lg:grid-cols-[0.9fr_1.1fr]">
+
+          {/* Left */}
+
+          <div>
+
+            <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
+              Get In Touch
+            </p>
+
+            <h2 className="mt-6 font-heading text-6xl leading-none text-[#2A2A2A]">
+              We'd Love
+              <br />
+              To Hear
+              <br />
+              From You
             </h2>
 
-            <div className="mt-12 space-y-8 text-neutral-600">
-              <div>
-                <h3 className="mb-2 text-xl text-black">Address</h3>
-                <p>
-                  24 Bridal Avenue
-                  <br />
-                  London, United Kingdom
-                </p>
+            <p className="mt-10 max-w-lg text-[17px] leading-9 text-[#666]">
+              Our team is always happy to answer your questions,
+              help you choose the perfect gown or arrange a private
+              consultation at our boutique.
+            </p>
+
+            <div className="mt-16 space-y-10">
+                            <div className="flex gap-5">
+
+                <span className="text-2xl text-[#B9935D]">✦</span>
+
+                <div>
+
+                  <h3 className="text-lg font-medium text-[#2A2A2A]">
+                    Visit Our Boutique
+                  </h3>
+
+                  <p className="mt-2 leading-7 text-[#777]">
+                    24 Bridal Avenue
+                    <br />
+                    London, United Kingdom
+                  </p>
+
+                </div>
+
               </div>
 
-              <div>
-                <h3 className="mb-2 text-xl text-black">Phone</h3>
-                <p>+44 20 1234 5678</p>
+              <div className="flex gap-5">
+
+                <span className="text-2xl text-[#B9935D]">✦</span>
+
+                <div>
+
+                  <h3 className="text-lg font-medium text-[#2A2A2A]">
+                    Call Us
+                  </h3>
+
+                  <p className="mt-2 leading-7 text-[#777]">
+                    +44 20 1234 5678
+                  </p>
+
+                </div>
+
               </div>
 
-              <div>
-                <h3 className="mb-2 text-xl text-black">Email</h3>
-                <p>hello@soltero.com</p>
+              <div className="flex gap-5">
+
+                <span className="text-2xl text-[#B9935D]">✦</span>
+
+                <div>
+
+                  <h3 className="text-lg font-medium text-[#2A2A2A]">
+                    Email Us
+                  </h3>
+
+                  <p className="mt-2 leading-7 text-[#777]">
+                    hello@soltero.com
+                  </p>
+
+                </div>
+
               </div>
 
-              <div>
-                <h3 className="mb-2 text-xl text-black">Opening Hours</h3>
-                <p>
-                  Monday – Saturday
-                  <br />
-                  10:00 – 19:00
-                </p>
+              <div className="flex gap-5">
+
+                <span className="text-2xl text-[#B9935D]">✦</span>
+
+                <div>
+
+                  <h3 className="text-lg font-medium text-[#2A2A2A]">
+                    Opening Hours
+                  </h3>
+
+                  <p className="mt-2 leading-7 text-[#777]">
+                    Monday – Saturday
+                    <br />
+                    10:00 — 19:00
+                  </p>
+
+                </div>
+
               </div>
+
             </div>
+
           </div>
 
-          <form className="space-y-6 rounded-sm bg-white p-10 shadow-sm">
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-            />
+          {/* Contact Form */}
 
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-            />
+          <form className="border border-[#ECE6DF] bg-white p-10 lg:p-14">
 
-            <input
-              type="text"
-              placeholder="Subject"
-              className="w-full border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-            />
+            <div className="mb-10">
 
-            <textarea
-              rows={7}
-              placeholder="Your Message"
-              className="w-full resize-none border border-neutral-300 px-5 py-4 outline-none focus:border-[#b8915d]"
-            />
+              <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
+                Send a Message
+              </p>
 
-            <button className="w-full bg-[#b8915d] py-5 uppercase tracking-[0.25em] text-white transition hover:bg-[#9f7847]">
+              <h2 className="mt-4 font-heading text-4xl text-[#2A2A2A]">
+                Get In Touch
+              </h2>
+
+              <p className="mt-5 text-[16px] leading-8 text-[#777]">
+                Complete the form below and our team will
+                respond as soon as possible.
+              </p>
+
+            </div>
+
+            <div className="space-y-6">
+                            <input
+                type="text"
+                placeholder="Full Name"
+                className="h-14 w-full border border-[#E6E1DA] px-5 text-[15px] outline-none transition focus:border-[#B9935D]"
+              />
+
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="h-14 w-full border border-[#E6E1DA] px-5 text-[15px] outline-none transition focus:border-[#B9935D]"
+              />
+
+              <input
+                type="text"
+                placeholder="Subject"
+                className="h-14 w-full border border-[#E6E1DA] px-5 text-[15px] outline-none transition focus:border-[#B9935D]"
+              />
+
+              <textarea
+                rows={7}
+                placeholder="Tell us how we can help you."
+                className="w-full resize-none border border-[#E6E1DA] p-5 text-[15px] leading-7 outline-none transition focus:border-[#B9935D]"
+              />
+
+            </div>
+
+            <button
+              className="mt-10 w-full bg-[#B9935D] py-5 text-[11px] uppercase tracking-[0.35em] text-white transition duration-300 hover:bg-[#A88352]"
+            >
               Send Message
             </button>
+
+            <p className="mt-6 text-center text-sm leading-7 text-[#888]">
+              We usually reply within one business day.
+            </p>
+
           </form>
+
         </div>
+
       </section>
 
-      <section className="pb-28">
-        <div className="mx-auto max-w-7xl px-6">
+      {/* Map */}
+
+      <section className="border-t border-[#ECE6DF] bg-[#FAF8F5] py-28">
+
+        <div className="mx-auto max-w-[1450px] px-6">
+
           <iframe
             src="https://www.google.com/maps?q=london&output=embed"
-            className="h-[500px] w-full border-0"
             loading="lazy"
+            className="h-[620px] w-full border-0 grayscale"
           />
+
         </div>
+
       </section>
 
-      <section className="bg-[#111] py-28 text-center text-white">
-        <p className="uppercase tracking-[0.35em] text-[#d8b176]">
-          Ready To Begin?
-        </p>
+      {/* CTA */}
 
-        <h2 className="mt-6 text-5xl font-light md:text-7xl">
-          Book Your Private
-          <br />
-          Bridal Appointment
-        </h2>
+      <section className="bg-[#111] py-32 text-center text-white">
 
-        <Link
-          href="/booking"
-          className="mt-10 inline-block bg-[#b8915d] px-10 py-5 uppercase tracking-[0.25em] transition hover:bg-[#9f7847]"
-        >
-          Book Appointment
-        </Link>
+        <div className="mx-auto max-w-4xl px-6">
+
+          <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
+            Ready To Begin?
+          </p>
+
+          <h2 className="mt-8 font-heading text-6xl leading-none md:text-7xl">
+            Book Your Private
+            <br />
+            Bridal Consultation
+          </h2>
+
+          <p className="mx-auto mt-8 max-w-2xl text-lg leading-9 text-white/80">
+            Experience a personalized bridal fitting and discover
+            the gown that perfectly reflects your style.
+          </p>
+                    <Link
+            href="/booking"
+            className="mt-14 inline-flex items-center justify-center bg-[#B9935D] px-12 py-5 text-[11px] uppercase tracking-[0.35em] text-white transition duration-300 hover:bg-[#A88352]"
+          >
+            Request Consultation
+          </Link>
+
+        </div>
+
       </section>
+
     </main>
   );
 }

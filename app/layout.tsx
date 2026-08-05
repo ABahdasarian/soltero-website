@@ -19,8 +19,55 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "SOLTERO",
-  description: "Luxury Bridal Boutique",
+  metadataBase: new URL("https://soltero.com"),
+
+  title: {
+    default: "SOLTERO | Luxury Bridal Boutique",
+    template: "%s | SOLTERO",
+  },
+
+  description:
+    "Discover timeless bridal gowns, luxury collections and personalized consultations at SOLTERO Bridal Boutique.",
+
+  keywords: [
+    "bridal boutique",
+    "wedding dresses",
+    "luxury bridal",
+    "bridal gowns",
+    "bridal fashion",
+    "wedding boutique",
+    "luxury wedding dresses",
+  ],
+
+  authors: [
+    {
+      name: "SOLTERO",
+    },
+  ],
+
+  creator: "SOLTERO",
+
+  openGraph: {
+    title: "SOLTERO | Luxury Bridal Boutique",
+    description:
+      "Discover timeless bridal gowns and book your private consultation.",
+    url: "https://soltero.com",
+    siteName: "SOLTERO",
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "SOLTERO",
+    description: "Luxury Bridal Boutique",
+    creator: "@soltero",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -44,4 +91,3 @@ export default function RootLayout({
     </html>
   );
 }
-

@@ -2,31 +2,36 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#faf8f5] px-6">
-      <div className="text-center">
-        <span className="uppercase tracking-[0.45em] text-[#b8915d]">
-          SOLTERO
-        </span>
+    <main className="flex min-h-screen items-center justify-center bg-white px-6">
 
-        <h1 className="mt-6 text-8xl font-light">
-          404
+      <div className="max-w-2xl text-center">
+
+        <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
+          Error 404
+        </p>
+
+        <h1 className="mt-8 font-heading text-7xl leading-none text-[#2A2A2A] md:text-8xl">
+          Page Not
+          <br />
+          Found
         </h1>
 
-        <h2 className="mt-6 text-4xl font-light">
-          Dress Not Found
-        </h2>
+        <div className="mx-auto mt-10 h-px w-24 bg-[#B9935D]" />
 
-        <p className="mx-auto mt-6 max-w-lg text-neutral-500">
-          The gown you are looking for doesn't exist or has been moved.
+        <p className="mx-auto mt-10 max-w-xl text-[17px] leading-9 text-[#666]">
+          The page you're looking for doesn't exist or may have
+          been moved. Let's help you find your way back.
         </p>
 
         <Link
-          href="/collection"
-          className="mt-12 inline-flex border border-black px-10 py-5 uppercase tracking-[0.3em] transition hover:bg-black hover:text-white"
+          href="/"
+          className="mt-14 inline-flex items-center justify-center border border-[#B9935D] bg-[#B9935D] px-10 py-5 text-[11px] uppercase tracking-[0.35em] text-white transition duration-300 hover:bg-transparent hover:text-[#B9935D]"
         >
-          Back to Collection
+          Back to Home
         </Link>
+
       </div>
+
     </main>
   );
 }

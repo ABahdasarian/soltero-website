@@ -1,0 +1,65 @@
+import type { MetadataRoute } from "next";
+
+import { dresses } from "@/data/dresses";
+import { collections } from "@/data/collections";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://soltero.com";
+
+  const pages: MetadataRoute.Sitemap = [
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    {
+      url: `${baseUrl}/collection`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/booking`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/faq`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+  ];
+
+  const collectionPages: MetadataRoute.Sitemap = collections.map(
+    (collection) => ({
+      url: `${baseUrl}/collection/${collection.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    })
+  );
+
+  const dressPages: MetadataRoute.Sitemap = dresses.map((dress) => ({
+    url: `${baseUrl}/dress/${dress.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  return [...pages, ...collectionPages, ...dressPages];
+}

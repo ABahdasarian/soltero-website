@@ -107,7 +107,7 @@ export default function AboutPage() {
 
         <div className="mx-auto max-w-[1450px] px-6">
 
-          <div className="text-center">
+          <div className="animate-soltero text-center">
 
             <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
               Why Choose Us

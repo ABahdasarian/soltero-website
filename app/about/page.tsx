@@ -198,40 +198,46 @@ export default function AboutPage() {
       
       {/* CTA */}
 
-      <section className="relative overflow-hidden bg-[#111] py-36 text-center text-white">
+<section className="relative overflow-hidden py-32 text-center text-white">
 
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/60" />
+  <Image
+    src="https://res.cloudinary.com/cwh8h4x4/image/upload/v1785955940/101.webp"
+    alt="SOLTERO"
+    fill
+    priority={false}
+    sizes="100vw"
+    className="object-cover"
+  />
 
-        <div className="relative mx-auto max-w-4xl px-6">
+  <div className="absolute inset-0 bg-black/55" />
 
-          <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
-            Begin Your Bridal Journey
-          </p>
+  <div className="relative z-10 mx-auto max-w-5xl px-6">
 
-          <h2 className="mt-8 font-heading text-6xl leading-none md:text-7xl">
-            Find The Dress
-            <br />
-            You've Always
-            <br />
-            Dreamed Of
-          </h2>
+    <p className="text-[12px] uppercase tracking-[0.45em] text-[#D8B176]">
+      Begin Your Bridal Journey
+    </p>
 
-          <p className="mx-auto mt-10 max-w-2xl text-lg leading-9 text-white/80">
-            Schedule your private consultation and experience
-            the elegance, craftsmanship and personal attention
-            that define SOLTERO.
-          </p>
+    <h2 className="mt-6 font-heading text-5xl leading-tight md:text-7xl">
+      Find The Dress
+      <br />
+      You've Always Dreamed Of
+    </h2>
 
-          <Link
-            href="/booking"
-            className="mt-14 inline-flex items-center justify-center bg-[#B9935D] px-12 py-5 text-[11px] uppercase tracking-[0.35em] text-white transition duration-300 hover:bg-[#A88352]"
-          >
-            Request Consultation
-          </Link>
+    <p className="mx-auto mt-8 max-w-2xl text-lg leading-9 text-white/80">
+      Schedule your private consultation and experience the elegance,
+      craftsmanship and personal attention that define SOLTERO.
+    </p>
 
-        </div>
+    <Link
+      href="/booking"
+      className="mt-12 inline-flex items-center justify-center border border-[#B9935D] bg-[#B9935D] px-10 py-5 text-[11px] uppercase tracking-[0.35em] text-white transition duration-300 hover:border-[#A88352] hover:bg-[#A88352]"
+    >
+      Request Consultation
+    </Link>
 
-      </section>
+  </div>
+
+</section>
           </main>
   );
 }

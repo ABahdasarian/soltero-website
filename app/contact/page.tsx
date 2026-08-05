@@ -112,9 +112,9 @@ export default function ContactPage() {
                   </h3>
 
                   <p className="mt-2 leading-7 text-[#777]">
-                    Monday – Saturday
+                    Monday – Friday
                     <br />
-                    10:00 — 19:00
+                    10:00 — 18:00
                   </p>
 
                 </div>
@@ -207,34 +207,47 @@ export default function ContactPage() {
 
       {/* CTA */}
 
-      <section className="bg-[#111] py-32 text-center text-white">
+     {/* CTA */}
 
-        <div className="mx-auto max-w-4xl px-6">
+<section className="relative overflow-hidden py-32 text-center text-white">
 
-          <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
-            Ready To Begin?
-          </p>
+  <Image
+    src="https://res.cloudinary.com/cwh8h4x4/image/upload/v1785955940/101.webp"
+    alt="SOLTERO"
+    fill
+    sizes="100vw"
+    className="object-cover"
+  />
 
-          <h2 className="mt-8 font-heading text-6xl leading-none md:text-7xl">
-            Book Your Private
-            <br />
-            Bridal Consultation
-          </h2>
+  <div className="absolute inset-0 bg-black/60" />
 
-          <p className="mx-auto mt-8 max-w-2xl text-lg leading-9 text-white/80">
-            Experience a personalized bridal fitting and discover
-            the gown that perfectly reflects your style.
-          </p>
-                    <Link
-            href="/booking"
-            className="mt-14 inline-flex items-center justify-center bg-[#B9935D] px-12 py-5 text-[11px] uppercase tracking-[0.35em] text-white transition duration-300 hover:bg-[#A88352]"
-          >
-            Request Consultation
-          </Link>
+  <div className="relative z-10 mx-auto max-w-4xl px-6">
 
-        </div>
+    <p className="text-[12px] uppercase tracking-[0.45em] text-[#D8B176]">
+      Ready To Begin?
+    </p>
 
-      </section>
+    <h2 className="mt-6 font-heading text-5xl leading-tight md:text-7xl">
+      Book Your Private
+      <br />
+      Bridal Consultation
+    </h2>
+
+    <p className="mx-auto mt-8 max-w-2xl text-lg leading-9 text-white/80">
+      Experience a personalized bridal fitting and discover the gown
+      that perfectly reflects your style.
+    </p>
+
+    <Link
+      href="/booking"
+      className="mt-12 inline-flex items-center justify-center border border-[#B9935D] bg-[#B9935D] px-10 py-5 text-[11px] uppercase tracking-[0.35em] text-white transition duration-300 hover:border-[#A88352] hover:bg-[#A88352]"
+    >
+      Request Consultation
+    </Link>
+
+  </div>
+
+</section>
 
     </main>
   );

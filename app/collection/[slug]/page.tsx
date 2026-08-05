@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import FadeIn from "@/components/ui/FadeIn";
 import { dresses } from "@/data/dresses";
 import DressCard from "@/components/catalog/DressCard";
 
@@ -24,21 +25,30 @@ export default async function CollectionPage({ params }: Props) {
   return (
     <main className="pt-24">
       <section className="mx-auto max-w-7xl px-6 py-20">
-        <div className="mb-20 text-center">
-          <span className="text-xs uppercase tracking-[0.35em] text-[#978065]">
-            SOLTERO COLLECTION
-          </span>
 
-          <h1 className="mt-6 font-heading text-6xl text-[#2A2A2A]">
-            {collectionName}
-          </h1>
-        </div>
+        <FadeIn>
+          <div className="mb-20 text-center">
+            <span className="text-xs uppercase tracking-[0.35em] text-[#978065]">
+              SOLTERO COLLECTION
+            </span>
+
+            <h1 className="mt-6 font-heading text-6xl text-[#2A2A2A]">
+              {collectionName}
+            </h1>
+          </div>
+        </FadeIn>
 
         <div className="grid gap-14 md:grid-cols-2 xl:grid-cols-3">
-          {collectionDresses.map((dress) => (
-            <DressCard key={dress.slug} dress={dress} />
+          {collectionDresses.map((dress, index) => (
+            <FadeIn
+              key={dress.slug}
+              delay={index * 0.08}
+            >
+              <DressCard dress={dress} />
+            </FadeIn>
           ))}
         </div>
+
       </section>
     </main>
   );

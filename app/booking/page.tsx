@@ -1,5 +1,6 @@
 import BookingForm from "./BookingForm";
 import PageHero from "@/components/ui/PageHero";
+import FadeIn from "@/components/ui/FadeIn";
 
 type Props = {
   searchParams: Promise<{
@@ -15,97 +16,95 @@ export default async function BookingPage({
   return (
     <main className="bg-white pt-24">
 
-      {/* Hero */}
-
       <PageHero
-  image="hero"
-  title="Request Consultation"
-  description="Begin your bridal journey with a private consultation and discover the gown created for your unforgettable day."
-/>
-
-      {/* Content */}
+        image="hero"
+        title="Request Consultation"
+        description="Begin your bridal journey with a private consultation and discover the gown created for your unforgettable day."
+      />
 
       <section className="py-32">
 
         <div className="mx-auto grid max-w-[1450px] gap-24 px-6 lg:grid-cols-[0.9fr_1.1fr]">
 
-          {/* Left */}
+          <FadeIn direction="left">
 
-          <div>
+            <div>
 
-            <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
-              Why Choose SOLTERO
-            </p>
+              <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
+                Why Choose SOLTERO
+              </p>
 
-            <h2 className="mt-6 font-heading text-6xl leading-none text-[#2A2A2A]">
-              A Bridal
-              <br />
-              Experience
-              <br />
-              Like No Other
-            </h2>
+              <h2 className="mt-6 font-heading text-6xl leading-none text-[#2A2A2A]">
+                A Bridal
+                <br />
+                Experience
+                <br />
+                Like No Other
+              </h2>
 
-            <p className="mt-10 max-w-lg text-[17px] leading-9 text-[#666]">
-              Every appointment is thoughtfully designed to provide
-              a relaxed, personal and unforgettable bridal experience.
-              Our stylists will guide you through every step of finding
-              the dress that feels uniquely yours.
-            </p>
+              <p className="mt-10 max-w-lg text-[17px] leading-9 text-[#666]">
+                Every appointment is thoughtfully designed to provide
+                a relaxed, personal and unforgettable bridal experience.
+                Our stylists will guide you through every step of finding
+                the dress that feels uniquely yours.
+              </p>
 
-            <div className="mt-16 space-y-8">
+              <div className="mt-16 space-y-8">
 
-              <div className="flex gap-5">
+                <div className="flex gap-5">
 
-                <span className="text-2xl text-[#B9935D]">✦</span>
+                  <span className="text-2xl text-[#B9935D]">✦</span>
 
-                <div>
+                  <div>
 
-                  <h3 className="text-lg font-medium text-[#2A2A2A]">
-                    Private Bridal Suite
-                  </h3>
+                    <h3 className="text-lg font-medium text-[#2A2A2A]">
+                      Private Bridal Suite
+                    </h3>
 
-                  <p className="mt-2 leading-7 text-[#777]">
-                    Enjoy an exclusive fitting in a calm,
-                    elegant atmosphere.
-                  </p>
+                    <p className="mt-2 leading-7 text-[#777]">
+                      Enjoy an exclusive fitting in a calm,
+                      elegant atmosphere.
+                    </p>
 
-                </div>
-
-              </div>
-
-              <div className="flex gap-5">
-
-                <span className="text-2xl text-[#B9935D]">✦</span>
-
-                <div>
-
-                  <h3 className="text-lg font-medium text-[#2A2A2A]">
-                    Personal Stylist
-                  </h3>
-
-                  <p className="mt-2 leading-7 text-[#777]">
-                    Receive expert guidance tailored to
-                    your personal bridal vision.
-                  </p>
+                  </div>
 
                 </div>
 
-              </div>
+                <div className="flex gap-5">
 
-              <div className="flex gap-5">
+                  <span className="text-2xl text-[#B9935D]">✦</span>
 
-                <span className="text-2xl text-[#B9935D]">✦</span>
+                  <div>
 
-                <div>
+                    <h3 className="text-lg font-medium text-[#2A2A2A]">
+                      Personal Stylist
+                    </h3>
 
-                  <h3 className="text-lg font-medium text-[#2A2A2A]">
-                    Exclusive Collections
-                  </h3>
+                    <p className="mt-2 leading-7 text-[#777]">
+                      Receive expert guidance tailored to
+                      your personal bridal vision.
+                    </p>
 
-                  <p className="mt-2 leading-7 text-[#777]">
-                    Discover carefully selected gowns
-                    available only in our boutique.
-                  </p>
+                  </div>
+
+                </div>
+
+                <div className="flex gap-5">
+
+                  <span className="text-2xl text-[#B9935D]">✦</span>
+
+                  <div>
+
+                    <h3 className="text-lg font-medium text-[#2A2A2A]">
+                      Exclusive Collections
+                    </h3>
+
+                    <p className="mt-2 leading-7 text-[#777]">
+                      Discover carefully selected gowns
+                      available only in our boutique.
+                    </p>
+
+                  </div>
 
                 </div>
 
@@ -113,89 +112,95 @@ export default async function BookingPage({
 
             </div>
 
-          </div>
+          </FadeIn>
 
-          {/* Form */}
-
-          <BookingForm dress={dress ?? ""} />
+          <FadeIn direction="right" delay={0.2}>
+            <BookingForm dress={dress ?? ""} />
+          </FadeIn>
 
         </div>
 
       </section>
-            {/* Contact Section */}
 
       <section className="border-t border-[#ECE6DF] bg-[#FAF8F5] py-28">
 
         <div className="mx-auto grid max-w-[1450px] gap-20 px-6 lg:grid-cols-2">
 
-          <div>
+          <FadeIn direction="left">
 
-            <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
-              Contact
-            </p>
+            <div>
 
-            <h2 className="mt-6 font-heading text-5xl leading-none text-[#2A2A2A]">
-              We Look Forward
-              <br />
-              To Meeting You
-            </h2>
+              <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
+                Contact
+              </p>
 
-            <p className="mt-8 max-w-lg text-[17px] leading-9 text-[#666]">
-              If you have any questions before your appointment,
-              our team will be delighted to assist you.
-            </p>
+              <h2 className="mt-6 font-heading text-5xl leading-none text-[#2A2A2A]">
+                We Look Forward
+                <br />
+                To Meeting You
+              </h2>
+                            <p className="mt-8 max-w-lg text-[17px] leading-9 text-[#666]">
+                If you have any questions before your appointment,
+                our team will be delighted to assist you.
+              </p>
 
-            <div className="mt-14 space-y-10">
+              <div className="mt-14 space-y-10">
 
-              <div>
-                <p className="text-[11px] uppercase tracking-[0.35em] text-[#B9935D]">
-                  Boutique
-                </p>
+                <div>
+                  <p className="text-[11px] uppercase tracking-[0.35em] text-[#B9935D]">
+                    Boutique
+                  </p>
 
-                <p className="mt-3 text-lg text-[#444]">
-                  24 Bridal Avenue
-                  <br />
-                  London, United Kingdom
-                </p>
-              </div>
+                  <p className="mt-3 text-lg text-[#444]">
+                    24 Bridal Avenue
+                    <br />
+                    London, United Kingdom
+                  </p>
+                </div>
 
-              <div>
-                <p className="text-[11px] uppercase tracking-[0.35em] text-[#B9935D]">
-                  Contact
-                </p>
+                <div>
+                  <p className="text-[11px] uppercase tracking-[0.35em] text-[#B9935D]">
+                    Contact
+                  </p>
 
-                <p className="mt-3 text-lg text-[#444]">
-                  +44 20 1234 5678
-                  <br />
-                  hello@soltero.com
-                </p>
-              </div>
+                  <p className="mt-3 text-lg text-[#444]">
+                    +44 20 1234 5678
+                    <br />
+                    hello@soltero.com
+                  </p>
+                </div>
 
-              <div>
-                <p className="text-[11px] uppercase tracking-[0.35em] text-[#B9935D]">
-                  Opening Hours
-                </p>
+                <div>
+                  <p className="text-[11px] uppercase tracking-[0.35em] text-[#B9935D]">
+                    Opening Hours
+                  </p>
 
-                <p className="mt-3 text-lg text-[#444]">
-                  Monday – Saturday
-                  <br />
-                  10:00 — 19:00
-                </p>
+                  <p className="mt-3 text-lg text-[#444]">
+                    Monday – Saturday
+                    <br />
+                    10:00 — 19:00
+                  </p>
+                </div>
+
               </div>
 
             </div>
 
-          </div>
+          </FadeIn>
 
-          <div className="overflow-hidden">
+          <FadeIn direction="right" delay={0.2}>
 
-            <iframe
-              src="https://www.google.com/maps?q=london&output=embed"
-              loading="lazy"
-              className="h-[620px] w-full border-0 grayscale"
-            />
+            <div className="overflow-hidden">
 
-          </div>
+              <iframe
+                src="https://www.google.com/maps?q=london&output=embed"
+                loading="lazy"
+                className="h-[620px] w-full border-0 grayscale"
+              />
+
+            </div>
+
+          </FadeIn>
 
         </div>
 

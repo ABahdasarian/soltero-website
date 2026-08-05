@@ -30,6 +30,9 @@ html {
 }
 
 body {
+  html {
+  scrollbar-gutter: stable;
+}
   margin: 0;
   overflow-x: hidden;
   background: var(--color-white);

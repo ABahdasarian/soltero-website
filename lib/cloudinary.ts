@@ -27,7 +27,7 @@ export function getCloudinaryCover(name: string) {
 }
 
 export function getCloudinaryPageImage(name: string) {
-  return `https://res.cloudinary.com/${cloudName}/image/upload/f_auto,q_auto,w_2200/${name}`;
+  return `https://res.cloudinary.com/${cloudName}/image/upload/f_auto,q_auto,c_fill,g_auto/${name}`;
 }
 
 export function getCloudinaryLogo(width = 260) {

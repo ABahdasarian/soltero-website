@@ -27,101 +27,185 @@ export default async function DressPage({ params }: Props) {
         d.collectionSlug === dress.collectionSlug &&
         d.slug !== dress.slug
     )
-    .slice(0, 2);
+    .slice(0, 3);
 
   return (
-    <main className="pt-24">
-      {/* Product */}
-      <section className="mx-auto max-w-7xl px-6 py-20">
-        <div className="grid gap-16 lg:grid-cols-2">
-          {/* Gallery */}
+    <main className="bg-white pt-28">
+
+      <section className="mx-auto max-w-[1500px] px-6 pb-32">
+
+        <div className="grid gap-20 lg:grid-cols-[1.15fr_0.85fr]">
+
           <DressGallery
             images={dress.images}
             name={dress.name}
           />
 
-          {/* Information */}
-          <div className="h-fit lg:sticky lg:top-32">
-            <p className="text-sm uppercase tracking-[0.35em] text-[#978065]">
-              {dress.collection}
-            </p>
+          <div className="sticky top-32 h-fit">
+            <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
+  {dress.collection}
+</p>
 
-            <h1 className="mt-5 font-heading text-6xl text-[#2A2A2A]">
-              {dress.name}
-            </h1>
+<h1 className="mt-6 font-heading text-6xl leading-none text-[#2A2A2A] xl:text-7xl">
+  {dress.name}
+</h1>
 
-            <div className="mt-10 space-y-5 text-lg text-neutral-700">
-              <p>
-                <span className="font-medium">Model:</span> {dress.name}
-              </p>
+<div className="mt-10 h-px w-24 bg-[#B9935D]" />
 
-              <p>
-                <span className="font-medium">Availability:</span>{" "}
-                Available in our boutique
-              </p>
+<p className="mt-10 max-w-xl text-[17px] leading-9 text-[#666]">
+  {dress.description}
+</p>
 
-              <p className="leading-8 text-neutral-500">
-                To try on this gown and receive a personalized bridal
-                consultation, please book an appointment with one of our
-                stylists.
-              </p>
-            </div>
+<div className="mt-16 rounded-sm border border-[#ECE6DF] bg-[#FAF8F5] p-8">
+
+  <h3 className="text-[12px] uppercase tracking-[0.35em] text-[#B9935D]">
+    Highlights
+  </h3>
+
+  <div className="mt-8 space-y-5">
+
+    <div className="flex items-center gap-4">
+      <span className="text-xl text-[#B9935D]">✦</span>
+      <span className="text-[#555]">
+        Handcrafted bridal couture
+      </span>
+    </div>
+
+    <div className="flex items-center gap-4">
+      <span className="text-xl text-[#B9935D]">✦</span>
+      <span className="text-[#555]">
+        Luxurious premium fabrics
+      </span>
+    </div>
+
+    <div className="flex items-center gap-4">
+      <span className="text-xl text-[#B9935D]">✦</span>
+      <span className="text-[#555]">
+        Timeless elegant silhouette
+      </span>
+    </div>
+
+    <div className="flex items-center gap-4">
+      <span className="text-xl text-[#B9935D]">✦</span>
+      <span className="text-[#555]">
+        Designed for unforgettable moments
+      </span>
+    </div>
+
+  </div>
+
+</div>
+
+<Link
+  href={`/booking?dress=${encodeURIComponent(dress.name)}`}
+  className="mt-12 inline-flex items-center justify-center bg-[#B9935D] px-10 py-5 text-[11px] uppercase tracking-[0.35em] text-white transition-all duration-300 hover:bg-[#A88352]"
+>
+  Request Consultation
+</Link>
+        </div>
+
+      </div>
+
+    </section>
+
+    {relatedDresses.length > 0 && (
+      <section className="mx-auto max-w-[1500px] px-6 pb-32">
+
+        <div className="mb-20 text-center">
+
+          <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
+            Discover More
+          </p>
+
+          <h2 className="mt-5 font-heading text-6xl text-[#2A2A2A]">
+            You May Also Like
+          </h2>
+
+        </div>
+
+        <div className="grid gap-12 md:grid-cols-3">
+
+          {relatedDresses.map((item) => (
 
             <Link
-              href={`/booking?dress=${encodeURIComponent(dress.name)}`}
-              className="mt-12 inline-flex items-center justify-center border border-[#978065] bg-[#978065] px-8 py-4 text-sm uppercase tracking-[0.3em] text-white transition duration-300 hover:bg-transparent hover:text-[#978065]"
+              key={item.slug}
+              href={`/dress/${item.slug}`}
+              className="group"
             >
-              Book Appointment
-            </Link>
-          </div>
-        </div>
-      </section>
 
-      {/* Related Dresses */}
-      {relatedDresses.length > 0 && (
-        <section className="mx-auto max-w-5xl px-6 pb-32">
-          <div className="mb-16 text-center">
-            <p className="text-sm uppercase tracking-[0.35em] text-[#978065]">
-              Discover More
-            </p>
+              <div className="overflow-hidden bg-[#F7F5F2]">
 
-            <h2 className="mt-4 font-heading text-5xl text-[#2A2A2A]">
-              You May Also Like
-            </h2>
-          </div>
+                <div className="relative overflow-hidden">
 
-          <div className="grid justify-items-center gap-x-12 gap-y-14 md:grid-cols-2">
-            {relatedDresses.map((item) => (
-              <Link
-                key={item.slug}
-                href={`/dress/${item.slug}`}
-                className="group w-full max-w-[360px]"
-              >
-                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-neutral-100">
                   <Image
                     src={getCloudinaryImage(item.images[0], {
                       width: 900,
                     })}
                     alt={item.name}
-                    fill
-                    className="object-cover transition duration-700 group-hover:scale-105"
+                    width={900}
+                    height={1200}
+                    className="aspect-[3/4] w-full object-cover transition-transform duration-700 group-hover:scale-[1.06]"
                   />
+
+                  <div className="absolute inset-0 bg-black/0 transition duration-500 group-hover:bg-black/5" />
+
                 </div>
 
-                <div className="mt-6 text-center">
-                  <p className="text-xs uppercase tracking-[0.35em] text-[#978065]">
-                    {item.collection}
-                  </p>
+              </div>
 
-                  <h3 className="mt-3 font-heading text-3xl text-[#2A2A2A]">
-                    {item.name}
-                  </h3>
+              <div className="pt-8 text-center">
+
+                <p className="text-[11px] uppercase tracking-[0.45em] text-[#B9935D]">
+                  {item.collection}
+                </p>
+
+                <h3 className="mt-4 font-heading text-[38px] text-[#2A2A2A] transition duration-300 group-hover:text-[#B9935D]">
+                  {item.name}
+                </h3>
+
+                <p className="mx-auto mt-5 max-w-[260px] text-[15px] leading-7 text-[#777]">
+                  {item.description}
+                </p>
+
+                <div className="mx-auto mt-8 h-px w-12 bg-[#B9935D] transition-all duration-300 group-hover:w-24" />
+                                <div className="mt-8 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-[#2A2A2A] transition duration-300 group-hover:text-[#B9935D]">
+
+                  View Details
+
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    <path
+                      d="M5 12H19"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    />
+
+                    <path
+                      d="M13 6L19 12L13 18"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    />
+                  </svg>
+
                 </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
+
+              </div>
+
+            </Link>
+
+          ))}
+
+        </div>
+
+      </section>
+
+    )}
+
     </main>
   );
 }

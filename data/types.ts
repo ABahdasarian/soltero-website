@@ -1,5 +1,6 @@
 export interface Dress {
   slug: string;
+
   name: string;
 
   collection: string;
@@ -8,4 +9,16 @@ export interface Dress {
   images: string[];
 
   description: string;
+
+  silhouette: string;
+
+  fabric: string;
+
+  train: string;
+
+  neckline: string;
+
+  sleeves: string;
+
+  style: string;
 }

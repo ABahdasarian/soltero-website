@@ -4,50 +4,62 @@ import { getCloudinaryPageImage } from "@/lib/cloudinary";
 
 export default function Hero() {
   return (
-    <section className="relative h-[85vh] overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden">
       <Image
         src={getCloudinaryPageImage("hero")}
-        alt="SOLTERO"
+        alt="SOLTERO Bridal Boutique"
         fill
         priority
         sizes="100vw"
         className="object-cover"
       />
 
-      <div className="absolute inset-0 bg-black/30" />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40" />
 
-      <div className="relative z-10 flex h-full items-center justify-center px-6 text-center text-white">
-        <div className="max-w-4xl">
-          <p className="mb-6 uppercase tracking-[0.45em] text-[#d7b27b]">
-            Soltero Bridal
-          </p>
+      <div className="relative z-10 flex min-h-screen items-center justify-center px-6 pt-32 lg:pt-36">
+        <div className="mx-auto mt-16 max-w-3xl text-center text-white lg:mt-20">
 
-          <h1 className="text-5xl font-light leading-tight md:text-8xl">
-            Discover
+        
+          <h1 className="font-heading text-6xl font-light leading-[0.95] md:text-7xl xl:text-[95px]">
+            Where Your
             <br />
-            Our Collection
+            Bridal Story
+            <br />
+            Begins
           </h1>
 
-          <p className="mx-auto mt-8 max-w-2xl text-lg text-white/80">
-            Timeless silhouettes, luxurious fabrics and handcrafted
-            details created for unforgettable moments.
+          <p className="mx-auto mt-10 max-w-2xl text-lg leading-9 text-white/80">
+            Discover timeless silhouettes, luxurious fabrics and
+            handcrafted gowns created for unforgettable moments.
           </p>
 
-          <div className="mt-12 flex flex-col justify-center gap-5 sm:flex-row">
+          <div className="mt-14 flex flex-col justify-center gap-5 sm:flex-row">
+
             <Link
               href="/collection"
-              className="border border-white px-10 py-4 uppercase tracking-[0.2em] transition hover:bg-white hover:text-black"
+              className="border border-white px-10 py-4 text-xs uppercase tracking-[0.35em] transition duration-300 hover:bg-white hover:text-black"
             >
               Explore Collection
             </Link>
 
             <Link
               href="/booking"
-              className="bg-[#b9935d] px-10 py-4 uppercase tracking-[0.2em] transition hover:bg-[#a88352]"
+              className="border border-[#B9935D] bg-[#B9935D] px-10 py-4 text-xs uppercase tracking-[0.35em] text-white transition duration-300 hover:bg-[#A88352]"
             >
-              Book Appointment
+              Request Consultation
             </Link>
+
           </div>
+
+          <div className="mt-24 flex flex-col items-center">
+            <span className="text-[11px] uppercase tracking-[0.45em] text-white/70">
+              Scroll
+            </span>
+
+            <div className="mt-4 h-12 w-px bg-white/40" />
+          </div>
+
         </div>
       </div>
     </section>

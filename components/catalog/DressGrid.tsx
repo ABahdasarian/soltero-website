@@ -11,6 +11,7 @@ const filters = [
   "Illuminare",
   "Radiance of Love",
   "Spring Flower",
+  "Wispers Dreams",
 ];
 
 export default function DressGrid() {

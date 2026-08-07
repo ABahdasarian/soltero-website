@@ -25,15 +25,22 @@ const collections = [
     image: "radiance",
     slug: "radiance-of-love",
   },
+  {
+    title: "Wispers Dreams",
+    image:
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786146416/wispers.jpg",
+    slug: "wispers-dreams",
+  },
 ];
 
 export default function Collections() {
   return (
     <section className="bg-white py-32">
       <div className="mx-auto max-w-[1500px] px-6">
+
         <FadeIn>
           <div className="mb-20 text-center">
-            <span className="uppercase tracking-[0.45em] text-[#B9935D]">
+            <span className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
               Collections
             </span>
 
@@ -48,7 +55,7 @@ export default function Collections() {
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-5">
           {collections.map((collection, index) => (
             <FadeIn
               key={collection.slug}
@@ -61,7 +68,11 @@ export default function Collections() {
                 <div className="overflow-hidden bg-[#F7F5F2]">
                   <div className="relative overflow-hidden">
                     <Image
-                      src={getCloudinaryCover(collection.image)}
+                      src={
+                        collection.image.startsWith("https://")
+                          ? collection.image
+                          : getCloudinaryCover(collection.image)
+                      }
                       alt={collection.title}
                       width={900}
                       height={1200}
@@ -72,19 +83,19 @@ export default function Collections() {
                   </div>
                 </div>
 
-                <div className="pt-8 text-center">
-                  <h3 className="font-heading text-[30px] leading-tight text-[#2A2A2A] transition duration-300 group-hover:text-[#B9935D] xl:text-[34px]">
+                <div className="pt-6 text-center">
+                  <h3 className="font-heading text-[26px] leading-tight text-[#2A2A2A] transition duration-300 group-hover:text-[#B9935D]">
                     {collection.title}
                   </h3>
 
-                  <div className="mx-auto mt-8 h-px w-12 bg-[#B9935D] transition-all duration-300 group-hover:w-24" />
+                  <div className="mx-auto mt-6 h-px w-10 bg-[#B9935D] transition-all duration-300 group-hover:w-20" />
 
-                  <div className="mt-8 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-[#2A2A2A] transition duration-300 group-hover:text-[#B9935D]">
+                  <div className="mt-6 inline-flex items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-[#2A2A2A] transition duration-300 group-hover:text-[#B9935D]">
                     Explore Collection
 
                     <svg
-                      width="18"
-                      height="18"
+                      width="16"
+                      height="16"
                       viewBox="0 0 24 24"
                       fill="none"
                       className="transition-transform duration-300 group-hover:translate-x-1"
@@ -107,6 +118,7 @@ export default function Collections() {
             </FadeIn>
           ))}
         </div>
+
       </div>
     </section>
   );

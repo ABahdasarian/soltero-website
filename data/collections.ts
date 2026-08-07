@@ -19,4 +19,9 @@ export const collections = [
     slug: "radiance-of-love",
     image: "radiance",
   },
+  {
+    title: "Wispers Dreams",
+    slug: "wispers-dreams",
+    image: "whispers/page_01",
+  },
 ];

@@ -842,4 +842,323 @@ export const dresses: Dress[] = [
       "/images/dresses/spring/Wisteria/wisteria3.webp",
     ],
   },
-];
+
+{
+  ...defaultDressInfo,
+  slug: "hailie",
+  name: "Hailie",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_04.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786144822/page_05.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "halo",
+  name: "Halo",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_07.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_08.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_09.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "hanna",
+  name: "Hanna",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_11.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_12.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "harmony",
+  name: "Harmony",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_14.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_15.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "haven",
+  name: "Haven",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_17.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_18.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "haviline",
+  name: "Haviline",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_20.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_21.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "hayden",
+  name: "Hayden",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_23.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_24.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "heather",
+  name: "Heather",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_26.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_27.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_28.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "helana",
+  name: "Helana",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_30.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_31.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_32.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "helen",
+  name: "Helen",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_34.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_35.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "helina",
+  name: "Helina",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_37.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_38.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_39.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "helisant",
+  name: "Helisant",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_41.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_42.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "helmina-corset",
+  name: "Helmina Corset",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_43.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "helmina-mermaid-skirt",
+  name: "Helmina Mermaid Skirt",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_45.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "helmina-a-line-skirt",
+  name: "Helmina A-line Skirt",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_46.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "henriette",
+  name: "Henriette",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_48.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_49.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "hermiona",
+  name: "Hermiona",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_51.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_52.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_53.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_54.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "hermosa",
+  name: "Hermosa",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_56.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_57.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_58.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "hespera",
+  name: "Hespera",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_60.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_61.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_62.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "hilary",
+  name: "Hilary",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_64.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_65.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "honey",
+  name: "Honey",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_67.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_68.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "honora",
+  name: "Honora",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_70.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_71.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "hope",
+  name: "Hope",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_73.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_74.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "hortense",
+  name: "Hortense",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_76.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_77.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "hyphelia",
+  name: "Hyphelia",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_79.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_80.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_81.jpg",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+  slug: "hypnora",
+  name: "Hypnora",
+  collection: "Wispers Dreams",
+  collectionSlug: "wispers-dreams",
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_83.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_84.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_85.jpg",
+  ],
+},
+]

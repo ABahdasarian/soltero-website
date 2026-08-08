@@ -26,7 +26,7 @@ const collections = [
     slug: "radiance-of-love",
   },
   {
-    title: "Wispers Dreams",
+    title: "Whispers Dreams",
     image:
       "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786146416/wispers.jpg",
     slug: "wispers-dreams",

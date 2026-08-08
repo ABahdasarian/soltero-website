@@ -3,293 +3,357 @@ import { defaultDressInfo } from "./dressDefaults";
 
 export const dresses: Dress[] = [
   {
-    ...defaultDressInfo,
+  ...defaultDressInfo,
 
-    slug: "beatrice",
-    name: "Beatrice",
+  slug: "beatrice",
+  name: "Beatrice",
 
-    collection: "Echoes of Her",
-    collectionSlug: "echoes-of-her",
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
 
-    images: [
-      "/images/dresses/echoes/Beatrice/beatrice2.webp",
-      "/images/dresses/echoes/Beatrice/beatrice4.webp",
-      "/images/dresses/echoes/Beatrice/beatrice6.webp",
-    ],
-  },
+  description:
+    "Silhouette: Princess. Fabric: Taffeta, lace. Color: Ivory. Accessories: Choker.",
 
-  {
-    ...defaultDressInfo,
+  images: [
+    "/images/dresses/echoes/Beatrice/beatrice2.webp",
+    "/images/dresses/echoes/Beatrice/beatrice4.webp",
+    "/images/dresses/echoes/Beatrice/beatrice6.webp",
+  ],
+},
 
-    slug: "cecilia",
-    name: "Cecilia",
+{
+  ...defaultDressInfo,
 
-    collection: "Echoes of Her",
-    collectionSlug: "echoes-of-her",
+  slug: "cecilia",
+  name: "Cecilia",
 
-    images: [
-      "/images/dresses/echoes/Cecilia/cecilia1.webp",
-      "/images/dresses/echoes/Cecilia/cecilia3.webp",
-    ],
-  },
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
 
-  {
-    ...defaultDressInfo,
+  description:
+    "Silhouette: Mermaid. Fabric: Satin. Color: Ivory. Accessories: Train, bead embellishment, sleeves.",
 
-    slug: "celesta",
-    name: "Celesta",
+  images: [
+    "/images/dresses/echoes/Cecilia/cecilia1.webp",
+    "/images/dresses/echoes/Cecilia/cecilia3.webp",
+  ],
+},
 
-    collection: "Echoes of Her",
-    collectionSlug: "echoes-of-her",
+{
+  ...defaultDressInfo,
 
-    images: [
-      "/images/dresses/echoes/Celesta/celesta1.webp",
-      "/images/dresses/echoes/Celesta/celesta3.webp",
-      "/images/dresses/echoes/Celesta/celesta4.webp",
-    ],
-  },
+  slug: "celesta",
+  name: "Celesta",
+
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
+
+  description:
+    "Silhouette: Mermaid. Fabric: Crepe, chiffon. Color: Ivory. Accessories: Cape.",
+
+  images: [
+    "/images/dresses/echoes/Celesta/celesta1.webp",
+    "/images/dresses/echoes/Celesta/celesta3.webp",
+    "/images/dresses/echoes/Celesta/celesta4.webp",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+
+  slug: "coraline",
+  name: "Coraline",
+
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
+
+  description:
+    "Silhouette: A-line. Fabric: Chiffon, lace. Color: Ivory/nude.",
+
+  images: [
+    "/images/dresses/echoes/Coraline/coraline1.webp",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+
+  slug: "florence",
+  name: "Florence",
+
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
+
+  description:
+    "Silhouette: A-line. Fabric: Chiffon, lace. Color: Ivory/nude.",
+
+  images: [
+    "/images/dresses/echoes/Florence/florence1.webp",
+  ],
+},
+
+
+
+{
+  ...defaultDressInfo,
+
+  slug: "juliette",
+  name: "Juliette",
+
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
+
+  description:
+    "Silhouette: Princess. Fabric: Mikado. Color: Ivory/nude. Accessories: Sleeves.",
+
+  images: [
+    "/images/dresses/echoes/Juliette/juliette4.webp",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+
+  slug: "lolite",
+  name: "Lolite",
+
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
+
+  description:
+    "Silhouette: Mermaid. Fabric: Mikado, 3D flowers. Color: Ivory. Accessories: Train.",
+
+  images: [
+    "/images/dresses/echoes/Lolite/lolite1.webp",
+    "/images/dresses/echoes/Lolite/lolite6.webp",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+
+  slug: "marguerite",
+  name: "Marguerite",
+
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
+
+  description:
+    "Silhouette: A-line. Fabric: Mikado. Color: Ivory.",
+
+  images: [
+    "/images/dresses/echoes/Marguerite/marguerite1.webp",
+    "/images/dresses/echoes/Marguerite/marguerite4.webp",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+
+  slug: "odette",
+  name: "Odette",
+
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
+
+  description:
+    "Silhouette: Straight. Fabric: Satin, lace. Color: Ivory/nude.",
+
+  images: [
+    "/images/dresses/echoes/Odette/odette2.webp",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+
+  slug: "ophelia",
+  name: "Ophelia",
+
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
+
+  description:
+    "Silhouette: Mermaid. Fabric: Mikado. Color: Ivory. Accessories: Veil.",
+
+  images: [
+    "/images/dresses/echoes/Ophelia/ophelia2.webp",
+  ],
+},
+
+
+
+{
+  ...defaultDressInfo,
+
+  slug: "rowena",
+  name: "Rowena",
+
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
+
+  description:
+    "Silhouette: Princess. Fabric: Satin. Color: Ivory. Accessories: Sleeves.",
+
+  images: [
+    "/images/dresses/echoes/Rowena/rowena1.webp",
+    "/images/dresses/echoes/Rowena/rowena2.webp",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+
+  slug: "sofi",
+  name: "Sofi",
+
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
+
+  description:
+    "Silhouette: Princess. Fabric: Tulle, satin, lace. Color: Ivory.",
+
+  images: [
+    "/images/dresses/echoes/Sofi/sofi3.webp",
+    "/images/dresses/echoes/Sofi/sofi4.webp",
+  ],
+},
+
+
+
+{
+  ...defaultDressInfo,
+
+  slug: "viviene",
+  name: "Viviene",
+
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
+
+  description:
+    "Silhouette: Princess. Fabric: Mikado. Color: Ivory.",
+
+  images: [
+    "/images/dresses/echoes/Viviene/vivene2.webp",
+    "/images/dresses/echoes/Viviene/vivene3.webp",
+  ],
+},
     {
-    ...defaultDressInfo,
+  ...defaultDressInfo,
 
-    slug: "coraline",
-    name: "Coraline",
+  slug: "aurora",
+  name: "Aurora",
 
-    collection: "Echoes of Her",
-    collectionSlug: "echoes-of-her",
+  collection: "Illuminare",
+  collectionSlug: "illuminare",
 
-    images: [
-      "/images/dresses/echoes/Coraline/coraline1.webp",
-    ],
-  },
+  description:
+    "Airy, weightless fabrics combined with delicate shimmering lace evoke the soft glow of dawn’s first light. The Aurora gown, named after the goddess of the morning sky, embodies the beauty of new beginnings. Its graceful A-line silhouette moves effortlessly while cascading ruffles on the skirt add an ethereal, unique charm. The sequin-adorned Chantilly lace catches the light with every step, creating an aura of softness and elegance.",
 
-  {
-    ...defaultDressInfo,
+  images: [
+    "/images/dresses/illuminare/Aurora/aurora1.webp",
+    "/images/dresses/illuminare/Aurora/aurora2.webp",
+    "/images/dresses/illuminare/Aurora/aurora3.webp",
+  ],
+},
 
-    slug: "florence",
-    name: "Florence",
+{
+  ...defaultDressInfo,
 
-    collection: "Echoes of Her",
-    collectionSlug: "echoes-of-her",
+  slug: "diana",
+  name: "Diana",
 
-    images: [
-      "/images/dresses/echoes/Florence/florence1.webp",
-    ],
-  },
+  collection: "Illuminare",
+  collectionSlug: "illuminare",
 
-  {
-    ...defaultDressInfo,
+  description:
+    "A gown of majestic beauty and ethereal grace, Diana captivates with its luxurious details. The intricately beaded corset, adorned with pearls and shimmering embroidery, accentuates the shoulders, exuding refined elegance. The voluminous tiered tulle skirt creates a breathtaking silhouette, flowing with a weightless allure. Diana is a gown for a bride who seeks a perfect balance between grandeur and delicacy—an embodiment of sophistication, radiance, and divine femininity.",
 
-    slug: "juliette",
-    name: "Juliette",
+  images: [
+    "/images/dresses/illuminare/Diana/diana1.webp",
+    "/images/dresses/illuminare/Diana/diana2.webp",
+    "/images/dresses/illuminare/Diana/diana3.webp",
+    "/images/dresses/illuminare/Diana/diana4.webp",
+  ],
+},
 
-    collection: "Echoes of Her",
-    collectionSlug: "echoes-of-her",
+{
+  ...defaultDressInfo,
 
-    images: [
-      "/images/dresses/echoes/Juliette/juliette4.webp",
-    ],
-  },
+  slug: "eliana",
+  name: "Eliana",
 
-  {
-    ...defaultDressInfo,
+  collection: "Illuminare",
+  collectionSlug: "illuminare",
 
-    slug: "lolite",
-    name: "Lolite",
+  description:
+    "Every detail in Eliana reflects passion, light, and the boundless beauty of love. Honoring the eternal brilliance of love, Eliana is a breathtaking mermaid gown, shimmering with exquisite lace. The high-neck corset, adorned with mikado draping and straps, accentuates the waist while adding an air of regal elegance. A detachable mikado train enhances the grandeur of the silhouette, creating a striking balance between sophistication and drama.",
 
-    collection: "Echoes of Her",
-    collectionSlug: "echoes-of-her",
+  images: [
+    "/images/dresses/illuminare/Eliana/eliana1.webp",
+    "/images/dresses/illuminare/Eliana/eliana2.webp",
+    "/images/dresses/illuminare/Eliana/eliana3.webp",
+    "/images/dresses/illuminare/Eliana/eliana4.webp",
+  ],
+},
 
-    images: [
-      "/images/dresses/echoes/Lolite/lolite1.webp",
-      "/images/dresses/echoes/Lolite/lolite6.webp",
-    ],
-  },
-    {
-    ...defaultDressInfo,
+{
+  ...defaultDressInfo,
 
-    slug: "marguerite",
-    name: "Marguerite",
+  slug: "flora",
+  name: "Flora",
 
-    collection: "Echoes of Her",
-    collectionSlug: "echoes-of-her",
+  collection: "Illuminare",
+  collectionSlug: "illuminare",
 
-    images: [
-      "/images/dresses/echoes/Marguerite/marguerite1.webp",
-      "/images/dresses/echoes/Marguerite/marguerite4.webp",
-    ],
-  },
+  description:
+    "Like a blooming garden kissed by spring, the Flora gown embodies romance and femininity. Layers of soft tulle create a dreamy A-line silhouette, adorned with embroidered lace and 3D floral appliqués that seem to bloom across the fabric. Delicate crystal-embellished straps add a subtle sparkle, while the sweetheart neckline beautifully frames the shoulders. Flora is a poetic tribute to renewal, love, and the beauty of nature in full bloom.",
 
-  {
-    ...defaultDressInfo,
+  images: [
+    "/images/dresses/illuminare/Flora/flora1.webp",
+    "/images/dresses/illuminare/Flora/flora2.webp",
+    "/images/dresses/illuminare/Flora/flora3.webp",
+  ],
+},
 
-    slug: "odette",
-    name: "Odette",
+{
+  ...defaultDressInfo,
 
-    collection: "Echoes of Her",
-    collectionSlug: "echoes-of-her",
+  slug: "helia",
+  name: "Helia",
 
-    images: [
-      "/images/dresses/echoes/Odette/odette2.webp",
-    ],
-  },
+  collection: "Illuminare",
+  collectionSlug: "illuminare",
 
-  {
-    ...defaultDressInfo,
+  description:
+    "A masterpiece of luxury and refinement, the Helia gown is crafted from mikado, radiating timeless sophistication. Its voluminous skirt, with a long train and a slit, flows effortlessly, while the sculpted bodice elongates the silhouette with its structured fit. The straight neckline elegantly highlights the shoulders, while hand-embroidered pearl beading on the bust adds a touch of exquisite detail. Helia is for the bride who desires a gown that mirrors the golden warmth of love, luminous and unforgettable.",
 
-    slug: "ophelia",
-    name: "Ophelia",
+  images: [
+    "/images/dresses/illuminare/Helia/helia1.webp",
+    "/images/dresses/illuminare/Helia/helia2.webp",
+    "/images/dresses/illuminare/Helia/helia3.webp",
+    "/images/dresses/illuminare/Helia/helia4.webp",
+  ],
+},
 
-    collection: "Echoes of Her",
-    collectionSlug: "echoes-of-her",
+{
+  ...defaultDressInfo,
 
-    images: [
-      "/images/dresses/echoes/Ophelia/ophelia2.webp",
-    ],
-  },
+  slug: "selena",
+  name: "Selena",
 
-  {
-    ...defaultDressInfo,
+  collection: "Illuminare",
+  collectionSlug: "illuminare",
 
-    slug: "rowena",
-    name: "Rowena",
+  description:
+    "Inspired by the serene glow of moonlight, the Selena gown is a vision of elegance and romance. The strapless straight neckline corset, adorned with delicate embroidery, gracefully accentuates the collarbones, while precise lacing ensures a flawless fit. A voluminous mikado skirt adds grandeur, featuring an intricate lace inset at the back for a touch of opulence. A statement bow, delicately embellished with lace, completes the look, infusing it with a soft, romantic charm. Selena is a blend of elegance, tenderness, and mystical radiance.",
 
-    collection: "Echoes of Her",
-    collectionSlug: "echoes-of-her",
-
-    images: [
-      "/images/dresses/echoes/Rowena/rowena1.webp",
-      "/images/dresses/echoes/Rowena/rowena2.webp",
-    ],
-  },
-
-  {
-    ...defaultDressInfo,
-
-    slug: "sofi",
-    name: "Sofi",
-
-    collection: "Echoes of Her",
-    collectionSlug: "echoes-of-her",
-
-    images: [
-      "/images/dresses/echoes/Sofi/sofi3.webp",
-      "/images/dresses/echoes/Sofi/sofi4.webp",
-    ],
-  },
-
-  {
-    ...defaultDressInfo,
-
-    slug: "viviene",
-    name: "Viviene",
-
-    collection: "Echoes of Her",
-    collectionSlug: "echoes-of-her",
-
-    images: [
-      "/images/dresses/echoes/Viviene/vivene2.webp",
-      "/images/dresses/echoes/Viviene/vivene3.webp",
-      "/images/dresses/echoes/Viviene/viviene4.webp",
-    ],
-  },
-    {
-    ...defaultDressInfo,
-
-    slug: "aurora",
-    name: "Aurora",
-
-    collection: "Illuminare",
-    collectionSlug: "illuminare",
-
-    images: [
-      "/images/dresses/illuminare/Aurora/aurora1.webp",
-      "/images/dresses/illuminare/Aurora/aurora2.webp",
-      "/images/dresses/illuminare/Aurora/aurora3.webp",
-    ],
-  },
-
-  {
-    ...defaultDressInfo,
-
-    slug: "diana",
-    name: "Diana",
-
-    collection: "Illuminare",
-    collectionSlug: "illuminare",
-
-    images: [
-      "/images/dresses/illuminare/Diana/diana1.webp",
-      "/images/dresses/illuminare/Diana/diana2.webp",
-      "/images/dresses/illuminare/Diana/diana3.webp",
-      "/images/dresses/illuminare/Diana/diana4.webp",
-    ],
-  },
-
-  {
-    ...defaultDressInfo,
-
-    slug: "eliana",
-    name: "Eliana",
-
-    collection: "Illuminare",
-    collectionSlug: "illuminare",
-
-    images: [
-      "/images/dresses/illuminare/Eliana/eliana1.webp",
-      "/images/dresses/illuminare/Eliana/eliana2.webp",
-      "/images/dresses/illuminare/Eliana/eliana3.webp",
-      "/images/dresses/illuminare/Eliana/eliana4.webp",
-    ],
-  },
-
-  {
-    ...defaultDressInfo,
-
-    slug: "flora",
-    name: "Flora",
-
-    collection: "Illuminare",
-    collectionSlug: "illuminare",
-
-    images: [
-      "/images/dresses/illuminare/Flora/flora1.webp",
-      "/images/dresses/illuminare/Flora/flora2.webp",
-      "/images/dresses/illuminare/Flora/flora3.webp",
-    ],
-  },
-
-  {
-    ...defaultDressInfo,
-
-    slug: "helia",
-    name: "Helia",
-
-    collection: "Illuminare",
-    collectionSlug: "illuminare",
-
-    images: [
-      "/images/dresses/illuminare/Helia/helia1.webp",
-      "/images/dresses/illuminare/Helia/helia2.webp",
-      "/images/dresses/illuminare/Helia/helia3.webp",
-      "/images/dresses/illuminare/Helia/helia4.webp",
-    ],
-  },
-
-  {
-    ...defaultDressInfo,
-
-    slug: "selena",
-    name: "Selena",
-
-    collection: "Illuminare",
-    collectionSlug: "illuminare",
-
-    images: [
-      "/images/dresses/illuminare/Selena/selena1.webp",
-      "/images/dresses/illuminare/Selena/selena2.webp",
-      "/images/dresses/illuminare/Selena/selena3.webp",
-    ],
-  },
+  images: [
+    "/images/dresses/illuminare/Selena/selena1.webp",
+    "/images/dresses/illuminare/Selena/selena2.webp",
+    "/images/dresses/illuminare/Selena/selena3.webp",
+  ],
+},
     {
     ...defaultDressInfo,
 
@@ -847,8 +911,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hailie",
   name: "Hailie",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: Princess. Fabric: Silk taffeta. Color: Ivory. Accessories: Bolero.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_04.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786144822/page_05.jpg",
@@ -859,8 +925,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "halo",
   name: "Halo",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: A-line. Fabric: Mikado. Color: Ivory. Accessories: Bolero.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_07.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_08.jpg",
@@ -872,8 +940,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hanna",
   name: "Hanna",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: Princess. Fabric: Mikado, embroidered lace. Color: Ivory.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_11.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_12.jpg",
@@ -884,8 +954,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "harmony",
   name: "Harmony",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: Princess. Fabric: Tulle, embroidered Chantilly. Color: Ivory. Accessories: Bolero.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_14.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_15.jpg",
@@ -896,8 +968,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "haven",
   name: "Haven",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: A-line. Fabric: Chantilly, tulle, pearls. Color: Ivory. Accessories: Veil.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_17.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_18.jpg",
@@ -908,8 +982,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "haviline",
   name: "Haviline",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: A-line. Fabric: Chiffon, Chantilly, tulle, 3D lace. Color: Original, Ivory.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_20.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_21.jpg",
@@ -920,8 +996,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hayden",
   name: "Hayden",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: A-line. Fabric: Chantilly, Italian tulle, lace. Color: Original, Ivory. Accessories: Veil.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_23.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_24.jpg",
@@ -932,8 +1010,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "heather",
   name: "Heather",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: A-line. Fabric: Tulle, lace. Color: Original, Ivory. Accessories: Sleeves.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_26.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_27.jpg",
@@ -945,8 +1025,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "helana",
   name: "Helana",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: A-line. Fabric: Tulle, lace, pearls embroidery. Color: Original, Ivory. Accessories: Sleeves.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_30.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_31.jpg",
@@ -958,8 +1040,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "helen",
   name: "Helen",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: A-line. Fabric: Tulle, 3D lace, embroidery. Color: Original, Ivory.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_34.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_35.jpg",
@@ -970,8 +1054,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "helina",
   name: "Helina",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: Princess. Fabric: Tulle, embroidered lace. Color: Original, Ivory.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_37.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_38.jpg",
@@ -983,8 +1069,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "helisant",
   name: "Helisant",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: A-line. Fabric: Embroidered lace, satin. Color: Original, Ivory.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_41.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_42.jpg",
@@ -995,8 +1083,8 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "helmina-corset",
   name: "Helmina Corset",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_43.jpg",
   ],
@@ -1006,8 +1094,8 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "helmina-mermaid-skirt",
   name: "Helmina Mermaid Skirt",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_45.jpg",
   ],
@@ -1017,8 +1105,8 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "helmina-a-line-skirt",
   name: "Helmina A-line Skirt",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_46.jpg",
   ],
@@ -1028,8 +1116,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "henriette",
   name: "Henriette",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: A-line. Fabric: Chantilly lace. Color: Ivory.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_48.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_49.jpg",
@@ -1040,8 +1130,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hermiona",
   name: "Hermiona",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: A-line. Fabric: Tulle, lace, hand embroidery with Swarovski crystals. Color: Original, Ivory.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_51.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_52.jpg",
@@ -1054,8 +1146,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hermosa",
   name: "Hermosa",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: A-line. Fabric: Tulle, embroidered lace. Color: Original, Ivory. Accessories: Choker.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_56.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_57.jpg",
@@ -1067,8 +1161,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hespera",
   name: "Hespera",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: Princess. Fabric: Mikado, lace, pearl embroidery. Color: Ivory. Accessories: Bow, choker.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_60.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_61.jpg",
@@ -1080,8 +1176,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hilary",
   name: "Hilary",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: Princess. Fabric: Tulle, lace embroidered with crystals. Color: Original, Ivory.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_64.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_65.jpg",
@@ -1092,8 +1190,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "honey",
   name: "Honey",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: Princess. Fabric: Tulle, 3D lace. Color: Original, Ivory. Accessories: Bolero.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_67.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_68.jpg",
@@ -1104,8 +1204,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "honora",
   name: "Honora",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: A-line. Fabric: Tulle, embroidered lace, hand-embroidery. Color: Ivory.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_70.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_71.jpg",
@@ -1116,8 +1218,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hope",
   name: "Hope",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: A-line. Fabric: Tulle, embroidered lace. Color: Original, Ivory.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_73.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_74.jpg",
@@ -1128,8 +1232,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hortense",
   name: "Hortense",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: A-line. Fabric: Chiffon, lace. Color: Original, Ivory. Accessories: Sleeves.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_76.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_77.jpg",
@@ -1140,8 +1246,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hyphelia",
   name: "Hyphelia",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: Mermaid. Fabric: Embroidered lace, hand embroidery. Color: Original, Ivory. Accessories: Train.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_79.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_80.jpg",
@@ -1153,8 +1261,10 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hypnora",
   name: "Hypnora",
-  collection: "Wispers Dreams",
-  collectionSlug: "wispers-dreams",
+  collection: "Whispers of Dreams",
+  collectionSlug: "whispers-dreams",
+  description:
+    "Silhouette: Mermaid. Fabric: Embroidered Chantilly lace, hand embroidery. Color: Original, Ivory.",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_83.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_84.jpg",

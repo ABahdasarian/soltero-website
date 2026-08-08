@@ -58,12 +58,7 @@ export default function Footer() {
             </h3>
 
             <div className="flex flex-col gap-6">
-              <Link
-                href="/collection"
-                className="text-neutral-700 transition hover:text-[#B9935D]"
-              >
-                All Dresses
-              </Link>
+             
 
               <Link
                 href="/collection/spring-flower"

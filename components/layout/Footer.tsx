@@ -14,7 +14,6 @@ export default function Footer() {
           {/* Logo */}
 
           <div className="max-w-[380px]">
-
             <Image
               src={getCloudinaryLogo(900)}
               alt="SOLTERO Bridal Boutique"
@@ -30,7 +29,6 @@ export default function Footer() {
             </p>
 
             <div className="mt-12 flex gap-8 text-lg">
-
               <a
                 href="https://www.instagram.com/solterobridal.uk/"
                 target="_blank"
@@ -48,116 +46,105 @@ export default function Footer() {
               >
                 Facebook
               </a>
-
             </div>
-
           </div>
 
 
           {/* Collections */}
 
           <div>
-
             <h3 className="mb-10 text-sm uppercase tracking-[0.35em] text-[#B9935D]">
               Collections
             </h3>
 
-            <div className="space-y-6">
-
+            <div className="flex flex-col gap-6">
               <Link
                 href="/collection"
-                className="block text-neutral-700 transition hover:text-[#B9935D]"
+                className="text-neutral-700 transition hover:text-[#B9935D]"
               >
                 All Dresses
               </Link>
 
               <Link
                 href="/collection/spring-flower"
-                className="block text-neutral-700 transition hover:text-[#B9935D]"
+                className="text-neutral-700 transition hover:text-[#B9935D]"
               >
                 Spring Flower
               </Link>
 
               <Link
                 href="/collection/echoes-of-her"
-                className="block text-neutral-700 transition hover:text-[#B9935D]"
+                className="text-neutral-700 transition hover:text-[#B9935D]"
               >
                 Echoes of Her
               </Link>
 
               <Link
                 href="/collection/illuminare"
-                className="block text-neutral-700 transition hover:text-[#B9935D]"
+                className="text-neutral-700 transition hover:text-[#B9935D]"
               >
                 Illuminare
               </Link>
 
               <Link
                 href="/collection/radiance-of-love"
-                className="block text-neutral-700 transition hover:text-[#B9935D]"
+                className="text-neutral-700 transition hover:text-[#B9935D]"
               >
                 Radiance of Love
               </Link>
 
               <Link
                 href="/collection/wispers-dreams"
-                className="block text-neutral-700 transition hover:text-[#B9935D]"
+                className="text-neutral-700 transition hover:text-[#B9935D]"
               >
                 Whispers Dreams
               </Link>
-
             </div>
-
           </div>
 
 
           {/* Company */}
 
           <div>
-
             <h3 className="mb-10 text-sm uppercase tracking-[0.35em] text-[#B9935D]">
               Company
             </h3>
 
-            <div className="space-y-6">
-
+            <div className="flex flex-col gap-6">
               <Link
                 href="/about"
-                className="block text-neutral-700 transition hover:text-[#B9935D]"
+                className="text-neutral-700 transition hover:text-[#B9935D]"
               >
                 About
               </Link>
 
               <Link
                 href="/contact"
-                className="block text-neutral-700 transition hover:text-[#B9935D]"
+                className="text-neutral-700 transition hover:text-[#B9935D]"
               >
                 Contact
               </Link>
 
               <Link
                 href="/booking"
-                className="block text-neutral-700 transition hover:text-[#B9935D]"
+                className="text-neutral-700 transition hover:text-[#B9935D]"
               >
                 Request Consultation
               </Link>
 
               <a
                 href="mailto:solterobridaluk@gmail.com"
-                className="block text-neutral-700 transition hover:text-[#B9935D]"
+                className="text-neutral-700 transition hover:text-[#B9935D]"
               >
                 Email Us
               </a>
-
             </div>
-
           </div>
 
 
           {/* Newsletter */}
 
           <div>
-
             <h3 className="mb-10 text-sm uppercase tracking-[0.35em] text-[#B9935D]">
               Newsletter
             </h3>
@@ -168,7 +155,6 @@ export default function Footer() {
             </p>
 
             <form className="mt-10">
-
               <input
                 type="email"
                 placeholder="Email Address"
@@ -181,9 +167,7 @@ export default function Footer() {
               >
                 Subscribe
               </button>
-
             </form>
-
           </div>
 
         </div>
@@ -192,11 +176,9 @@ export default function Footer() {
         {/* Bottom */}
 
         <div className="mt-24 border-t border-[#ECE6DF] pt-10 text-center">
-
           <p className="text-sm tracking-[0.08em] text-neutral-500">
             © 2026 SOLTERO Bridal Boutique. All rights reserved.
           </p>
-
         </div>
 
       </div>

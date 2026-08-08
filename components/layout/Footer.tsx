@@ -88,6 +88,19 @@ export default function Footer() {
                 Illuminare
               </Link>
 
+
+              <li>
+  <Link href="/collection/radiance-of-love">
+    Radiance of Love
+  </Link>
+</li>
+
+<li>
+  <Link href="/collection/wispers-dreams">
+    Whispers Dreams
+  </Link>
+</li>
+
             </div>
 
           </div>

@@ -52,51 +52,48 @@ export default function Footer() {
 
           {/* Collections */}
 
-          <div>
-            <h3 className="mb-10 text-sm uppercase tracking-[0.35em] text-[#B9935D]">
-              Collections
-            </h3>
+<div>
+  <h3 className="mb-10 text-sm uppercase tracking-[0.35em] text-[#B9935D]">
+    Collections
+  </h3>
 
-            <div className="flex flex-col gap-6">
-             
+  <div className="flex flex-col gap-6">
+    <Link
+      href="/collection/spring-flower"
+      className="text-neutral-700 transition hover:text-[#B9935D]"
+    >
+      Spring Flower
+    </Link>
 
-              <Link
-                href="/collection/spring-flower"
-                className="text-neutral-700 transition hover:text-[#B9935D]"
-              >
-                Spring Flower
-              </Link>
+    <Link
+      href="/collection/echoes-of-her"
+      className="text-neutral-700 transition hover:text-[#B9935D]"
+    >
+      Echoes of Her
+    </Link>
 
-              <Link
-                href="/collection/echoes-of-her"
-                className="text-neutral-700 transition hover:text-[#B9935D]"
-              >
-                Echoes of Her
-              </Link>
+    <Link
+      href="/collection/illuminare"
+      className="text-neutral-700 transition hover:text-[#B9935D]"
+    >
+      Illuminare
+    </Link>
 
-              <Link
-                href="/collection/illuminare"
-                className="text-neutral-700 transition hover:text-[#B9935D]"
-              >
-                Illuminare
-              </Link>
+    <Link
+      href="/collection/radiance-of-love"
+      className="text-neutral-700 transition hover:text-[#B9935D]"
+    >
+      Radiance of Love
+    </Link>
 
-              <Link
-                href="/collection/radiance-of-love"
-                className="text-neutral-700 transition hover:text-[#B9935D]"
-              >
-                Radiance of Love
-              </Link>
-
-              <Link
-                href="/collection/wispers-dreams"
-                className="text-neutral-700 transition hover:text-[#B9935D]"
-              >
-                Whispers Dreams
-              </Link>
-            </div>
-          </div>
-
+    <Link
+      href="/collection/wispers-dreams"
+      className="text-neutral-700 transition hover:text-[#B9935D]"
+    >
+      Whispers Dreams
+    </Link>
+  </div>
+</div>
 
           {/* Company */}
 

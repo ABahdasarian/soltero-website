@@ -7,9 +7,8 @@ import { getCloudinaryLogo } from "@/lib/cloudinary";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#ECE6DF] bg-[#FAF8F5]">
-      <div className="mx-auto max-w-[1500px] px-8 py-24">
-
+    <footer className="bg-[#FAF8F5]">
+      <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
         <div className="grid gap-20 lg:grid-cols-[420px_1fr_1fr_1fr]">
 
           {/* Logo */}
@@ -31,9 +30,11 @@ export default function Footer() {
             </p>
 
             <div className="mt-12 flex gap-8 text-lg">
+
               <a
                 href="https://www.instagram.com/solterobridal.uk/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="transition hover:text-[#B9935D]"
               >
                 Instagram
@@ -42,13 +43,16 @@ export default function Footer() {
               <a
                 href="https://facebook.com"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="transition hover:text-[#B9935D]"
               >
                 Facebook
               </a>
+
             </div>
 
           </div>
+
 
           {/* Collections */}
 
@@ -88,22 +92,24 @@ export default function Footer() {
                 Illuminare
               </Link>
 
+              <Link
+                href="/collection/radiance-of-love"
+                className="block text-neutral-700 transition hover:text-[#B9935D]"
+              >
+                Radiance of Love
+              </Link>
 
-              <li>
-  <Link href="/collection/radiance-of-love">
-    Radiance of Love
-  </Link>
-</li>
-
-<li>
-  <Link href="/collection/wispers-dreams">
-    Whispers Dreams
-  </Link>
-</li>
+              <Link
+                href="/collection/wispers-dreams"
+                className="block text-neutral-700 transition hover:text-[#B9935D]"
+              >
+                Whispers Dreams
+              </Link>
 
             </div>
 
           </div>
+
 
           {/* Company */}
 
@@ -146,7 +152,9 @@ export default function Footer() {
             </div>
 
           </div>
-                    {/* Newsletter */}
+
+
+          {/* Newsletter */}
 
           <div>
 
@@ -180,12 +188,15 @@ export default function Footer() {
 
         </div>
 
+
         {/* Bottom */}
 
         <div className="mt-24 border-t border-[#ECE6DF] pt-10 text-center">
+
           <p className="text-sm tracking-[0.08em] text-neutral-500">
             © 2026 SOLTERO Bridal Boutique. All rights reserved.
           </p>
+
         </div>
 
       </div>

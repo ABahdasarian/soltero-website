@@ -92,7 +92,45 @@ export const dresses: Dress[] = [
   ],
 },
 
+{
+  ...defaultDressInfo,
 
+  slug: "genevieva",
+  name: "Genevieva",
+
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
+
+  description:
+    "Silhouette: Princess. Fabric: Satin. Color: Ivory.",
+
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408741/genevieva3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408740/genevieva4.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408740/genevieva1.webp",
+  ],
+},
+
+{
+  ...defaultDressInfo,
+
+  slug: "rose",
+  name: "Rose",
+
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
+
+  description:
+    "Silhouette: Princess. Fabric: Satin. Color: Ivory. Accessories: Sleeves.",
+
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408989/rose_1.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408990/rose_3.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408990/rose_2.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408991/rose_4.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408992/rose_5.jpg",
+  ],
+},
 
 {
   ...defaultDressInfo,

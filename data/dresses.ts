@@ -949,7 +949,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hailie",
   name: "Hailie",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: Princess. Fabric: Silk taffeta. Color: Ivory. Accessories: Bolero.",
@@ -963,7 +963,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "halo",
   name: "Halo",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: A-line. Fabric: Mikado. Color: Ivory. Accessories: Bolero.",
@@ -978,7 +978,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hanna",
   name: "Hanna",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: Princess. Fabric: Mikado, embroidered lace. Color: Ivory.",
@@ -992,7 +992,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "harmony",
   name: "Harmony",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: Princess. Fabric: Tulle, embroidered Chantilly. Color: Ivory. Accessories: Bolero.",
@@ -1006,7 +1006,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "haven",
   name: "Haven",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: A-line. Fabric: Chantilly, tulle, pearls. Color: Ivory. Accessories: Veil.",
@@ -1020,7 +1020,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "haviline",
   name: "Haviline",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: A-line. Fabric: Chiffon, Chantilly, tulle, 3D lace. Color: Original, Ivory.",
@@ -1034,7 +1034,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hayden",
   name: "Hayden",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: A-line. Fabric: Chantilly, Italian tulle, lace. Color: Original, Ivory. Accessories: Veil.",
@@ -1048,7 +1048,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "heather",
   name: "Heather",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: A-line. Fabric: Tulle, lace. Color: Original, Ivory. Accessories: Sleeves.",
@@ -1063,7 +1063,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "helana",
   name: "Helana",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: A-line. Fabric: Tulle, lace, pearls embroidery. Color: Original, Ivory. Accessories: Sleeves.",
@@ -1078,7 +1078,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "helen",
   name: "Helen",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: A-line. Fabric: Tulle, 3D lace, embroidery. Color: Original, Ivory.",
@@ -1092,7 +1092,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "helina",
   name: "Helina",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: Princess. Fabric: Tulle, embroidered lace. Color: Original, Ivory.",
@@ -1107,7 +1107,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "helisant",
   name: "Helisant",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: A-line. Fabric: Embroidered lace, satin. Color: Original, Ivory.",
@@ -1121,7 +1121,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "helmina-corset",
   name: "Helmina Corset",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_43.jpg",
@@ -1132,7 +1132,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "helmina-mermaid-skirt",
   name: "Helmina Mermaid Skirt",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_45.jpg",
@@ -1143,7 +1143,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "helmina-a-line-skirt",
   name: "Helmina A-line Skirt",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/page_46.jpg",
@@ -1154,7 +1154,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "henriette",
   name: "Henriette",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: A-line. Fabric: Chantilly lace. Color: Ivory.",
@@ -1168,7 +1168,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hermiona",
   name: "Hermiona",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: A-line. Fabric: Tulle, lace, hand embroidery with Swarovski crystals. Color: Original, Ivory.",
@@ -1184,7 +1184,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hermosa",
   name: "Hermosa",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: A-line. Fabric: Tulle, embroidered lace. Color: Original, Ivory. Accessories: Choker.",
@@ -1199,7 +1199,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hespera",
   name: "Hespera",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: Princess. Fabric: Mikado, lace, pearl embroidery. Color: Ivory. Accessories: Bow, choker.",
@@ -1214,7 +1214,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hilary",
   name: "Hilary",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: Princess. Fabric: Tulle, lace embroidered with crystals. Color: Original, Ivory.",
@@ -1228,7 +1228,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "honey",
   name: "Honey",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: Princess. Fabric: Tulle, 3D lace. Color: Original, Ivory. Accessories: Bolero.",
@@ -1242,7 +1242,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "honora",
   name: "Honora",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: A-line. Fabric: Tulle, embroidered lace, hand-embroidery. Color: Ivory.",
@@ -1256,7 +1256,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hope",
   name: "Hope",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: A-line. Fabric: Tulle, embroidered lace. Color: Original, Ivory.",
@@ -1270,7 +1270,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hortense",
   name: "Hortense",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: A-line. Fabric: Chiffon, lace. Color: Original, Ivory. Accessories: Sleeves.",
@@ -1284,7 +1284,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hyphelia",
   name: "Hyphelia",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: Mermaid. Fabric: Embroidered lace, hand embroidery. Color: Original, Ivory. Accessories: Train.",
@@ -1299,7 +1299,7 @@ export const dresses: Dress[] = [
   ...defaultDressInfo,
   slug: "hypnora",
   name: "Hypnora",
-  collection: "Whispers of Dreams",
+  collection: "Whispers Dreams",
   collectionSlug: "whispers-dreams",
   description:
     "Silhouette: Mermaid. Fabric: Embroidered Chantilly lace, hand embroidery. Color: Original, Ivory.",

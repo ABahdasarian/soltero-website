@@ -31,7 +31,7 @@ const collections = [
     title: "Whispers Dreams",
     image:
       "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786409414/whispers.jpg",
-  slug: "wispers-dreams",
+  slug: "whispers-dreams",
   },
 ];
 

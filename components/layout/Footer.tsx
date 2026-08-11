@@ -87,7 +87,7 @@ export default function Footer() {
     </Link>
 
     <Link
-      href="/collection/wispers-dreams"
+      href="/collection/whispers-dreams"
       className="text-neutral-700 transition hover:text-[#B9935D]"
     >
       Whispers Dreams

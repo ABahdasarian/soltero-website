@@ -5,31 +5,33 @@ import FadeIn from "@/components/ui/FadeIn";
 import { getCloudinaryCover } from "@/lib/cloudinary";
 
 const collections = [
-  {
-    title: "Spring Flower",
-    image: "spring-flower",
-    slug: "spring-flower",
-  },
+  
   {
     title: "Echoes of Her",
-    image: "echoes-of-her",
-    slug: "echoes-of-her",
+    image: "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786409406/echoes.jpg",
+    slug: "echoes",
   },
   {
     title: "Illuminare",
-    image: "illuminare",
+    image: "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786409411/illuminare.jpg",
     slug: "illuminare",
   },
   {
     title: "Radiance of Love",
-    image: "radiance",
-    slug: "radiance-of-love",
+    image: "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786409412/radience.jpg",
+    slug: "radiance",
+  },
+  
+  {
+    title: "Spring Flower",
+    image: "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786409405/spring.jpg",
+    slug: "spring-flower",
   },
   {
     title: "Whispers Dreams",
     image:
-      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786146416/wispers.jpg",
-    slug: "wispers-dreams",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786409414/whispers.jpg",
+    slug: "whispers",
   },
 ];
 

@@ -11,6 +11,7 @@ const navigation = [
   { href: "/", label: "Home" },
   { href: "/collection", label: "Collections" },
   { href: "/about", label: "About" },
+  { href: "/partnership", label: "Partnership" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -46,7 +47,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
 
-          <nav className="hidden items-center gap-14 lg:flex">
+          <nav className="hidden items-center gap-10 lg:flex">
             {navigation.map((item) => {
               const active = pathname === item.href;
 
@@ -54,7 +55,7 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="group relative text-[13px] font-medium uppercase tracking-[0.32em] text-[#2A2A2A] transition duration-300 hover:text-[#B9935D]"
+                  className="group relative text-[13px] font-medium uppercase tracking-[0.28em] text-[#2A2A2A] transition duration-300 hover:text-[#B9935D]"
                 >
                   {item.label}
 
@@ -69,7 +70,8 @@ export default function Header() {
               );
             })}
           </nav>
-                    {/* CTA */}
+
+          {/* CTA */}
 
           <div className="hidden lg:block">
             <Link
@@ -85,6 +87,7 @@ export default function Header() {
           <button
             onClick={() => setOpen(!open)}
             className="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
+            aria-label="Toggle menu"
           >
             <span
               className={`h-[2px] w-7 bg-[#2A2A2A] transition-all ${

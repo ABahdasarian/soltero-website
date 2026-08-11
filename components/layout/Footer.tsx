@@ -111,6 +111,13 @@ export default function Footer() {
               </Link>
 
               <Link
+  href="/partnership"
+  className="block text-neutral-700 transition hover:text-[#B9935D]"
+>
+  Partnership
+</Link>
+
+              <Link
                 href="/contact"
                 className="text-neutral-700 transition hover:text-[#B9935D]"
               >

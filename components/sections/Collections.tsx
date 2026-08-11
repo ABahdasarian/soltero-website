@@ -9,7 +9,7 @@ const collections = [
   {
     title: "Echoes of Her",
     image: "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786409406/echoes.jpg",
-    slug: "echoes",
+    slug: "echoes-of-her",
   },
   {
     title: "Illuminare",
@@ -19,9 +19,9 @@ const collections = [
   {
     title: "Radiance of Love",
     image: "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786409412/radience.jpg",
-    slug: "radiance",
+    slug: "radiance-of-love",
   },
-  
+
   {
     title: "Spring Flower",
     image: "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786409405/spring.jpg",
@@ -31,7 +31,7 @@ const collections = [
     title: "Whispers Dreams",
     image:
       "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786409414/whispers.jpg",
-    slug: "whispers",
+  slug: "wispers-dreams",
   },
 ];
 

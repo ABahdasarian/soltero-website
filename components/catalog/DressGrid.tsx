@@ -11,7 +11,7 @@ const filters = [
   "Illuminare",
   "Radiance of Love",
   "Spring Flower",
-  "Whispers of Dreams",
+  "Whispers Dreams",
 ];
 
 export default function DressGrid() {
@@ -23,10 +23,10 @@ export default function DressGrid() {
     }
 
     return dresses.filter((dress) => {
-      if (active === "Whispers of Dreams") {
+      if (active === "Whispers Dreams") {
         return (
-          dress.collection === "Whispers of Dreams" ||
-          dress.collection === "Wispers Dreams"
+          dress.collection === "Whispers Dreams" ||
+          dress.collection === "Whispers Dreams"
         );
       }
 

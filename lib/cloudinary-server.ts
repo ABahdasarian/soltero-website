@@ -33,34 +33,86 @@ export async function getCloudinaryDressImages(
   try {
     const prefix = dressSlug.toLowerCase();
 
-    console.log(
-      "Searching Cloudinary images with prefix:",
-      prefix
-    );
+    /*
+     * 1. Ищем фотографии внутри папки.
+     *
+     * Например:
+     * soltero/collections/echoes/Celesta/
+     */
+    const folderName =
+      dressSlug.charAt(0).toUpperCase() + dressSlug.slice(1);
 
-    const result = await cloudinary.api.resources({
+    const folderResult = await cloudinary.api.resources({
+      resource_type: "image",
+      type: "upload",
+      prefix: `soltero/collections/echoes/${folderName}/`,
+      max_results: 500,
+    });
+
+    /*
+     * 2. Ищем фотографии в корне Cloudinary.
+     *
+     * Например:
+     * celesta1
+     * celesta2
+     * celesta3
+     */
+    const rootResult = await cloudinary.api.resources({
       resource_type: "image",
       type: "upload",
       prefix,
       max_results: 500,
     });
 
-    console.log(
-      "Cloudinary images found:",
-      result.resources?.length || 0
+    /*
+     * Объединяем результаты.
+     */
+    const allImages = [
+      ...(folderResult.resources ?? []),
+      ...(rootResult.resources ?? []),
+    ];
+
+    /*
+     * Убираем дубликаты.
+     */
+    const uniqueImages = Array.from(
+      new Map(
+        allImages.map((image: any) => [
+          image.public_id,
+          image,
+        ])
+      ).values()
     );
 
-    return result.resources
-      .sort((a: any, b: any) =>
-        a.public_id.localeCompare(b.public_id)
+    /*
+     * Сортируем по имени:
+     *
+     * celesta1
+     * celesta2
+     * celesta3
+     * celesta4
+     */
+    uniqueImages.sort((a: any, b: any) =>
+      a.public_id.localeCompare(
+        b.public_id,
+        undefined,
+        { numeric: true }
       )
-      .map((image: any) => ({
-        publicId: image.public_id,
-        url: image.secure_url,
-        width: image.width,
-        height: image.height,
-        format: image.format,
-      }));
+    );
+
+    console.log(
+      `Cloudinary images for ${dressSlug}:`,
+      uniqueImages.map((image: any) => image.public_id)
+    );
+
+    return uniqueImages.map((image: any) => ({
+      publicId: image.public_id,
+      url: image.secure_url,
+      width: image.width,
+      height: image.height,
+      format: image.format,
+    }));
+
   } catch (error: any) {
     console.error("Cloudinary dress images error:", {
       message: error?.message,

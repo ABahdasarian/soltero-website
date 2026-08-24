@@ -257,6 +257,21 @@ export const dresses: Dress[] = [
   ],
 },
 
+{
+  ...defaultDressInfo,
+
+  slug: "sybil",
+  name: "Sybil",
+
+  collection: "Echoes of Her",
+  collectionSlug: "echoes-of-her",
+
+  images: [
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787526960/sybil1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787526960/sybil2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787526961/sybil3.webp",
+  ],
+},
 
 
 {

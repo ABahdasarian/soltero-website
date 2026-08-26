@@ -54,7 +54,7 @@ export const metadata: Metadata = {
       "Discover timeless bridal gowns and book your private consultation.",
     url: "https://www.soltero.co.uk",
     siteName: "SOLTERO",
-    locale: "en_GB",
+    locale: "en_US",
     type: "website",
   },
 
@@ -83,7 +83,11 @@ export default function RootLayout({
       className={`${playfair.variable} ${montserrat.variable}`}
     >
       <body className="bg-white text-neutral-900">
-        {/* Google Analytics */}
+        <Header />
+
+        {children}
+
+        {/* Google Analytics / Google tag */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-18LRN9X4MW"
           strategy="afterInteractive"
@@ -99,15 +103,9 @@ export default function RootLayout({
 
             gtag('js', new Date());
 
-            gtag('config', 'G-18LRN9X4MW', {
-              page_path: window.location.pathname,
-            });
+            gtag('config', 'G-18LRN9X4MW');
           `}
         </Script>
-
-        <Header />
-
-        {children}
 
         <Footer />
       </body>

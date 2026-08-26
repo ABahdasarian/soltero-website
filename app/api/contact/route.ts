@@ -6,7 +6,7 @@ import { NextResponse } from "next/server";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const GOOGLE_SHEETS_URL =
-  "https://script.google.com/macros/s/AKfycbzzKArLXs2QjcwBJY-6B5AnLJ5VEtS88SxFo9DqPlYs8ye2puILYZlsDd2YaBQjvlODfg/exec";
+  "https://script.google.com/macros/s/AKfycbxW43icgjNDxxgGXIsqWHZocgNX-hR1Eu7JEtzKe19ZNwoWGD8zTdHboHNaT1u_mP40SQ/exec";
 
 export async function POST(req: Request) {
   try {

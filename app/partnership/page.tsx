@@ -4,8 +4,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function PartnershipPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
   const [form, setForm] = useState({
@@ -19,7 +19,9 @@ export default function PartnershipPage() {
   });
 
   function handleChange(
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement
+    >
   ) {
     setForm({
       ...form,
@@ -27,10 +29,12 @@ export default function PartnershipPage() {
     });
   }
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(
+    e: React.FormEvent<HTMLFormElement>
+  ) {
     e.preventDefault();
 
-    setLoading(true);
+    setIsSubmitting(true);
     setError("");
 
     try {
@@ -45,20 +49,18 @@ export default function PartnershipPage() {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error || "Failed to send request.");
+        throw new Error(
+          data.error || "Something went wrong."
+        );
       }
 
       setSubmitted(true);
 
-      setForm({
-        name: "",
-        email: "",
-        phone: "",
-        shop: "",
-        country: "",
-        city: "",
-        message: "",
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
       });
+
     } catch (error) {
       console.error(error);
 
@@ -68,7 +70,7 @@ export default function PartnershipPage() {
           : "Something went wrong. Please try again."
       );
     } finally {
-      setLoading(false);
+      setIsSubmitting(false);
     }
   }
 
@@ -101,7 +103,9 @@ export default function PartnershipPage() {
           className="absolute inset-0 bg-black/55"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.2 }}
+          transition={{
+            duration: 1.2,
+          }}
         />
 
         <div className="relative z-10 flex h-full items-center justify-center px-6 text-center text-white">
@@ -144,12 +148,14 @@ export default function PartnershipPage() {
                 delay: 0.75,
               }}
             >
-              Join SOLTERO and discover a refined partnership built around
-              exceptional bridal collections, timeless design and a shared
-              passion for creating unforgettable experiences.
+              Join SOLTERO and discover a refined partnership
+              built around exceptional bridal collections,
+              timeless design and a shared passion for creating
+              unforgettable experiences.
             </motion.p>
 
-          
+            
+
           </div>
 
         </div>
@@ -157,273 +163,278 @@ export default function PartnershipPage() {
       </section>
 
       {/* ========================= */}
-      {/* FORM */}
+      {/* FORM / SUCCESS */}
       {/* ========================= */}
 
       <section
         id="partnership-form"
-        className="mx-auto max-w-[1200px] px-6 py-32"
+        className="bg-[#FAF8F5] px-6 py-32"
       >
 
-        {!submitted ? (
+        <div className="mx-auto max-w-[900px]">
 
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
+          {!submitted ? (
 
-            <div className="mb-16 text-center">
+            <>
+              <div className="text-center">
 
-              <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
-                Work With Us
-              </p>
+                <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
+                  Work With Us
+                </p>
 
-              <h2 className="mt-5 font-heading text-5xl text-[#2A2A2A] md:text-6xl">
-                Let&apos;s Create Something Beautiful
-              </h2>
+                <h2 className="mt-5 font-heading text-5xl leading-tight text-[#2A2A2A] md:text-6xl">
+                  Let&apos;s Create Something Beautiful
+                </h2>
 
-              <p className="mx-auto mt-7 max-w-2xl text-[16px] leading-8 text-[#666]">
-                Tell us a little about yourself and your business.
-                Our team will be in touch to discuss a potential partnership
-                with SOLTERO.
-              </p>
+                <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#666]">
+                  Tell us a little about yourself and your
+                  boutique. Our team will be in touch shortly.
+                </p>
 
-            </div>
+              </div>
 
-            <form
-              onSubmit={handleSubmit}
-              className="mx-auto max-w-4xl"
+              <form
+                onSubmit={handleSubmit}
+                className="mt-16 bg-white p-8 md:p-14"
+              >
+
+                <div className="grid gap-8 md:grid-cols-2">
+
+                  {/* NAME */}
+
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="text-[11px] uppercase tracking-[0.25em] text-[#666]"
+                    >
+                      Full Name *
+                    </label>
+
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      required
+                      value={form.name}
+                      onChange={handleChange}
+                      className="mt-3 w-full border-b border-[#D8D0C8] bg-transparent px-0 py-4 text-[#2A2A2A] outline-none transition focus:border-[#B9935D]"
+                    />
+                  </div>
+
+                  {/* EMAIL */}
+
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="text-[11px] uppercase tracking-[0.25em] text-[#666]"
+                    >
+                      Email *
+                    </label>
+
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                      value={form.email}
+                      onChange={handleChange}
+                      className="mt-3 w-full border-b border-[#D8D0C8] bg-transparent px-0 py-4 text-[#2A2A2A] outline-none transition focus:border-[#B9935D]"
+                    />
+                  </div>
+
+                  {/* PHONE */}
+
+                  <div>
+                    <label
+                      htmlFor="phone"
+                      className="text-[11px] uppercase tracking-[0.25em] text-[#666]"
+                    >
+                      Mobile Number *
+                    </label>
+
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      required
+                      value={form.phone}
+                      onChange={handleChange}
+                      className="mt-3 w-full border-b border-[#D8D0C8] bg-transparent px-0 py-4 text-[#2A2A2A] outline-none transition focus:border-[#B9935D]"
+                    />
+                  </div>
+
+                  {/* SHOP */}
+
+                  <div>
+                    <label
+                      htmlFor="shop"
+                      className="text-[11px] uppercase tracking-[0.25em] text-[#666]"
+                    >
+                      Boutique / Shop
+                    </label>
+
+                    <input
+                      id="shop"
+                      name="shop"
+                      type="text"
+                      value={form.shop}
+                      onChange={handleChange}
+                      className="mt-3 w-full border-b border-[#D8D0C8] bg-transparent px-0 py-4 text-[#2A2A2A] outline-none transition focus:border-[#B9935D]"
+                    />
+                  </div>
+
+                  {/* COUNTRY */}
+
+                  <div>
+                    <label
+                      htmlFor="country"
+                      className="text-[11px] uppercase tracking-[0.25em] text-[#666]"
+                    >
+                      Country *
+                    </label>
+
+                    <input
+                      id="country"
+                      name="country"
+                      type="text"
+                      required
+                      value={form.country}
+                      onChange={handleChange}
+                      className="mt-3 w-full border-b border-[#D8D0C8] bg-transparent px-0 py-4 text-[#2A2A2A] outline-none transition focus:border-[#B9935D]"
+                    />
+                  </div>
+
+                  {/* CITY */}
+
+                  <div>
+                    <label
+                      htmlFor="city"
+                      className="text-[11px] uppercase tracking-[0.25em] text-[#666]"
+                    >
+                      City *
+                    </label>
+
+                    <input
+                      id="city"
+                      name="city"
+                      type="text"
+                      required
+                      value={form.city}
+                      onChange={handleChange}
+                      className="mt-3 w-full border-b border-[#D8D0C8] bg-transparent px-0 py-4 text-[#2A2A2A] outline-none transition focus:border-[#B9935D]"
+                    />
+                  </div>
+
+                </div>
+
+                {/* MESSAGE */}
+
+                <div className="mt-10">
+
+                  <label
+                    htmlFor="message"
+                    className="text-[11px] uppercase tracking-[0.25em] text-[#666]"
+                  >
+                    Message
+                  </label>
+
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={5}
+                    value={form.message}
+                    onChange={handleChange}
+                    className="mt-3 w-full resize-none border-b border-[#D8D0C8] bg-transparent px-0 py-4 text-[#2A2A2A] outline-none transition focus:border-[#B9935D]"
+                  />
+
+                </div>
+
+                {/* ERROR */}
+
+                {error && (
+                  <div className="mt-8 border border-red-200 bg-red-50 p-5 text-sm text-red-700">
+                    {error}
+                  </div>
+                )}
+
+                {/* BUTTON */}
+
+                <div className="mt-12 text-center">
+
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="inline-flex items-center justify-center bg-[#B9935D] px-12 py-5 text-[11px] uppercase tracking-[0.35em] text-white transition duration-500 hover:bg-[#A88352] disabled:cursor-not-allowed disabled:opacity-60"
+                  >
+                    {isSubmitting
+                      ? "Sending..."
+                      : "Submit Partnership Request"}
+                  </button>
+
+                </div>
+
+              </form>
+            </>
+
+          ) : (
+
+            /* ========================= */
+            /* THANK YOU SCREEN */
+            /* ========================= */
+
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 30,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 0.8,
+              }}
+              className="bg-white px-8 py-24 text-center md:px-20"
             >
 
-              <div className="grid gap-8 md:grid-cols-2">
+              <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
+                SOLTERO Partnership
+              </p>
 
-                {/* NAME */}
+              <h2 className="mt-6 font-heading text-5xl leading-tight text-[#2A2A2A] md:text-6xl">
+                Thank You for
+                <br />
+                Your Request
+              </h2>
 
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="mb-3 block text-[11px] uppercase tracking-[0.3em] text-[#B9935D]"
-                  >
-                    Name *
-                  </label>
+              <div className="mx-auto mt-10 h-px w-20 bg-[#B9935D]" />
 
-                  <input
-                    id="name"
-                    name="name"
-                    value={form.name}
-                    onChange={handleChange}
-                    required
-                    type="text"
-                    className="w-full border-b border-[#DCD5CC] bg-transparent px-1 py-4 text-[#2A2A2A] outline-none transition-colors focus:border-[#B9935D]"
-                    placeholder="Your name"
-                  />
-                </div>
+              <p className="mx-auto mt-10 max-w-2xl text-lg leading-9 text-[#666]">
+                Thank you for your interest in becoming a SOLTERO
+                partner. We have received your enquiry and our
+                team will review your request carefully.
+              </p>
 
-                {/* EMAIL */}
+              <p className="mx-auto mt-6 max-w-2xl text-lg leading-9 text-[#666]">
+                We will be in touch with you shortly.
+              </p>
 
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="mb-3 block text-[11px] uppercase tracking-[0.3em] text-[#B9935D]"
-                  >
-                    Email *
-                  </label>
+              <div className="mt-12">
 
-                  <input
-                    id="email"
-                    name="email"
-                    value={form.email}
-                    onChange={handleChange}
-                    required
-                    type="email"
-                    className="w-full border-b border-[#DCD5CC] bg-transparent px-1 py-4 text-[#2A2A2A] outline-none transition-colors focus:border-[#B9935D]"
-                    placeholder="your@email.com"
-                  />
-                </div>
-
-                {/* PHONE */}
-
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="mb-3 block text-[11px] uppercase tracking-[0.3em] text-[#B9935D]"
-                  >
-                    Mobile Number *
-                  </label>
-
-                  <input
-                    id="phone"
-                    name="phone"
-                    value={form.phone}
-                    onChange={handleChange}
-                    required
-                    type="tel"
-                    className="w-full border-b border-[#DCD5CC] bg-transparent px-1 py-4 text-[#2A2A2A] outline-none transition-colors focus:border-[#B9935D]"
-                    placeholder="+44"
-                  />
-                </div>
-
-                {/* SHOP */}
-
-                <div>
-                  <label
-                    htmlFor="shop"
-                    className="mb-3 block text-[11px] uppercase tracking-[0.3em] text-[#B9935D]"
-                  >
-                    Shop / Business
-                  </label>
-
-                  <input
-                    id="shop"
-                    name="shop"
-                    value={form.shop}
-                    onChange={handleChange}
-                    type="text"
-                    className="w-full border-b border-[#DCD5CC] bg-transparent px-1 py-4 text-[#2A2A2A] outline-none transition-colors focus:border-[#B9935D]"
-                    placeholder="Your boutique or business"
-                  />
-                </div>
-
-                {/* COUNTRY */}
-
-                <div>
-                  <label
-                    htmlFor="country"
-                    className="mb-3 block text-[11px] uppercase tracking-[0.3em] text-[#B9935D]"
-                  >
-                    Country *
-                  </label>
-
-                  <input
-                    id="country"
-                    name="country"
-                    value={form.country}
-                    onChange={handleChange}
-                    required
-                    type="text"
-                    className="w-full border-b border-[#DCD5CC] bg-transparent px-1 py-4 text-[#2A2A2A] outline-none transition-colors focus:border-[#B9935D]"
-                    placeholder="United Kingdom"
-                  />
-                </div>
-
-                {/* CITY */}
-
-                <div>
-                  <label
-                    htmlFor="city"
-                    className="mb-3 block text-[11px] uppercase tracking-[0.3em] text-[#B9935D]"
-                  >
-                    City *
-                  </label>
-
-                  <input
-                    id="city"
-                    name="city"
-                    value={form.city}
-                    onChange={handleChange}
-                    required
-                    type="text"
-                    className="w-full border-b border-[#DCD5CC] bg-transparent px-1 py-4 text-[#2A2A2A] outline-none transition-colors focus:border-[#B9935D]"
-                    placeholder="London"
-                  />
-                </div>
-
-              </div>
-
-              {/* MESSAGE */}
-
-              <div className="mt-10">
-
-                <label
-                  htmlFor="message"
-                  className="mb-3 block text-[11px] uppercase tracking-[0.3em] text-[#B9935D]"
+                <a
+                  href="/"
+                  className="inline-flex border border-[#B9935D] px-10 py-5 text-[11px] uppercase tracking-[0.35em] text-[#2A2A2A] transition duration-500 hover:bg-[#B9935D] hover:text-white"
                 >
-                  Message
-                </label>
-
-                <textarea
-                  id="message"
-                  name="message"
-                  value={form.message}
-                  onChange={handleChange}
-                  rows={6}
-                  className="w-full resize-none border border-[#DCD5CC] bg-[#FAF8F5] p-5 text-[#2A2A2A] outline-none transition-colors focus:border-[#B9935D]"
-                  placeholder="Tell us about your business and your interest in partnering with SOLTERO..."
-                />
+                  Back to SOLTERO
+                </a>
 
               </div>
 
-              {/* ERROR */}
+            </motion.div>
 
-              {error && (
-                <div className="mt-8 border border-red-200 bg-red-50 px-6 py-4 text-center text-sm text-red-600">
-                  {error}
-                </div>
-              )}
+          )}
 
-              {/* SUBMIT */}
-
-              <div className="mt-12 text-center">
-
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="inline-flex min-w-[220px] items-center justify-center bg-[#B9935D] px-10 py-5 text-[11px] uppercase tracking-[0.35em] text-white transition-all duration-300 hover:bg-[#A88352] disabled:cursor-not-allowed disabled:opacity-60"
-                >
-                  {loading ? "Sending..." : "Submit Request"}
-                </button>
-
-              </div>
-
-            </form>
-
-          </motion.div>
-
-        ) : (
-
-          /* ========================= */
-          /* THANK YOU */
-          /* ========================= */
-
-          <motion.div
-            initial={{ opacity: 0, y: 35 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: [0.22, 1, 0.36, 1],
-            }}
-            className="py-20 text-center"
-          >
-
-            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-[#B9935D] text-2xl text-[#B9935D]">
-              ✓
-            </div>
-
-            <p className="mt-10 text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
-              Thank You
-            </p>
-
-            <h2 className="mt-5 font-heading text-5xl text-[#2A2A2A] md:text-6xl">
-              Thank You For Your Request
-            </h2>
-
-            <p className="mx-auto mt-7 max-w-2xl text-[16px] leading-8 text-[#666]">
-              Thank you for your interest in partnering with SOLTERO.
-              We have received your request and our team will review your
-              details and get back to you shortly.
-            </p>
-
-            <div className="mx-auto mt-10 h-px w-20 bg-[#B9935D]" />
-
-            <p className="mt-8 text-sm text-[#888]">
-              We look forward to connecting with you.
-            </p>
-
-          </motion.div>
-
-        )}
+        </div>
 
       </section>
 

@@ -6,7 +6,7 @@ import { NextResponse } from "next/server";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const GOOGLE_SHEETS_URL =
-  "https://script.google.com/macros/s/AKfycby1GqitoCo1tHrz76j_CkBEJND7R7bzxdOAKd6_hY9Z542PPgNQI0HjSCv_PkZzVVpuWg/exec";
+  "https://script.google.com/macros/s/AKfycbxW43icgjNDxxgGXIsqWHZocgNX-hR1Eu7JEtzKe19ZNwoWGD8zTdHboHNaT1u_mP40SQ/exec";
 
 export async function POST(req: Request) {
   try {
@@ -75,7 +75,7 @@ export async function POST(req: Request) {
     */
 
     await resend.emails.send({
-      from: "SOLTERO <onboarding@resend.dev>",
+      from: "SOLTERO Bridal <hello@soltero.co.uk>",
       to: "solterobridaluk@gmail.com",
       replyTo: email,
 
@@ -191,7 +191,7 @@ export async function POST(req: Request) {
     */
 
     await resend.emails.send({
-      from: "SOLTERO <onboarding@resend.dev>",
+      from: "SOLTERO Bridal <hello@soltero.co.uk>",
 
       // IMPORTANT:
       // The email goes to the customer,

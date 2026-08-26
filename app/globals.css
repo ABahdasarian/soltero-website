@@ -2,6 +2,10 @@
 
 @import "tailwindcss";
 
+/* ========================= */
+/* ROOT */
+/* ========================= */
+
 :root {
   --gold: #B9935D;
   --gold-hover: #A88352;
@@ -11,9 +15,7 @@
 
   --border: #ECE6DF;
   --background: #FAF8F5;
-}
 
-:root {
   /* Brand Colors */
   --color-taupe: #978065;
   --color-taupe-hover: #876f56;
@@ -36,14 +38,16 @@
   --transition: 0.4s ease;
 }
 
+/* ========================= */
+/* HTML / BODY */
+/* ========================= */
+
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body {
-  html {
-  scrollbar-gutter: stable;
-}
   margin: 0;
   overflow-x: hidden;
   background: var(--color-white);
@@ -54,6 +58,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
 
 *,
 *::before,
@@ -87,10 +95,18 @@ button {
   cursor: pointer;
 }
 
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
 .container {
   width: min(var(--container), calc(100% - 64px));
   margin-inline: auto;
 }
+
+/* ========================= */
+/* SECTIONS */
+/* ========================= */
 
 .section {
   padding: 140px 0;
@@ -112,6 +128,10 @@ button {
   line-height: 1.9;
   color: var(--color-muted);
 }
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
 
 .gold-btn {
   display: inline-flex;
@@ -150,6 +170,10 @@ button {
   color: var(--color-white);
 }
 
+/* ========================= */
+/* CARD HOVER */
+/* ========================= */
+
 .card-hover {
   overflow: hidden;
 }
@@ -161,6 +185,10 @@ button {
 .card-hover:hover img {
   transform: scale(1.05);
 }
+
+/* ========================= */
+/* SCROLLBAR */
+/* ========================= */
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -178,19 +206,9 @@ button {
   background: var(--color-taupe-hover);
 }
 
-@media (max-width: 768px) {
-  .container {
-    width: calc(100% - 32px);
-  }
-
-  .section {
-    padding: 90px 0;
-  }
-
-  .section-title {
-    font-size: clamp(2.2rem, 8vw, 3.2rem);
-  }
-}
+/* ========================= */
+/* GENERAL FADE */
+/* ========================= */
 
 @keyframes solteroFade {
   0% {
@@ -208,10 +226,14 @@ button {
   animation: solteroFade 0.9s ease forwards;
 }
 
-@keyframes fadeUp {
+/* ========================= */
+/* PARTNERSHIP HERO */
+/* ========================= */
+
+@keyframes partnershipFadeUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(45px);
   }
 
   to {
@@ -220,7 +242,7 @@ button {
   }
 }
 
-@keyframes heroZoom {
+@keyframes partnershipHeroZoom {
   from {
     transform: scale(1.08);
   }
@@ -230,28 +252,39 @@ button {
   }
 }
 
-/* ========================= */
-/* PARTNERSHIP HERO ANIMATION */
-/* ========================= */
+/* Text animation */
 
-@keyframes heroZoom {
-  from {
-    transform: scale(1.12);
-  }
-
-  to {
-    transform: scale(1);
-  }
+.animate-fadeUp {
+  opacity: 0;
+  animation-name: partnershipFadeUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
 }
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(35px);
+/* Background animation */
+
+.animate-heroZoom {
+  animation-name: partnershipHeroZoom;
+  animation-duration: 1.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 32px);
   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .section {
+    padding: 90px 0;
+  }
+
+  .section-title {
+    font-size: clamp(2.2rem, 8vw, 3.2rem);
   }
 }

@@ -75,7 +75,7 @@ export async function POST(req: Request) {
     */
 
     await resend.emails.send({
-      from: "SOLTERO <onboarding@resend.dev>",
+      from: "SOLTERO Bridal <hello@soltero.co.uk>",
       to: "solterobridaluk@gmail.com",
       replyTo: email,
 

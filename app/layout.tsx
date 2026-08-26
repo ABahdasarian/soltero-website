@@ -8,6 +8,8 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
+import Script from "next/script";
+
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-heading",
@@ -85,6 +87,22 @@ export default function RootLayout({
         <Header />
 
         {children}
+        
+        
+        <Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-9BQLDDPY18"
+  strategy="afterInteractive"
+/>
+
+<Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9BQLDDPY18');
+  `}
+</Script>
 
         <Footer />
       </body>

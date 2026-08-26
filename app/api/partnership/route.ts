@@ -1,11 +1,13 @@
 import { Resend } from "resend";
+import { NextResponse } from "next/server";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(request: Request) {
-  try {
-    const body = await request.json();
+const GOOGLE_SHEETS_URL =
+  "https://script.google.com/macros/s/AKfycby1GqitoCo1tHrz76j_CkBEJND7R7bzxdOAKd6_hY9Z542PPgNQI0HjSCv_PkZzVVpuWg/exec";
 
+export async function POST(req: Request) {
+  try {
     const {
       name,
       email,
@@ -14,246 +16,301 @@ export async function POST(request: Request) {
       country,
       city,
       message,
-    } = body;
+    } = await req.json();
 
-    // Required fields
+    // REQUIRED FIELDS
     if (!name || !email || !phone || !country || !city) {
-      return Response.json(
-        { error: "Please fill in all required fields." },
-        { status: 400 }
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Please fill in all required fields.",
+        },
+        {
+          status: 400,
+        }
       );
     }
 
     /*
-     * =========================
-     * EMAIL TO SOLTERO
-     * =========================
-     */
+    ==========================================
+    1. SAVE PARTNER TO GOOGLE SHEETS
+    ==========================================
+    */
 
-    const adminEmail = await resend.emails.send({
-      from: "SOLTERO Bridal <partnership@soltero.co.uk>",
-      to: ["solterobridaluk@gmail.com"],
+    try {
+      const googleResponse = await fetch(GOOGLE_SHEETS_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          shop: shop || "",
+          country,
+          city,
+          message: message || "",
+          source: "partnership",
+        }),
+      });
+
+      if (!googleResponse.ok) {
+        console.error(
+          "Google Sheets error:",
+          await googleResponse.text()
+        );
+      }
+    } catch (googleError) {
+      console.error(
+        "Google Sheets request failed:",
+        googleError
+      );
+    }
+
+    /*
+    ==========================================
+    2. EMAIL TO SOLTERO
+    ==========================================
+    */
+
+    await resend.emails.send({
+      from: "SOLTERO <onboarding@resend.dev>",
+      to: "solterobridaluk@gmail.com",
       replyTo: email,
-      subject: `New Partnership Request — ${name}`,
-      html: `
-        <div style="
-          font-family: Arial, Helvetica, sans-serif;
-          line-height: 1.7;
-          color: #2A2A2A;
-          max-width: 650px;
-          margin: 0 auto;
-        ">
 
-          <h1 style="
-            font-weight: 400;
-            font-size: 28px;
-            margin-bottom: 30px;
-          ">
+      subject: `New Partnership Request – ${name}`,
+
+      html: `
+        <div
+          style="
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            max-width: 700px;
+            margin: auto;
+            color: #2A2A2A;
+          "
+        >
+
+          <h1
+            style="
+              color: #978065;
+              margin-bottom: 30px;
+              font-weight: 400;
+            "
+          >
             New Partnership Request
           </h1>
 
-          <div style="
-            border-top: 1px solid #ECE6DF;
-            border-bottom: 1px solid #ECE6DF;
-            padding: 25px 0;
-          ">
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+            "
+          >
 
-            <p>
-              <strong>Name:</strong><br />
-              ${name}
-            </p>
+            <tr>
+              <td style="padding: 12px; font-weight: bold;">
+                Name
+              </td>
+              <td style="padding: 12px;">
+                ${name}
+              </td>
+            </tr>
 
-            <p>
-              <strong>Email:</strong><br />
-              ${email}
-            </p>
+            <tr>
+              <td style="padding: 12px; font-weight: bold;">
+                Email
+              </td>
+              <td style="padding: 12px;">
+                ${email}
+              </td>
+            </tr>
 
-            <p>
-              <strong>Mobile Number:</strong><br />
-              ${phone}
-            </p>
+            <tr>
+              <td style="padding: 12px; font-weight: bold;">
+                Mobile Number
+              </td>
+              <td style="padding: 12px;">
+                ${phone}
+              </td>
+            </tr>
 
-            <p>
-              <strong>Shop:</strong><br />
-              ${shop || "Not provided"}
-            </p>
+            <tr>
+              <td style="padding: 12px; font-weight: bold;">
+                Boutique / Shop
+              </td>
+              <td style="padding: 12px;">
+                ${shop || "Not provided"}
+              </td>
+            </tr>
 
-            <p>
-              <strong>Country:</strong><br />
-              ${country}
-            </p>
+            <tr>
+              <td style="padding: 12px; font-weight: bold;">
+                Country
+              </td>
+              <td style="padding: 12px;">
+                ${country}
+              </td>
+            </tr>
 
-            <p>
-              <strong>City:</strong><br />
-              ${city}
-            </p>
+            <tr>
+              <td style="padding: 12px; font-weight: bold;">
+                City
+              </td>
+              <td style="padding: 12px;">
+                ${city}
+              </td>
+            </tr>
 
-            <p>
-              <strong>Message:</strong><br />
-              ${message || "No message provided"}
-            </p>
+            <tr>
+              <td style="padding: 12px; font-weight: bold;">
+                Message
+              </td>
+              <td style="padding: 12px;">
+                ${message || "-"}
+              </td>
+            </tr>
 
-          </div>
+          </table>
 
-          <p style="
-            margin-top: 30px;
-            color: #978065;
-            letter-spacing: 2px;
-            font-size: 13px;
-          ">
-            SOLTERO BRIDAL BOUTIQUE
+          <hr
+            style="
+              margin: 30px 0;
+              border: none;
+              border-top: 1px solid #eee;
+            "
+          />
+
+          <p
+            style="
+              color: #978065;
+              font-size: 14px;
+            "
+          >
+            SOLTERO Bridal Boutique
           </p>
 
         </div>
       `,
     });
 
-    if (adminEmail.error) {
-      console.error(adminEmail.error);
+    /*
+    ==========================================
+    3. CONFIRMATION EMAIL TO PARTNER
+    ==========================================
+    */
 
-      return Response.json(
-        { error: "Failed to send partnership request." },
-        { status: 500 }
+    try {
+      await resend.emails.send({
+        from: "SOLTERO Bridal <onboarding@resend.dev>",
+        to: email,
+
+        subject:
+          "Thank You for Your Partnership Request – SOLTERO Bridal",
+
+        html: `
+          <div
+            style="
+              font-family: Arial, sans-serif;
+              max-width: 700px;
+              margin: auto;
+              padding: 40px;
+              color: #333;
+              line-height: 1.8;
+            "
+          >
+
+            <h1
+              style="
+                color: #978065;
+                margin-bottom: 30px;
+                font-weight: 400;
+              "
+            >
+              Thank You for Your Interest
+            </h1>
+
+            <p>
+              Dear <strong>${name}</strong>,
+            </p>
+
+            <p>
+              Thank you for your interest in partnering
+              with <strong>SOLTERO Bridal Boutique</strong>.
+            </p>
+
+            <p>
+              We have successfully received your
+              partnership request.
+            </p>
+
+            <p>
+              Our team will review your details and
+              contact you shortly to discuss the
+              next steps.
+            </p>
+
+            <hr
+              style="
+                margin: 35px 0;
+                border: none;
+                border-top: 1px solid #eee;
+              "
+            />
+
+            <p>
+              <strong>Boutique / Shop:</strong>
+              ${shop || "Not provided"}
+            </p>
+
+            <p>
+              <strong>Country:</strong>
+              ${country}
+            </p>
+
+            <p>
+              <strong>City:</strong>
+              ${city}
+            </p>
+
+            <p style="margin-top: 40px;">
+              Kind regards,
+              <br /><br />
+              <strong>SOLTERO Bridal Boutique</strong>
+            </p>
+
+          </div>
+        `,
+      });
+    } catch (customerEmailError) {
+      console.error(
+        "Partner confirmation email failed:",
+        customerEmailError
       );
     }
 
     /*
-     * =========================
-     * CONFIRMATION EMAIL
-     * =========================
-     */
+    ==========================================
+    4. SUCCESS
+    ==========================================
+    */
 
-    const customerEmail = await resend.emails.send({
-      from: "SOLTERO Bridal <partnership@soltero.co.uk>",
-      to: [email],
-      subject: "Thank You for Your Partnership Request — SOLTERO",
-      html: `
-        <div style="
-          font-family: Arial, Helvetica, sans-serif;
-          background: #FAF8F5;
-          padding: 60px 20px;
-          color: #2A2A2A;
-        ">
-
-          <div style="
-            max-width: 650px;
-            margin: 0 auto;
-            background: #ffffff;
-            padding: 55px 45px;
-            text-align: center;
-          ">
-
-            <p style="
-              margin: 0;
-              color: #B9935D;
-              font-size: 11px;
-              letter-spacing: 4px;
-              text-transform: uppercase;
-            ">
-              SOLTERO
-            </p>
-
-            <h1 style="
-              margin: 30px 0 20px;
-              font-size: 34px;
-              font-weight: 400;
-              line-height: 1.3;
-            ">
-              Thank You for Your Request
-            </h1>
-
-            <div style="
-              width: 60px;
-              height: 1px;
-              background: #B9935D;
-              margin: 30px auto;
-            "></div>
-
-            <p style="
-              font-size: 16px;
-              line-height: 1.9;
-              color: #666666;
-            ">
-              Dear ${name},
-            </p>
-
-            <p style="
-              font-size: 16px;
-              line-height: 1.9;
-              color: #666666;
-            ">
-              Thank you for your interest in becoming a SOLTERO partner.
-              We have received your partnership enquiry and our team will
-              review your request carefully.
-            </p>
-
-            <p style="
-              font-size: 16px;
-              line-height: 1.9;
-              color: #666666;
-            ">
-              We will be in touch with you shortly.
-            </p>
-
-            <div style="
-              margin-top: 45px;
-              padding-top: 25px;
-              border-top: 1px solid #ECE6DF;
-            ">
-
-              <p style="
-                margin: 0;
-                color: #978065;
-                font-size: 12px;
-                letter-spacing: 3px;
-                text-transform: uppercase;
-              ">
-                SOLTERO Bridal Boutique
-              </p>
-
-              <p style="
-                margin-top: 10px;
-                color: #999999;
-                font-size: 12px;
-              ">
-                soltero.co.uk
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-      `,
-    });
-
-    if (customerEmail.error) {
-      console.error(customerEmail.error);
-
-      // The admin email was already successfully sent,
-      // so we don't fail the entire request here.
-      return Response.json({
-        success: true,
-        warning: "Request received, but confirmation email could not be sent.",
-      });
-    }
-
-    /*
-     * =========================
-     * SUCCESS
-     * =========================
-     */
-
-    return Response.json({
+    return NextResponse.json({
       success: true,
     });
 
   } catch (error) {
     console.error(error);
 
-    return Response.json(
-      { error: "Something went wrong." },
-      { status: 500 }
+    return NextResponse.json(
+      {
+        success: false,
+        message: "Something went wrong.",
+      },
+      {
+        status: 500,
+      }
     );
   }
 }

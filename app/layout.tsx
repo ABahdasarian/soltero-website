@@ -20,7 +20,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://soltero.com"),
+  metadataBase: new URL("https://www.soltero.co.uk"),
 
   title: {
     default: "SOLTERO | Luxury Bridal Boutique",
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
     title: "SOLTERO | Luxury Bridal Boutique",
     description:
       "Discover timeless bridal gowns and book your private consultation.",
-    url: "https://soltero.com",
+    url: "https://www.soltero.co.uk",
     siteName: "SOLTERO",
-    locale: "en_US",
+    locale: "en_GB",
     type: "website",
   },
 
@@ -88,20 +88,24 @@ export default function RootLayout({
         {children}
 
         {/* Google Analytics */}
-       <Script
-  src="https://www.googletagmanager.com/gtag/js?id=G-18LRN9X4MW"
-  strategy="afterInteractive"
-/>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-18LRN9X4MW"
+          strategy="afterInteractive"
+        />
 
-<Script id="google-analytics" strategy="afterInteractive">
-  {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){window.dataLayer.push(arguments);}
-    gtag('js', new Date());
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'G-18LRN9X4MW');
-  `}
-</Script>
+            function gtag() {
+              window.dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+
+            gtag('config', 'G-18LRN9X4MW');
+          `}
+        </Script>
 
         <Footer />
       </body>

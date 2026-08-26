@@ -83,10 +83,6 @@ export default function RootLayout({
       className={`${playfair.variable} ${montserrat.variable}`}
     >
       <body className="bg-white text-neutral-900">
-        <Header />
-
-        {children}
-
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-18LRN9X4MW"
@@ -103,9 +99,15 @@ export default function RootLayout({
 
             gtag('js', new Date());
 
-            gtag('config', 'G-18LRN9X4MW');
+            gtag('config', 'G-18LRN9X4MW', {
+              page_path: window.location.pathname,
+            });
           `}
         </Script>
+
+        <Header />
+
+        {children}
 
         <Footer />
       </body>

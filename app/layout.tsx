@@ -2,13 +2,12 @@
 
 import type { Metadata } from "next";
 import { Playfair_Display, Montserrat } from "next/font/google";
+import Script from "next/script";
 
 import "./globals.css";
 
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-
-import Script from "next/script";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -87,22 +86,23 @@ export default function RootLayout({
         <Header />
 
         {children}
-        
-        
+
+        {/* Google Analytics */}
         <Script
-  src="https://www.googletagmanager.com/gtag/js?id=G-9BQLDDPY18"
-  strategy="afterInteractive"
-/>
+          src="https://www.googletagmanager.com/gtag/js?id=G-18LRN9X4MW"
+          strategy="afterInteractive"
+        />
 
-<Script id="google-analytics" strategy="afterInteractive">
-  {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){window.dataLayer.push(arguments);}
-    gtag('js', new Date());
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
 
-    gtag('config', 'G-9BQLDDPY18');
-  `}
-</Script>
+            gtag('js', new Date());
+
+            gtag('config', 'G-18LRN9X4MW');
+          `}
+        </Script>
 
         <Footer />
       </body>

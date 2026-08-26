@@ -88,21 +88,20 @@ export default function RootLayout({
         {children}
 
         {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-18LRN9X4MW"
-          strategy="afterInteractive"
-        />
+       <Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-18LRN9X4MW"
+  strategy="afterInteractive"
+/>
 
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer.push(arguments);}
+<Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-            gtag('js', new Date());
-
-            gtag('config', 'G-18LRN9X4MW');
-          `}
-        </Script>
+    gtag('config', 'G-18LRN9X4MW');
+  `}
+</Script>
 
         <Footer />
       </body>

@@ -1,6 +1,5 @@
 export interface Dress {
   slug: string;
-
   name: string;
 
   collection: string;
@@ -10,15 +9,15 @@ export interface Dress {
 
   description: string;
 
-  silhouette: string;
-
+  // Основная информация
+  color: string;
   fabric: string;
+  line: string;
 
+  // Дополнительные характеристики
+  silhouette: string;
   train: string;
-
   neckline: string;
-
   sleeves: string;
-
   style: string;
 }

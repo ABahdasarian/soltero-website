@@ -57,10 +57,10 @@ export default async function DressPage({ params }: Props) {
   }
 
   /*
-   * Если Cloudinary нашёл фотографии —
+   * Если Cloudinary нашёл фотографии 
    * используем их.
    *
-   * Если нет —
+   * Если нет 
    * используем старые фотографии из dresses.ts.
    */
   const galleryImages =
@@ -121,62 +121,48 @@ export default async function DressPage({ params }: Props) {
               <p className="mt-10 max-w-xl text-[17px] leading-9 text-[#666]">
                 {dress.description}
               </p>
+              <div className="mt-12 grid grid-cols-2 gap-x-20 gap-y-10 border-t border-[#c8ae82]/60 pt-9">
+  <div>
+    <p className="mb-3 text-[13px] font-medium tracking-[0.28em] text-[#a8895d]">
+      COLOR
+    </p>
 
-              {/* ========================= */}
-              {/* HIGHLIGHTS */}
-              {/* ========================= */}
+    <p className="text-[17px] font-light tracking-[0.03em] text-neutral-900">
+      {dress.color}
+    </p>
+  </div>
 
-              <div className="mt-16 rounded-sm border border-[#ECE6DF] bg-[#FAF8F5] p-8">
+  <div>
+    <p className="mb-3 text-[13px] font-medium tracking-[0.28em] text-[#a8895d]">
+      FABRIC
+    </p>
 
-                <h3 className="text-[12px] uppercase tracking-[0.35em] text-[#B9935D]">
-                  Highlights
-                </h3>
+    <p className="text-[17px] font-light tracking-[0.03em] text-neutral-900">
+      {dress.fabric}
+    </p>
+  </div>
 
-                <div className="mt-8 space-y-5">
+  <div>
+    <p className="mb-3 text-[13px] font-medium tracking-[0.28em] text-[#a8895d]">
+      LINE
+    </p>
 
-                  <div className="flex items-center gap-4">
-                    <span className="text-xl text-[#B9935D]">
-                      ✦
-                    </span>
+    <p className="text-[17px] font-light tracking-[0.03em] text-neutral-900">
+      {dress.line}
+    </p>
+  </div>
 
-                    <span className="text-[#555]">
-                      Handcrafted bridal couture
-                    </span>
-                  </div>
+  <div>
+    <p className="mb-3 text-[13px] font-medium tracking-[0.28em] text-[#a8895d]">
+      COLLECTION
+    </p>
 
-                  <div className="flex items-center gap-4">
-                    <span className="text-xl text-[#B9935D]">
-                      ✦
-                    </span>
+    <p className="text-[17px] font-light tracking-[0.03em] text-neutral-900">
+      {dress.collection}
+    </p>
+  </div>
+</div>
 
-                    <span className="text-[#555]">
-                      Luxurious premium fabrics
-                    </span>
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <span className="text-xl text-[#B9935D]">
-                      ✦
-                    </span>
-
-                    <span className="text-[#555]">
-                      Timeless elegant silhouette
-                    </span>
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <span className="text-xl text-[#B9935D]">
-                      ✦
-                    </span>
-
-                    <span className="text-[#555]">
-                      Designed for unforgettable moments
-                    </span>
-                  </div>
-
-                </div>
-
-              </div>
 
               {/* ========================= */}
               {/* BOOKING */}

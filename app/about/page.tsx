@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "@/components/ui/FadeIn";
 import { getCloudinaryPageImage } from "@/lib/cloudinary";
+import WorldwideMap from "@/components/about/WorldwideMap";
 
 export default function AboutPage() {
   return (
@@ -325,41 +326,7 @@ export default function AboutPage() {
       </section>
 
 
-      {/* ========================= */}
-      {/* 2017 / BRAND LEGACY */}
-      {/* ========================= */}
-
-      <section className="bg-[#FAF8F5] py-32">
-
-        <FadeIn>
-
-          <div className="mx-auto max-w-5xl px-6 text-center">
-
-            <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
-              Since 2017
-            </p>
-
-            <h2 className="mt-6 font-heading text-6xl leading-tight text-[#2A2A2A] md:text-7xl">
-              Hundreds Of
-              <br />
-              Unique Dresses
-            </h2>
-
-            <div className="mx-auto mt-10 h-px w-20 bg-[#B9935D]" />
-
-            <p className="mx-auto mt-10 max-w-3xl text-[17px] leading-9 text-[#666]">
-              Since the first Vittoria Soltero dresses appeared in 2017,
-              hundreds of unique gowns have been created by the brand's
-              team every year. Today, Vittoria Soltero continues to develop
-              new collections and explore new markets, bringing its vision
-              of modern bridal elegance to brides around the world.
-            </p>
-
-          </div>
-
-        </FadeIn>
-
-      </section>
+     
 
 
       {/* ========================= */}
@@ -427,7 +394,7 @@ export default function AboutPage() {
         </FadeIn>
 
       </section>
-
+<WorldwideMap />
     </main>
   );
 }

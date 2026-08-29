@@ -20,8 +20,8 @@ export const collections = [
     image: "radiance",
   },
   {
-    title: "whispers Dreams",
-    slug: "whispers-dreams",
+    title: "Whispers of Dreams",
+    slug: "whispers-of-dreams",
     image: "whispers/page_01",
   },
 ];

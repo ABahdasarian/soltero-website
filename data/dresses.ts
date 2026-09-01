@@ -354,8 +354,8 @@ export const dresses: Dress[] = [
 
   images: [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527578/viviene1.webp",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527579/viviene2.webp",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527580/viviene3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527578/vivene2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527578/vivene3.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527578/viviene4.webp",
   ],
 },

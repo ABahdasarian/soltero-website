@@ -41,7 +41,7 @@ export default function Header() {
               width={900}
               height={280}
               priority
-              className="h-auto w-[300px] xl:w-[360px]"
+              className="h-auto w-[300px] xl:w-[360px] -ml-18"
             />
           </Link>
 

@@ -11,43 +11,45 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
         <div className="grid gap-20 lg:grid-cols-[420px_1fr_1fr_1fr]">
 
-          {/* Logo */}
+        
 
-          <div className="max-w-[380px]">
-            <Image
-              src={getCloudinaryLogo(900)}
-              alt="SOLTERO Bridal Boutique"
-              width={900}
-              height={280}
-              className="h-auto w-[320px]"
-            />
+{/* Logo */}
 
-            <p className="mt-10 max-w-[360px] leading-9 text-neutral-600">
-              Discover timeless bridal elegance crafted for modern brides.
-              Every gown is selected with exceptional attention to quality,
-              silhouette and sophistication.
-            </p>
+<div className="max-w-[800px]">
+  <Image
+    src={getCloudinaryLogo(900)}
+    alt="SOLTERO Bridal Boutique"
+    width={900}
+    height={280}
+    className="h-auto w-[440px] -ml-23"
+  />
 
-            <div className="mt-12 flex gap-8 text-lg">
-              <a
-                href="https://www.instagram.com/solterobridal.uk/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition hover:text-[#B9935D]"
-              >
-                Instagram
-              </a>
+  <p className="mt-10 max-w-[360px] leading-9 text-neutral-600">
+    Discover timeless bridal elegance crafted for modern brides.
+    Every gown is selected with exceptional attention to quality,
+    silhouette and sophistication.
+  </p>
 
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition hover:text-[#B9935D]"
-              >
-                Facebook
-              </a>
-            </div>
-          </div>
+  <div className="mt-12 flex gap-8 text-lg">
+    <a
+      href="https://www.instagram.com/solterobridal.uk/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="transition hover:text-[#B9935D]"
+    >
+      Instagram
+    </a>
+
+    <a
+      href="https://facebook.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="transition hover:text-[#B9935D]"
+    >
+      Facebook
+    </a>
+  </div>
+</div>
 
 
           {/* Collections */}

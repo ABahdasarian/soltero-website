@@ -4,7 +4,7 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const GOOGLE_SHEETS_URL =
-  "https://script.google.com/macros/s/AKfycbz4SyVw37f84EpgejESzMCZbzeYVsA6QSwvOybIQ1D4nUM3BSNE-4WdTFqxlStI9COUjg/exec";
+  "https://script.google.com/macros/s/AKfycbxBdoXbBg6mNVvpckqu_CCqw71tBPggYRJU9kOYJV8Sp6OfEcCTyv1b8cGnOerUsGpA5w/exec";
 
 export async function POST(request: Request) {
   try {

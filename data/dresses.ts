@@ -1214,8 +1214,8 @@ export const dresses: Dress[] = [
   collectionSlug: "whispers-of-dreams",
 
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275189/Halo1.webp",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275190/Halo2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275189/Hanna1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275190/Hanna2.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275198/Hanna3.webp",
   ],
 },
@@ -1250,8 +1250,8 @@ export const dresses: Dress[] = [
   collectionSlug: "whispers-of-dreams",
 
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275201/Haven1.webp",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275202/Haven2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275202/haven_1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275203/Haven_2.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275201/Haven3.webp",
   ],
 },
@@ -1267,9 +1267,9 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275201/Haven3.webp",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275202/Haven2.webp",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275201/Haven3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275206/Haviline3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275205/Haviline2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275204/Haviline1.webp",
   ],
 },
 
@@ -1320,9 +1320,9 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275210/Heather1.webp",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275211/Heather2.webp",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275212/Heather3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275210/Helana1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275211/Helana2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275212/Helana3.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275216/Helana4.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275216/Helana5.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275217/Helana6.webp",
@@ -1407,8 +1407,8 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275231/Henriette1.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275231/Henriette2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275231/Henriette1.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275233/Henriette3.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275234/Henriette4.webp",
   ],
@@ -1444,8 +1444,8 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275239/Hermosa1.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275239/Hermosa2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275239/Hermosa1.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275239/Hermosa3.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275242/Hermosa4.webp",
   ],
@@ -1484,9 +1484,9 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275250/Hilary1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275250/Hilary3.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275250/Hilary2.webp",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275251/Hilary3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275251/Hilary1.webp",
   ],
 },
 

@@ -42,8 +42,9 @@ export const dresses: Dress[] = [
   collectionSlug: "echoes-of-her",
 
   images: [
-    "/images/dresses/echoes/Cecilia/cecilia1.webp",
-    "/images/dresses/echoes/Cecilia/cecilia3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804064/soltero/collections/echoes/Cecilia/cecilia1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527689/cecilia2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804064/soltero/collections/echoes/Cecilia/cecilia3.webp",
   ],
 },
 
@@ -62,9 +63,10 @@ export const dresses: Dress[] = [
   collectionSlug: "echoes-of-her",
 
   images: [
-    "/images/dresses/echoes/Celesta/celesta1.webp",
-    "/images/dresses/echoes/Celesta/celesta3.webp",
-    "/images/dresses/echoes/Celesta/celesta4.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804066/soltero/collections/echoes/Celesta/celesta1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527692/celesta2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804066/soltero/collections/echoes/Celesta/celesta3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804066/soltero/collections/echoes/Celesta/celesta4.webp",
   ],
 },
 
@@ -83,7 +85,10 @@ export const dresses: Dress[] = [
   collectionSlug: "echoes-of-her",
 
   images: [
-    "/images/dresses/echoes/Coraline/coraline1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527471/coraline1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527462/coraline2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527463/coraline3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527465/coraline4.webp",
   ],
 },
 
@@ -102,7 +107,10 @@ export const dresses: Dress[] = [
   collectionSlug: "echoes-of-her",
 
   images: [
-    "/images/dresses/echoes/Florence/florence1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527472/florence1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527467/florence2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527468/florence3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527469/florence4.webp",
   ],
 },
 
@@ -121,9 +129,10 @@ export const dresses: Dress[] = [
   collectionSlug: "echoes-of-her",
 
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408741/genevieva3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408741/genevieva1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408740/genevieva2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408740/genevieva3.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408740/genevieva4.webp",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408740/genevieva1.webp",
   ],
 },
 
@@ -142,10 +151,10 @@ export const dresses: Dress[] = [
   collectionSlug: "echoes-of-her",
 
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408989/rose_1.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408989/rose_4.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408990/rose_3.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408990/rose_2.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408991/rose_4.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408991/rose_1.jpg",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786408992/rose_5.jpg",
   ],
 },
@@ -165,7 +174,10 @@ export const dresses: Dress[] = [
   collectionSlug: "echoes-of-her",
 
   images: [
-    "/images/dresses/echoes/Juliette/juliette4.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527483/juliette1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527484/juliette2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527485/juliette3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527486/juliette4.webp",
   ],
 },
 
@@ -184,8 +196,14 @@ export const dresses: Dress[] = [
   collectionSlug: "echoes-of-her",
 
   images: [
-    "/images/dresses/echoes/Lolite/lolite1.webp",
-    "/images/dresses/echoes/Lolite/lolite6.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527490/lolite1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527491/lolite2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527494/lolite3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527496/lolite4.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527498/lolite5.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527499/lolite6.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527501/lolite7.webp",
+
   ],
 },
 
@@ -204,8 +222,10 @@ export const dresses: Dress[] = [
   collectionSlug: "echoes-of-her",
 
   images: [
-    "/images/dresses/echoes/Marguerite/marguerite1.webp",
-    "/images/dresses/echoes/Marguerite/marguerite4.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527503/marguerite1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527504/marguerite2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527505/marguerite3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527506/marguerite4.webp",
   ],
 },
 
@@ -224,7 +244,9 @@ export const dresses: Dress[] = [
   collectionSlug: "echoes-of-her",
 
   images: [
-    "/images/dresses/echoes/Odette/odette2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527513/odette2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527511/odette1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527515/odette3.webp",
   ],
 },
 
@@ -243,7 +265,10 @@ export const dresses: Dress[] = [
   collectionSlug: "echoes-of-her",
 
   images: [
-    "/images/dresses/echoes/Ophelia/ophelia2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527517/ophelia1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527518/ophelia2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527519/ophelia3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527524/ophelia4.webp",
   ],
 },
 
@@ -262,8 +287,11 @@ export const dresses: Dress[] = [
   collectionSlug: "echoes-of-her",
 
   images: [
-    "/images/dresses/echoes/Rowena/rowena1.webp",
-    "/images/dresses/echoes/Rowena/rowena2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527571/rowena1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527572/rowena2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527570/rowena3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527570/rowena4.webp",
+    
   ],
 },
 
@@ -282,8 +310,10 @@ export const dresses: Dress[] = [
   collectionSlug: "echoes-of-her",
 
   images: [
-    "/images/dresses/echoes/Sofi/sofi3.webp",
-    "/images/dresses/echoes/Sofi/sofi4.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527571/sofi1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527572/sofi2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527573/sofi3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527574/sofi4.webp",
   ],
 },
 
@@ -323,8 +353,10 @@ export const dresses: Dress[] = [
   collectionSlug: "echoes-of-her",
 
   images: [
-    "/images/dresses/echoes/Viviene/vivene2.webp",
-    "/images/dresses/echoes/Viviene/vivene3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527578/viviene1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527579/viviene2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527580/viviene3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527578/viviene4.webp",
   ],
 },
 
@@ -345,9 +377,9 @@ export const dresses: Dress[] = [
   collectionSlug: "illuminare",
 
   images: [
-    "/images/dresses/illuminare/Aurora/aurora1.webp",
-    "/images/dresses/illuminare/Aurora/aurora2.webp",
-    "/images/dresses/illuminare/Aurora/aurora3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804089/soltero/collections/illuminare/Aurora/aurora3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804089/soltero/collections/illuminare/Aurora/aurora2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804089/soltero/collections/illuminare/Aurora/aurora1.webp",
   ],
 },
 
@@ -366,10 +398,10 @@ export const dresses: Dress[] = [
   collectionSlug: "illuminare",
 
   images: [
-    "/images/dresses/illuminare/Diana/diana1.webp",
-    "/images/dresses/illuminare/Diana/diana2.webp",
-    "/images/dresses/illuminare/Diana/diana3.webp",
-    "/images/dresses/illuminare/Diana/diana4.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804089/soltero/collections/illuminare/Diana/diana1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804089/soltero/collections/illuminare/Diana/diana2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804089/soltero/collections/illuminare/Diana/diana3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804089/soltero/collections/illuminare/Diana/diana4.webp",
   ],
 },
 
@@ -388,10 +420,10 @@ export const dresses: Dress[] = [
   collectionSlug: "illuminare",
 
   images: [
-    "/images/dresses/illuminare/Eliana/eliana1.webp",
-    "/images/dresses/illuminare/Eliana/eliana2.webp",
-    "/images/dresses/illuminare/Eliana/eliana3.webp",
-    "/images/dresses/illuminare/Eliana/eliana4.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804093/soltero/collections/illuminare/Eliana/eliana2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804092/soltero/collections/illuminare/Eliana/eliana1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804093/soltero/collections/illuminare/Eliana/eliana3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804093/soltero/collections/illuminare/Eliana/eliana4.webp",
   ],
 },
 
@@ -410,9 +442,9 @@ export const dresses: Dress[] = [
   collectionSlug: "illuminare",
 
   images: [
-    "/images/dresses/illuminare/Flora/flora1.webp",
-    "/images/dresses/illuminare/Flora/flora2.webp",
-    "/images/dresses/illuminare/Flora/flora3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804095/soltero/collections/illuminare/Flora/flora1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804095/soltero/collections/illuminare/Flora/flora2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804095/soltero/collections/illuminare/Flora/flora3.webp",
   ],
 },
 
@@ -431,10 +463,10 @@ export const dresses: Dress[] = [
   collectionSlug: "illuminare",
 
   images: [
-    "/images/dresses/illuminare/Helia/helia1.webp",
-    "/images/dresses/illuminare/Helia/helia2.webp",
-    "/images/dresses/illuminare/Helia/helia3.webp",
-    "/images/dresses/illuminare/Helia/helia4.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804098/soltero/collections/illuminare/Helia/helia1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804098/soltero/collections/illuminare/Helia/helia2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804098/soltero/collections/illuminare/Helia/helia3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804098/soltero/collections/illuminare/Helia/helia4.webp",
   ],
 },
 
@@ -453,9 +485,9 @@ export const dresses: Dress[] = [
   collectionSlug: "illuminare",
   
   images: [
-    "/images/dresses/illuminare/Selena/selena1.webp",
-    "/images/dresses/illuminare/Selena/selena2.webp",
-    "/images/dresses/illuminare/Selena/selena3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804101/soltero/collections/illuminare/Selena/selena1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804101/soltero/collections/illuminare/Selena/selena2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804101/soltero/collections/illuminare/Selena/selena3.webp",
   ],
 },
 
@@ -475,9 +507,9 @@ export const dresses: Dress[] = [
 
 
     images: [
-      "/images/dresses/radiance/Abigael/Abigael1.webp",
-      "/images/dresses/radiance/Abigael/Abigael2.webp",
-      "/images/dresses/radiance/Abigael/Abigael3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804104/soltero/collections/radiance/Abigael/Abigael3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804104/soltero/collections/radiance/Abigael/Abigael2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804104/soltero/collections/radiance/Abigael/Abigael1.webp",
     ],
   },
 
@@ -494,10 +526,10 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Adela/Adela1.webp",
-      "/images/dresses/radiance/Adela/Adela2.webp",
-      "/images/dresses/radiance/Adela/Adela3.webp",
-      "/images/dresses/radiance/Adela/Adela4.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804105/soltero/collections/radiance/Adela/Adela1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804105/soltero/collections/radiance/Adela/Adela2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804105/soltero/collections/radiance/Adela/Adela3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804105/soltero/collections/radiance/Adela/Adela4.webp",
     ],
   },
 
@@ -514,9 +546,9 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Agatha/Agatha1.webp",
-      "/images/dresses/radiance/Agatha/Agatha2.webp",
-      "/images/dresses/radiance/Agatha/Agatha3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804108/soltero/collections/radiance/Agatha/Agatha1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804108/soltero/collections/radiance/Agatha/Agatha2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804108/soltero/collections/radiance/Agatha/Agatha3.webp",
     ],
   },
 
@@ -534,9 +566,9 @@ export const dresses: Dress[] = [
 
 
     images: [
-      "/images/dresses/radiance/Alegra/Alegra1.webp",
-      "/images/dresses/radiance/Alegra/Alegra2.webp",
-      "/images/dresses/radiance/Alegra/Alegra3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804110/soltero/collections/radiance/Alegra/Alegra1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804110/soltero/collections/radiance/Alegra/Alegra2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804110/soltero/collections/radiance/Alegra/Alegra3.webp",
     ],
   },
 
@@ -553,9 +585,9 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Alexis/Alexis1.webp",
-      "/images/dresses/radiance/Alexis/Alexis2.webp",
-      "/images/dresses/radiance/Alexis/Alexis3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804112/soltero/collections/radiance/Alexis/Alexis1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804112/soltero/collections/radiance/Alexis/Alexis2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804112/soltero/collections/radiance/Alexis/Alexis3.webp",
     ],
   },
 
@@ -572,10 +604,10 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Allison/Allison1.webp",
-      "/images/dresses/radiance/Allison/Allison2.webp",
-      "/images/dresses/radiance/Allison/Allison3.webp",
-      "/images/dresses/radiance/Allison/Allison4.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804117/soltero/collections/radiance/Allison/Allison4.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804117/soltero/collections/radiance/Allison/Allison2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804117/soltero/collections/radiance/Allison/Allison3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804117/soltero/collections/radiance/Allison/Allison4.webp",
     ],
   },
    {
@@ -591,10 +623,10 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Amity/Amity1.webp",
-      "/images/dresses/radiance/Amity/Amity2.webp",
-      "/images/dresses/radiance/Amity/Amity3.webp",
-      "/images/dresses/radiance/Amity/Amity4.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804117/soltero/collections/radiance/Amity/Amity1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804117/soltero/collections/radiance/Amity/Amity2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804117/soltero/collections/radiance/Amity/Amity3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804117/soltero/collections/radiance/Amity/Amity4.webp",
     ],
   },
 
@@ -611,10 +643,10 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Ammie/Ammie1.webp",
-      "/images/dresses/radiance/Ammie/Ammie2.webp",
-      "/images/dresses/radiance/Ammie/Ammie3.webp",
-      "/images/dresses/radiance/Ammie/Ammie4.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804120/soltero/collections/radiance/Ammie/Ammie1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804120/soltero/collections/radiance/Ammie/Ammie2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804120/soltero/collections/radiance/Ammie/Ammie3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804120/soltero/collections/radiance/Ammie/Ammie4.webp",
     ],
   },
 
@@ -631,10 +663,10 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Amora/amora1.webp",
-      "/images/dresses/radiance/Amora/amora2.webp",
-      "/images/dresses/radiance/Amora/amora3.webp",
-      "/images/dresses/radiance/Amora/amora4.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804124/soltero/collections/radiance/Amora/amora2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804124/soltero/collections/radiance/Amora/amora3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804124/soltero/collections/radiance/Amora/amora4.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804123/soltero/collections/radiance/Amora/amora1.webp",
     ],
   },
 
@@ -651,9 +683,9 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Andrea/Andrea1.webp",
-      "/images/dresses/radiance/Andrea/Andrea2.webp",
-      "/images/dresses/radiance/Andrea/Andrea3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804127/soltero/collections/radiance/Andrea/Andrea1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804127/soltero/collections/radiance/Andrea/Andrea2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804127/soltero/collections/radiance/Andrea/Andrea3.webp",
     ],
   },
 
@@ -670,10 +702,10 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Angelina/Angelina1.webp",
-      "/images/dresses/radiance/Angelina/Angelina2.webp",
-      "/images/dresses/radiance/Angelina/Angelina3.webp",
-      "/images/dresses/radiance/Angelina/Angelina4.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804129/soltero/collections/radiance/Angelina/Angelina1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804129/soltero/collections/radiance/Angelina/Angelina2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804129/soltero/collections/radiance/Angelina/Angelina3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804129/soltero/collections/radiance/Angelina/Angelina4.webp",
     ],
   },
 
@@ -690,9 +722,9 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Anita/Anita1.webp",
-      "/images/dresses/radiance/Anita/Anita2.webp",
-      "/images/dresses/radiance/Anita/Anita3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804132/soltero/collections/radiance/Anita/Anita1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804132/soltero/collections/radiance/Anita/Anita2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804132/soltero/collections/radiance/Anita/Anita3.webp",
     ],
   },
     {
@@ -708,9 +740,9 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/April/april1.webp",
-      "/images/dresses/radiance/April/april2.webp",
-      "/images/dresses/radiance/April/april3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804135/soltero/collections/radiance/April/april1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804135/soltero/collections/radiance/April/april2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804135/soltero/collections/radiance/April/april3.webp",
     ],
   },
 
@@ -727,9 +759,9 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Aria/Aria1.webp",
-      "/images/dresses/radiance/Aria/Aria2.webp",
-      "/images/dresses/radiance/Aria/Aria3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804137/soltero/collections/radiance/Aria/Aria1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804137/soltero/collections/radiance/Aria/Aria2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804137/soltero/collections/radiance/Aria/Aria3.webp",
     ],
   },
 
@@ -746,9 +778,9 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Ariella/Ariella1.webp",
-      "/images/dresses/radiance/Ariella/Ariella2.webp",
-      "/images/dresses/radiance/Ariella/Ariella3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804139/soltero/collections/radiance/Ariella/Ariella1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804139/soltero/collections/radiance/Ariella/Ariella2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804139/soltero/collections/radiance/Ariella/Ariella3.webp",
     ],
   },
 
@@ -765,8 +797,9 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Ashlee/Ashlee1.webp",
-      "/images/dresses/radiance/Ashlee/Ashlee2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804141/soltero/collections/radiance/Ashlee/Ashlee1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804141/soltero/collections/radiance/Ashlee/Ashlee2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788270458/Ashlee3.jpg",
     ],
   },
 
@@ -783,9 +816,11 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Astra/Astra1.webp",
-      "/images/dresses/radiance/Astra/Astra2.webp",
-      "/images/dresses/radiance/Astra/Astra3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804143/soltero/collections/radiance/Astra/Astra1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804143/soltero/collections/radiance/Astra/Astra2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804143/soltero/collections/radiance/Astra/Astra3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804145/soltero/collections/radiance/Athena/Athena%2BAvery.webp",
+
     ],
   },
 
@@ -802,9 +837,9 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Athena/Athena1.webp",
-      "/images/dresses/radiance/Athena/Athena2.webp",
-      "/images/dresses/radiance/Athena/Athena3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804146/soltero/collections/radiance/Athena/Athena1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804146/soltero/collections/radiance/Athena/Athena2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804146/soltero/collections/radiance/Athena/Athena3.webp",
     ],
   },
 
@@ -821,9 +856,9 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Augusta/Augusta1.webp",
-      "/images/dresses/radiance/Augusta/Augusta2.webp",
-      "/images/dresses/radiance/Augusta/Augusta3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804150/soltero/collections/radiance/Augusta/Augusta1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804150/soltero/collections/radiance/Augusta/Augusta2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804150/soltero/collections/radiance/Augusta/Augusta3.webp",
     ],
   },
 
@@ -840,10 +875,10 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Aura/Aura1.webp",
-      "/images/dresses/radiance/Aura/Aura2.webp",
-      "/images/dresses/radiance/Aura/Aura3.webp",
-      "/images/dresses/radiance/Aura/Aura4.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804152/soltero/collections/radiance/Aura/Aura1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804152/soltero/collections/radiance/Aura/Aura2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804152/soltero/collections/radiance/Aura/Aura3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804152/soltero/collections/radiance/Aura/Aura4.webp",
     ],
   },
 
@@ -860,9 +895,9 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Avery/Avery1.webp",
-      "/images/dresses/radiance/Avery/Avery2.webp",
-      "/images/dresses/radiance/Avery/Avery3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804156/soltero/collections/radiance/Avery/Avery2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804156/soltero/collections/radiance/Avery/Avery3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804156/soltero/collections/radiance/Avery/Avery1.webp",
     ],
   },
 
@@ -879,9 +914,9 @@ export const dresses: Dress[] = [
   collectionSlug: "radiance-of-love",
 
     images: [
-      "/images/dresses/radiance/Azure/Azure1.webp",
-      "/images/dresses/radiance/Azure/Azure2.webp",
-      "/images/dresses/radiance/Azure/Azure3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804157/soltero/collections/radiance/Azure/Azure1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804157/soltero/collections/radiance/Azure/Azure2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804157/soltero/collections/radiance/Azure/Azure3.webp",
     ],
   },
 
@@ -901,9 +936,9 @@ export const dresses: Dress[] = [
   collectionSlug: "spring-flower",
 
     images: [
-      "/images/dresses/spring/Camellia/camellia1.webp",
-      "/images/dresses/spring/Camellia/camellia2.webp",
-      "/images/dresses/spring/Camellia/camellia3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804160/soltero/collections/spring/Camellia/camellia1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804160/soltero/collections/spring/Camellia/camellia2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804160/soltero/collections/spring/Camellia/camellia3.webp",
     ],
   },
 
@@ -920,9 +955,9 @@ export const dresses: Dress[] = [
   collectionSlug: "spring-flower",
 
     images: [
-      "/images/dresses/spring/Cherry Blossom/cherry blossom1.webp",
-      "/images/dresses/spring/Cherry Blossom/cherry blossom2.webp",
-      "/images/dresses/spring/Cherry Blossom/cherry blossom3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804162/soltero/collections/spring/Cherry%20blossom/cherry%20blossom1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804162/soltero/collections/spring/Cherry%20blossom/cherry%20blossom2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804162/soltero/collections/spring/Cherry%20blossom/cherry%20blossom3.webp",
     ],
   },
 
@@ -939,9 +974,9 @@ export const dresses: Dress[] = [
   collectionSlug: "spring-flower",
 
     images: [
-      "/images/dresses/spring/Daisy/daisy1.webp",
-      "/images/dresses/spring/Daisy/daisy2.webp",
-      "/images/dresses/spring/Daisy/daisy3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804164/soltero/collections/spring/daisy/daisy1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804164/soltero/collections/spring/daisy/daisy2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804164/soltero/collections/spring/daisy/daisy3.webp",
     ],
   },
 
@@ -958,10 +993,10 @@ export const dresses: Dress[] = [
   collectionSlug: "spring-flower",
 
     images: [
-      "/images/dresses/spring/forget me not/forget-me-not1.webp",
-      "/images/dresses/spring/forget me not/forget-me-not2.webp",
-      "/images/dresses/spring/forget me not/forget-me-not3.webp",
-      "/images/dresses/spring/forget me not/forget-me-not4.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804166/soltero/collections/spring/forget%20me%20not/forget-me-not1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804166/soltero/collections/spring/forget%20me%20not/forget-me-not2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804166/soltero/collections/spring/forget%20me%20not/forget-me-not3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804166/soltero/collections/spring/forget%20me%20not/forget-me-not4.webp",
     ],
   },
 
@@ -978,17 +1013,17 @@ export const dresses: Dress[] = [
   collectionSlug: "spring-flower",
 
     images: [
-      "/images/dresses/spring/fresia/fresia1.webp",
-      "/images/dresses/spring/fresia/fresia2.webp",
-      "/images/dresses/spring/fresia/fresia3.webp",
-      "/images/dresses/spring/fresia/fresia4.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804169/soltero/collections/spring/fresia/fresia1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804169/soltero/collections/spring/fresia/fresia2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804169/soltero/collections/spring/fresia/fresia3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804169/soltero/collections/spring/fresia/fresia4.webp",
     ],
   },
 
   {
   ...defaultDressInfo,
-  slug: "lili-skirt-chantilly",
-  name: "Lili Skirt Chantilly",
+  slug: "lily-skirt-chantilly",
+  name: "Lily Skirt Chantilly",
   description:
     "When the ceremony is over — it’s your time to shine. This mini dress is made for the celebration: light, stylish, and full of character. Its minimalist silhouette blends modern flair with femininity, while interchangeable accessories add a touch of magic. Choose a sleek tulle overskirt for a clean look, or a floral one for a true fairytale moment. The final flourish — a dramatic bow cape with long ribbons. Finished with a zipper closure.",
   color: "Ivory",
@@ -998,9 +1033,9 @@ export const dresses: Dress[] = [
   collectionSlug: "spring-flower",
 
     images: [
-      "/images/dresses/spring/Lily/lily1.webp",
-      "/images/dresses/spring/Lily/lily2.webp",
-      "/images/dresses/spring/Lily/lily3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804174/soltero/collections/spring/lily/lily1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804174/soltero/collections/spring/lily/lily2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804174/soltero/collections/spring/lily/lily3.webp",
     ],
   },
 
@@ -1017,9 +1052,9 @@ export const dresses: Dress[] = [
   collectionSlug: "spring-flower",
 
     images: [
-      "/images/dresses/spring/Magnolia/magnolia1.webp",
-      "/images/dresses/spring/Magnolia/magnolia2.webp",
-      "/images/dresses/spring/Magnolia/magnolia3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804176/soltero/collections/spring/magnolia/magnolia1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804176/soltero/collections/spring/magnolia/magnolia2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804176/soltero/collections/spring/magnolia/magnolia3.webp",
     ],
   },
 
@@ -1036,11 +1071,11 @@ export const dresses: Dress[] = [
   collectionSlug: "spring-flower",
 
     images: [
-      "/images/dresses/spring/Nemesia/nemesia1.webp",
-      "/images/dresses/spring/Nemesia/nemesia2.webp",
-      "/images/dresses/spring/Nemesia/nemesia3.webp",
-      "/images/dresses/spring/Nemesia/nemesia4.webp",
-      "/images/dresses/spring/Nemesia/nemesia5.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804178/soltero/collections/spring/nemesia/nemesia1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804178/soltero/collections/spring/nemesia/nemesia2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804178/soltero/collections/spring/nemesia/nemesia3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804178/soltero/collections/spring/nemesia/nemesia4.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804178/soltero/collections/spring/nemesia/nemesia5.webp",
     ],
   },
 
@@ -1057,17 +1092,17 @@ export const dresses: Dress[] = [
   collectionSlug: "spring-flower",
 
     images: [
-      "/images/dresses/spring/Peony/peony1.webp",
-      "/images/dresses/spring/Peony/peony2.webp",
-      "/images/dresses/spring/Peony/peony3.webp",
-      "/images/dresses/spring/Peony/peony4.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804182/soltero/collections/spring/peony/peony1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804182/soltero/collections/spring/peony/peony2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804182/soltero/collections/spring/peony/peony3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804182/soltero/collections/spring/peony/peony4.webp",
     ],
   },
 
   {
   ...defaultDressInfo,
-  slug: "primrose",
-  name: "Primrose",
+  slug: "primerose",
+  name: "Primerose",
   description:
     "A refined fitted gown crafted from mikado fabric. The corset features a unique floral-inspired draping, beautifully hand adorned with delicate shimmering crystal accents. This design combines timeless elegance with exquisite beauty.",
   color: "Ivory, white, red, black",
@@ -1077,9 +1112,9 @@ export const dresses: Dress[] = [
   collectionSlug: "spring-flower",
 
     images: [
-      "/images/dresses/spring/Primerose/primerose1.webp",
-      "/images/dresses/spring/Primerose/primerose2.webp",
-      "/images/dresses/spring/Primerose/primerose3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804185/soltero/collections/spring/primerose/primerose1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804185/soltero/collections/spring/primerose/primerose2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804185/soltero/collections/spring/primerose/primerose3.webp",
     ],
   },
 
@@ -1096,10 +1131,10 @@ export const dresses: Dress[] = [
   collectionSlug: "spring-flower",
 
     images: [
-      "/images/dresses/spring/Violet/violet1.webp",
-      "/images/dresses/spring/Violet/violet2.webp",
-      "/images/dresses/spring/Violet/violet3.webp",
-      "/images/dresses/spring/Violet/violet4.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804187/soltero/collections/spring/violet/violet1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804187/soltero/collections/spring/violet/violet2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804187/soltero/collections/spring/violet/violet3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804187/soltero/collections/spring/violet/violet4.webp",
     ],
   },
 
@@ -1116,9 +1151,9 @@ export const dresses: Dress[] = [
   collectionSlug: "spring-flower",
 
     images: [
-      "/images/dresses/spring/Wisteria/wisteria1.webp",
-      "/images/dresses/spring/Wisteria/wisteria2.webp",
-      "/images/dresses/spring/Wisteria/wisteria3.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804189/soltero/collections/spring/wisteria/wisteria1.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804189/soltero/collections/spring/wisteria/wisteria2.webp",
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804189/soltero/collections/spring/wisteria/wisteria3.webp",
     ],
   },
 

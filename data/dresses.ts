@@ -380,6 +380,9 @@ export const dresses: Dress[] = [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804089/soltero/collections/illuminare/Aurora/aurora3.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804089/soltero/collections/illuminare/Aurora/aurora2.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804089/soltero/collections/illuminare/Aurora/aurora1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804087/soltero/collections/illuminare/101.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785804085/soltero/collections/illuminare/100.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788277253/aurora_bidemaids.webp",
   ],
 },
 

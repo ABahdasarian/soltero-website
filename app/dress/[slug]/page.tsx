@@ -5,8 +5,6 @@ import { notFound } from "next/navigation";
 import FadeIn from "@/components/ui/FadeIn";
 import { dresses } from "@/data/dresses";
 import DressGallery from "@/components/dress/DressGallery";
-import { getCloudinaryDressImages } from "@/lib/cloudinary-server";
-import { getCloudinaryImage } from "@/lib/cloudinary";
 
 type Props = {
   params: Promise<{
@@ -23,51 +21,10 @@ export default async function DressPage({ params }: Props) {
     notFound();
   }
 
-  /*
-   * Загружаем фотографии платья из Cloudinary.
-   *
-   * Например для:
-   *
-   * /dress/beatrice
-   *
-   * ищем:
-   *
-   * beatrice1
-   * beatrice2
-   * beatrice3
-   * beatrice7
-   *
-   * и т.д.
-   */
-  let cloudinaryImages: {
-    publicId: string;
-    url: string;
-    width: number;
-    height: number;
-    format: string;
-  }[] = [];
+  // Фотографии берём напрямую из dresses.ts
+  const galleryImages = dress.images;
 
-  try {
-    cloudinaryImages = await getCloudinaryDressImages(slug);
-  } catch (error) {
-    console.error(
-      "Failed to load Cloudinary dress images:",
-      error
-    );
-  }
-
-  /*
-   * Если Cloudinary нашёл фотографии 
-   * используем их.
-   *
-   * Если нет 
-   * используем старые фотографии из dresses.ts.
-   */
-  const galleryImages =
-    cloudinaryImages.length > 0
-      ? cloudinaryImages.map((image) => image.url)
-      : dress.images;
-
+  // Похожие платья из той же коллекции
   const relatedDresses = dresses
     .filter(
       (d) =>
@@ -78,36 +35,23 @@ export default async function DressPage({ params }: Props) {
 
   return (
     <main className="bg-white pt-28">
-
-      {/* ========================= */}
       {/* MAIN DRESS SECTION */}
-      {/* ========================= */}
 
       <section className="mx-auto max-w-[1500px] px-6 pb-32">
-
         <div className="grid gap-20 lg:grid-cols-[1.15fr_0.85fr]">
-
-          {/* ========================= */}
           {/* GALLERY */}
-          {/* ========================= */}
 
           <FadeIn direction="left">
-
             <DressGallery
               images={galleryImages}
               name={dress.name}
             />
-
           </FadeIn>
 
-          {/* ========================= */}
           {/* INFO */}
-          {/* ========================= */}
 
           <FadeIn direction="right" delay={0.2}>
-
             <div className="sticky top-32 h-fit">
-
               <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
                 {dress.collection}
               </p>
@@ -121,52 +65,52 @@ export default async function DressPage({ params }: Props) {
               <p className="mt-10 max-w-xl text-[17px] leading-9 text-[#666]">
                 {dress.description}
               </p>
+
+              {/* DRESS DETAILS */}
+
               <div className="mt-12 grid grid-cols-2 gap-x-20 gap-y-10 border-t border-[#c8ae82]/60 pt-9">
-  <div>
-    <p className="mb-3 text-[13px] font-medium tracking-[0.28em] text-[#a8895d]">
-      COLOR
-    </p>
+                <div>
+                  <p className="mb-3 text-[13px] font-medium tracking-[0.28em] text-[#a8895d]">
+                    COLOR
+                  </p>
 
-    <p className="text-[17px] font-light tracking-[0.03em] text-neutral-900">
-      {dress.color}
-    </p>
-  </div>
+                  <p className="text-[17px] font-light tracking-[0.03em] text-neutral-900">
+                    {dress.color}
+                  </p>
+                </div>
 
-  <div>
-    <p className="mb-3 text-[13px] font-medium tracking-[0.28em] text-[#a8895d]">
-      FABRIC
-    </p>
+                <div>
+                  <p className="mb-3 text-[13px] font-medium tracking-[0.28em] text-[#a8895d]">
+                    FABRIC
+                  </p>
 
-    <p className="text-[17px] font-light tracking-[0.03em] text-neutral-900">
-      {dress.fabric}
-    </p>
-  </div>
+                  <p className="text-[17px] font-light tracking-[0.03em] text-neutral-900">
+                    {dress.fabric}
+                  </p>
+                </div>
 
-  <div>
-    <p className="mb-3 text-[13px] font-medium tracking-[0.28em] text-[#a8895d]">
-      LINE
-    </p>
+                <div>
+                  <p className="mb-3 text-[13px] font-medium tracking-[0.28em] text-[#a8895d]">
+                    LINE
+                  </p>
 
-    <p className="text-[17px] font-light tracking-[0.03em] text-neutral-900">
-      {dress.line}
-    </p>
-  </div>
+                  <p className="text-[17px] font-light tracking-[0.03em] text-neutral-900">
+                    {dress.line}
+                  </p>
+                </div>
 
-  <div>
-    <p className="mb-3 text-[13px] font-medium tracking-[0.28em] text-[#a8895d]">
-      COLLECTION
-    </p>
+                <div>
+                  <p className="mb-3 text-[13px] font-medium tracking-[0.28em] text-[#a8895d]">
+                    COLLECTION
+                  </p>
 
-    <p className="text-[17px] font-light tracking-[0.03em] text-neutral-900">
-      {dress.collection}
-    </p>
-  </div>
-</div>
+                  <p className="text-[17px] font-light tracking-[0.03em] text-neutral-900">
+                    {dress.collection}
+                  </p>
+                </div>
+              </div>
 
-
-              {/* ========================= */}
               {/* BOOKING */}
-              {/* ========================= */}
 
               <Link
                 href={`/booking?dress=${encodeURIComponent(
@@ -176,26 +120,17 @@ export default async function DressPage({ params }: Props) {
               >
                 Request Consultation
               </Link>
-
             </div>
-
           </FadeIn>
-
         </div>
-
       </section>
 
-      {/* ========================= */}
       {/* RELATED DRESSES */}
-      {/* ========================= */}
 
       {relatedDresses.length > 0 && (
         <section className="mx-auto max-w-[1500px] px-6 pb-32">
-
           <FadeIn>
-
             <div className="mb-20 text-center">
-
               <p className="text-[12px] uppercase tracking-[0.45em] text-[#B9935D]">
                 Discover More
               </p>
@@ -203,33 +138,23 @@ export default async function DressPage({ params }: Props) {
               <h2 className="mt-5 font-heading text-6xl text-[#2A2A2A]">
                 You May Also Like
               </h2>
-
             </div>
-
           </FadeIn>
 
           <div className="grid gap-12 md:grid-cols-3">
-
             {relatedDresses.map((item, index) => (
-
               <FadeIn
                 key={item.slug}
                 delay={index * 0.1}
               >
-
                 <Link
                   href={`/dress/${item.slug}`}
                   className="group"
                 >
-
                   <div className="overflow-hidden bg-[#F7F5F2]">
-
                     <div className="relative overflow-hidden">
-
                       <Image
-                        src={getCloudinaryImage(item.images[0], {
-                          width: 900,
-                        })}
+                        src={item.images[0]}
                         alt={item.name}
                         width={900}
                         height={1200}
@@ -237,13 +162,10 @@ export default async function DressPage({ params }: Props) {
                       />
 
                       <div className="absolute inset-0 bg-black/0 transition duration-500 group-hover:bg-black/5" />
-
                     </div>
-
                   </div>
 
                   <div className="pt-8 text-center">
-
                     <p className="text-[11px] uppercase tracking-[0.45em] text-[#B9935D]">
                       {item.collection}
                     </p>
@@ -259,7 +181,6 @@ export default async function DressPage({ params }: Props) {
                     <div className="mx-auto mt-8 h-px w-12 bg-[#B9935D] transition-all duration-300 group-hover:w-24" />
 
                     <div className="mt-8 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-[#2A2A2A] transition duration-300 group-hover:text-[#B9935D]">
-
                       View Details
 
                       <svg
@@ -269,7 +190,6 @@ export default async function DressPage({ params }: Props) {
                         fill="none"
                         className="transition-transform duration-300 group-hover:translate-x-1"
                       >
-
                         <path
                           d="M5 12H19"
                           stroke="currentColor"
@@ -281,24 +201,15 @@ export default async function DressPage({ params }: Props) {
                           stroke="currentColor"
                           strokeWidth="1.5"
                         />
-
                       </svg>
-
                     </div>
-
                   </div>
-
                 </Link>
-
               </FadeIn>
-
             ))}
-
           </div>
-
         </section>
       )}
-
     </main>
   );
 }

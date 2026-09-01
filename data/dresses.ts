@@ -17,9 +17,13 @@ export const dresses: Dress[] = [
   collectionSlug: "echoes-of-her",
 
   images: [
-    "/images/dresses/echoes/Beatrice/beatrice2.webp",
-    "/images/dresses/echoes/Beatrice/beatrice4.webp",
-    "/images/dresses/echoes/Beatrice/beatrice6.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527644/beatrice1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527644/beatrice2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527644/beatrice3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527644/beatrice4.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527644/beatrice5.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527644/beatrice6.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1787527647/beatrice7.webp",
   ],
 },
 

@@ -1171,8 +1171,12 @@ export const dresses: Dress[] = [
   collectionSlug: "whispers-of-dreams",
 
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_04.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1786144822/page_05.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275185/Hailie1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275572/Hailie2.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275186/Hailie3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275186/Hailie3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275188/Hailie5.webp",
+
   ],
 },
 
@@ -1188,9 +1192,10 @@ export const dresses: Dress[] = [
   collectionSlug: "whispers-of-dreams",
 
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_07.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_08.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_09.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275189/Halo1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275190/Halo2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275191/Halo3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275189/Halo1.webp",
   ],
 },
 
@@ -1206,8 +1211,9 @@ export const dresses: Dress[] = [
   collectionSlug: "whispers-of-dreams",
 
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_11.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_12.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275189/Halo1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275190/Halo2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275198/Hanna3.webp",
   ],
 },
 
@@ -1223,8 +1229,9 @@ export const dresses: Dress[] = [
   collectionSlug: "whispers-of-dreams",
 
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_14.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_15.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275199/Harmony1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275200/Harmony2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275201/Harmony3.webp",
   ],
 },
 
@@ -1240,8 +1247,9 @@ export const dresses: Dress[] = [
   collectionSlug: "whispers-of-dreams",
 
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_17.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_18.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275201/Haven1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275202/Haven2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275201/Haven3.webp",
   ],
 },
 
@@ -1256,8 +1264,9 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_20.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_21.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275201/Haven3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275202/Haven2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275201/Haven3.webp",
   ],
 },
 
@@ -1272,8 +1281,9 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_23.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_24.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275207/Hayden1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275208/Hayden2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275209/Hayden3.webp",
   ],
 },
 
@@ -1288,9 +1298,11 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_26.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_27.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_28.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275210/Heather1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275211/Heather2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275212/Heather3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275210/Heather1.webp",
+
   ],
 },
 
@@ -1305,9 +1317,12 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_30.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_31.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_32.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275210/Heather1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275211/Heather2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275212/Heather3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275216/Helana4.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275216/Helana5.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275217/Helana6.webp",
   ],
 },
 
@@ -1322,8 +1337,9 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_34.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_35.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275218/Helen1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275219/Helen2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275220/helen3.webp",
   ],
 },
 
@@ -1338,9 +1354,10 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_37.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_38.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_39.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275221/Helina1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275222/Helina2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275223/Helina3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275221/Helina4.webp"
   ],
 },
 
@@ -1355,43 +1372,26 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_41.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_42.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788276169/BEST2494.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275226/Helisant3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275226/Helisant3.webp",
   ],
 },
 
 {
   ...defaultDressInfo,
-  slug: "helmina-corset",
-  name: "Helmina Corset",
+  slug: "helmina",
+  name: "Helmina",
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_43.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275227/Helmina.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275227/Helmina2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275229/Helmina3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275229/Helmina3.webp",
   ],
 },
 
-{
-  ...defaultDressInfo,
-  slug: "helmina-mermaid-skirt",
-  name: "Helmina Mermaid Skirt",
-  collection: "Whispers of Dreams",
-  collectionSlug: "whispers-of-dreams",
-  images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_45.jpg",
-  ],
-},
-
-{
-  ...defaultDressInfo,
-  slug: "helmina-a-line-skirt",
-  name: "Helmina A-line Skirt",
-  collection: "Whispers of Dreams",
-  collectionSlug: "whispers-of-dreams",
-  images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_46.jpg",
-  ],
-},
 
 {
   ...defaultDressInfo,
@@ -1404,8 +1404,10 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_48.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_49.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275231/Henriette1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275231/Henriette2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275233/Henriette3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275234/Henriette4.webp",
   ],
 },
 
@@ -1420,10 +1422,11 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_51.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_52.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_53.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_54.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275234/Hermiona1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275234/Hermiona2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275234/Hermiona3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275234/Hermiona4.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275238/Hermiona5.webp",
   ],
 },
 
@@ -1438,9 +1441,10 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_56.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_57.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_58.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275239/Hermosa1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275239/Hermosa2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275239/Hermosa3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275242/Hermosa4.webp",
   ],
 },
 
@@ -1455,9 +1459,14 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_60.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_61.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_62.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275243/Hespera1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275243/Hespera2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275243/Hespera3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275243/Hespera4.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275243/Hespera5.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275243/Hespera6.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275243/Hespera7.webp",
+
   ],
 },
 
@@ -1472,8 +1481,9 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_64.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_65.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275250/Hilary1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275250/Hilary2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275251/Hilary3.webp",
   ],
 },
 
@@ -1488,8 +1498,9 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_67.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_68.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275252/Honey1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275252/Honey2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275254/Honey3.webp",
   ],
 },
 
@@ -1504,8 +1515,10 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_70.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_71.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275258/Honora4.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275258/Honora3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275256/Honora2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275255/Honora1.webp",
   ],
 },
 
@@ -1520,8 +1533,9 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_73.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_74.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275259/Hope2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275259/Hope1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275260/Hope3.webp",
   ],
 },
 
@@ -1536,8 +1550,9 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_76.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_77.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275262/Hortense2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275262/Hortense1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275262/Hortense3.webp",
   ],
 },
 
@@ -1552,9 +1567,11 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_79.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_80.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_81.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275264/Hyphelia1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275264/Hyphelia2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275264/Hyphelia3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275267/Hyphelia4.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275267/Hyphelia5.webp",
   ],
 },
 
@@ -1569,9 +1586,10 @@ export const dresses: Dress[] = [
   collection: "Whispers of Dreams",
   collectionSlug: "whispers-of-dreams",
   images: [
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_83.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_84.jpg",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/page_85.jpg",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275268/Hypnora2.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275268/Hypnora1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275268/Hypnora3.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275271/Hypnora4.webp",
   ],
 },
 ]

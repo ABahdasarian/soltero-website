@@ -24,50 +24,93 @@ export const metadata: Metadata = {
 
   title: {
     default: "SOLTERO | Luxury Bridal Boutique",
-    template: "%s | SOLTERO",
+    template: "%s | SOLTERO Bridal",
   },
 
   description:
-    "Discover timeless bridal gowns, luxury collections and personalized consultations at SOLTERO Bridal Boutique.",
+    "Discover luxury wedding dresses and timeless bridal gowns at SOLTERO Bridal Boutique. Explore our exclusive bridal collections and book your private consultation.",
 
   keywords: [
+    "SOLTERO",
+    "SOLTERO bridal",
     "bridal boutique",
+    "luxury bridal boutique",
     "wedding dresses",
-    "luxury bridal",
-    "bridal gowns",
-    "bridal fashion",
-    "wedding boutique",
+    "wedding dress boutique",
     "luxury wedding dresses",
+    "designer wedding dresses",
+    "bridal gowns",
+    "luxury bridal gowns",
+    "bridal fashion",
+    "bridal shop",
+    "wedding boutique",
+    "bridal consultation",
+    "bridal appointment",
+    "bridal boutique London",
+    "wedding dresses London",
+    "luxury bridal London",
+    "wedding dress shop London",
+    "UK bridal boutique",
   ],
 
   authors: [
     {
-      name: "SOLTERO",
+      name: "SOLTERO Bridal Boutique",
+      url: "https://www.soltero.co.uk",
     },
   ],
 
-  creator: "SOLTERO",
+  creator: "SOLTERO Bridal Boutique",
+  publisher: "SOLTERO Bridal Boutique",
+
+  category: "Fashion",
+
+  alternates: {
+    canonical: "https://www.soltero.co.uk",
+  },
 
   openGraph: {
     title: "SOLTERO | Luxury Bridal Boutique",
     description:
-      "Discover timeless bridal gowns and book your private consultation.",
+      "Discover timeless bridal gowns, luxury wedding dresses and book your private consultation at SOLTERO Bridal Boutique.",
     url: "https://www.soltero.co.uk",
-    siteName: "SOLTERO",
-    locale: "en_US",
+    siteName: "SOLTERO Bridal Boutique",
+    locale: "en_GB",
     type: "website",
+    images: [
+      {
+        url: "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785955940/101.webp",
+        width: 1200,
+        height: 630,
+        alt: "SOLTERO Bridal Boutique",
+      },
+    ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "SOLTERO",
-    description: "Luxury Bridal Boutique",
-    creator: "@soltero",
+    title: "SOLTERO | Luxury Bridal Boutique",
+    description:
+      "Discover luxury wedding dresses and timeless bridal collections.",
+    images: [
+      "https://res.cloudinary.com/cwh8h4x4/image/upload/v1785955940/101.webp",
+    ],
   },
 
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 
@@ -87,7 +130,7 @@ export default function RootLayout({
 
         {children}
 
-        {/* Google Analytics / Google tag */}
+        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-9BQLDDPY18"
           strategy="afterInteractive"
@@ -101,9 +144,9 @@ export default function RootLayout({
               window.dataLayer.push(arguments);
             }
 
-            gtag('js', new Date());
+            gtag("js", new Date());
 
-            gtag('config', 'G-9BQLDDPY18');
+            gtag("config", "G-9BQLDDPY18");
           `}
         </Script>
 

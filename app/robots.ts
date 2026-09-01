@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://soltero.com";
+  const baseUrl = "https://www.soltero.co.uk";
 
   return {
     rules: [

@@ -1195,7 +1195,7 @@ export const dresses: Dress[] = [
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275189/Halo1.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275190/Halo2.webp",
     "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275191/Halo3.webp",
-    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275189/Halo1.webp",
+    "https://res.cloudinary.com/cwh8h4x4/image/upload/v1788275189/Halo4.webp",
   ],
 },
 

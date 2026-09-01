@@ -18,20 +18,16 @@ export default function DressGallery({
   const [active, setActive] = useState(0);
   const [open, setOpen] = useState(false);
 
-  if (!images || images.length === 0) {
-    return null;
-  }
-
   const currentImage = images[active];
 
   return (
     <>
       <div className="grid gap-6 lg:grid-cols-[90px_1fr]">
-        {/* Thumbnails */}
+        {/* THUMBNAILS */}
         <div className="order-2 flex gap-4 overflow-x-auto lg:order-1 lg:flex-col">
           {images.map((image, index) => (
             <button
-              key={image}
+              key={`${image}-${index}`}
               type="button"
               onClick={() => setActive(index)}
               className={`relative h-28 w-20 flex-shrink-0 overflow-hidden border transition-all duration-300 ${
@@ -51,19 +47,19 @@ export default function DressGallery({
           ))}
         </div>
 
-        {/* Main Image */}
+        {/* MAIN IMAGE */}
         <button
           type="button"
           onClick={() => setOpen(true)}
           className="group relative order-1 aspect-[3/4] overflow-hidden bg-[#F7F5F2] lg:order-2"
         >
           <Image
-            key={currentImage}
+            key={`${currentImage}-${active}`}
             src={currentImage}
-            alt={name}
+            alt={`${name} ${active + 1}`}
             fill
             priority
-            sizes="(max-width: 1024px) 100vw, 800px"
+            sizes="(max-width: 1024px) 100vw, 70vw"
             className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
           />
 
@@ -79,8 +75,9 @@ export default function DressGallery({
         open={open}
         close={() => setOpen(false)}
         index={active}
-        slides={images.map((image) => ({
+        slides={images.map((image, index) => ({
           src: image,
+          alt: `${name} ${index + 1}`,
         }))}
         controller={{
           closeOnBackdropClick: true,

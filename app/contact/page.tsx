@@ -46,28 +46,36 @@ export default function ContactPage() {
                     <h3 className="text-lg font-medium text-[#2A2A2A]">
                       Visit Our Boutique
                     </h3>
-
                     <p className="mt-2 leading-7 text-[#777]">
+  London, United Kingdom
+</p>
+
+                    {/*<p className="mt-2 leading-7 text-[#777]">
                       24 Bridal Avenue
                       <br />
                       London, United Kingdom
                     </p>
+                    */}
+                   
                   </div>
                 </div>
 
+                {/*
                 <div className="flex gap-5">
                   <span className="text-2xl text-[#B9935D]">✦</span>
 
+                 
                   <div>
                     <h3 className="text-lg font-medium text-[#2A2A2A]">
                       Call Us
                     </h3>
 
                     <p className="mt-2 leading-7 text-[#777]">
-                      +44 20 1234 5678
+                      +44 79 3640 8389
                     </p>
                   </div>
                 </div>
+                */}
 
                 <div className="flex gap-5">
                   <span className="text-2xl text-[#B9935D]">✦</span>

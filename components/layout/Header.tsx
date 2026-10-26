@@ -93,7 +93,7 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setOpen((previous) => !previous)}
-            className="relative z-50 flex h-11 w-11 shrink-0 flex-col items-center justify-center gap-1.5 lg:hidden"
+            className="relative z-[102] flex h-11 w-11 shrink-0 flex-col items-center justify-center gap-1.5 border border-[#B9935D]/50 bg-[#F8F6F3] lg:hidden"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
           >

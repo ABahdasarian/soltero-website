@@ -10,23 +10,22 @@ export type AccessorySet = {
 
 const set1 = [
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792963993/IMG_6026.webp",
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792963994/IMG_6060.webp",
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792963997/IMG_6121.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964009/IMG_6070.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964003/IMG_6078.webp",
   
   
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792963997/IMG_6103.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792963997/IMG_6121.webp",
-  
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792963994/IMG_6060.webp",
-  
   
 ];
 
 const set2 = [
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964031/IMG_7773.webp",
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964008/IMG_8022.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964007/IMG_8003.webp",
   
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964008/IMG_8022.webp",
+  
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964008/IMG_8012.webp",
 
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964004/IMG_7979.webp",
@@ -34,8 +33,9 @@ const set2 = [
 
 const set3 = [
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964014/IMG_1967.webp",
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964010/IMG_0976.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964031/IMG_3333.webp",
-  
+   
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964027/IMG_3334.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964027/IMG_3321.webp",
   
@@ -46,13 +46,13 @@ const set3 = [
  
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964011/IMG_1011.webp",
   
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964010/IMG_0976.webp",
+ 
 ];
 
 const set4 = [
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964042/IMG_6962.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964044/IMG_6927.webp",
-  
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964030/IMG_6775.webp",
   
   
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964037/IMG_6778.webp",
@@ -61,23 +61,22 @@ const set4 = [
  
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964034/IMG_6758.webp",
   
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964030/IMG_6775.webp",
+  
   
 ];
 
 const set5 = [
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964040/IMG_6716.webp",
+  
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964047/IMG_7049.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964046/IMG_6874.webp",
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964040/IMG_6834.webp",
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964042/IMG_6840.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964046/IMG_6867.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964045/IMG_6868.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964044/IMG_6863.webp",
+  
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964044/IMG_6852.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964043/IMG_6850.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964042/IMG_6840.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964042/IMG_6839.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964041/IMG_6835.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964040/IMG_6834.webp",
+
+  
+  
 ];
 
 export const accessories: AccessorySet[] = [

@@ -9,66 +9,60 @@ export type AccessorySet = {
 };
 
 const set1 = [
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964014/IMG_6122.webp",
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792963993/IMG_6026.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964009/IMG_6070.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964003/IMG_6078.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964002/IMG_6128.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964001/IMG_6130.webp",
+  
+  
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792963997/IMG_6103.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792963997/IMG_6121.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792963997/IMG_6097.webp",
+  
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792963994/IMG_6060.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792963993/IMG_3233.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792963993/IMG_6026.webp",
+  
+  
 ];
 
 const set2 = [
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964007/IMG_8003.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964031/IMG_7773.webp",
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964007/IMG_8003.webp",
+  
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964008/IMG_8022.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964008/IMG_8012.webp",
+
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964004/IMG_7979.webp",
 ];
 
 const set3 = [
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964014/IMG_1967.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964031/IMG_3333.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964029/IMG_2650.webp",
+  
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964027/IMG_3334.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964027/IMG_3321.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964026/IMG_1017.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964020/IMG_2673.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964019/IMG_2659.webp",
+  
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964019/IMG_2667.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964018/IMG_2664.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964017/IMG_2654.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964015/IMG_2649.webp",
+  
+  
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964014/IMG_2645.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964013/IMG_2639.webp",
+ 
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964011/IMG_1011.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964011/IMG_0977.webp",
+  
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964010/IMG_0976.webp",
 ];
 
 const set4 = [
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964047/IMG_7072.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964044/IMG_6792.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964044/IMG_6927.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964042/IMG_6962.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964038/IMG_6945.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964038/IMG_6986.webp",
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964044/IMG_6927.webp",
+  
+  
+  
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964037/IMG_6778.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964035/IMG_6809.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964034/IMG_6794.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964034/IMG_6808.webp",
+ 
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964034/IMG_6758.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964034/IMG_6803.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964033/IMG_6787.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964032/IMG_6786.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964031/IMG_6784.webp",
+  
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964030/IMG_6775.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964029/IMG_6765.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964028/IMG_6763.webp",
+  
 ];
 
 const set5 = [

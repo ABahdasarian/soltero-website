@@ -152,8 +152,6 @@ export default async function BookingPage({
                   </p>
 
                   <p className="mt-3 text-lg text-[#444]">
-                    24 Bridal Avenue
-                    <br />
                     London, United Kingdom
                   </p>
                 </div>

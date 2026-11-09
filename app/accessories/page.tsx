@@ -67,13 +67,14 @@ export default function AccessoriesPage() {
                     <div className="relative mx-auto aspect-[4/5] w-full max-w-[420px] overflow-hidden bg-[#EEEAE4]">
                       {image ? (
                         <Image
-                          src={image}
-                          alt={accessory.name}
-                          fill
-                          priority={index < 2}
-                          sizes="(max-width: 639px) 46vw, (max-width: 1023px) 44vw, 30vw"
-                          className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035]"
-                        />
+  src={image}
+  alt={accessory.name}
+  fill
+  unoptimized
+  priority={index < 2}
+  sizes="(max-width: 639px) 46vw, (max-width: 1023px) 44vw, 30vw"
+  className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035]"
+/>
                       ) : (
                         <div className="flex h-full items-center justify-center px-4 text-center text-sm text-[#91877B]">
                           Image coming soon

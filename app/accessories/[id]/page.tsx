@@ -386,6 +386,7 @@ export default function AccessoryDetailPage() {
                 alt={`${accessory.name} — photo ${activeImage + 1}`}
                 fill
                 priority
+                unoptimized
                 sizes="(max-width: 768px) 100vw, 45vw"
                 className="object-contain"
               />
@@ -436,6 +437,7 @@ export default function AccessoryDetailPage() {
                       src={image}
                       alt={`${accessory.name} thumbnail ${index + 1}`}
                       fill
+                      unoptimized
                       sizes="100px"
                       className="object-cover"
                     />

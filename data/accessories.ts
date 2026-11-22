@@ -39,10 +39,10 @@ const set3 = [
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964027/IMG_3334.webp",
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964027/IMG_3321.webp",
   
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964019/IMG_2667.webp",
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1795359782/3_1.png",
   
   
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964014/IMG_2645.webp",
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1795359780/3_2.png",
  
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1792964011/IMG_1011.webp",
   
@@ -92,10 +92,10 @@ const set6 = [
 
 const set7 = [
   "https://res.cloudinary.com/cwh8h4x4/image/upload/v1794242728/IMG_2270.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1794242886/IMG_0652.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1794242733/IMG_0661.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1794242717/IMG_0665.webp",
-  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1794242709/IMG_0660.webp",
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1795360000/1.7.png",
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1795360015/2.7.png",
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1795360009/3.7.png",
+  "https://res.cloudinary.com/cwh8h4x4/image/upload/v1795360003/4.7.png",
 
 
 ];
